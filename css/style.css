@@ -1,0 +1,5016 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.zagolovok {
+    background-image: url('img/logotip/Fotohea.jpg'); /* Путь к вашему фоновому изображению */
+    background-size: cover;
+    background-position: center 30%; /* Фон будет расположен по центру по горизонтали и немного снизу */
+    background-repeat: no-repeat;
+    height: 100vh; /* Используем вьюпортные единицы для высоты контейнера */
+
+}
+
+
+
+.text-overlay {
+    position: absolute;
+    top: 0; /* Разместите контейнер текста вверху блока */
+    left: 50  %;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 20px; /* Добавьте необходимые отступы вокруг текста */
+    box-sizing: border-box;
+}
+.logo {
+    display: inline-block; /* Размещаем логотип в строке с другими пунктами меню */
+    margin: 0 10px; /* Регулируем отступы вокруг логотипа */
+}
+
+/* Скрыть логотип в гамбургере */
+@media screen and (max-width: 992px) {
+    .logo {
+        display: none;
+    }
+}
+
+
+/* Стили для пунктов меню */
+header li {
+  flex: 1; /* Распределение равномерно между пунктами меню */
+  text-align: center; /* Выравнивание текста по центру */
+  color: #141312;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'ex';
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+/* Стили для логотипа */
+header img {
+  max-width: 100%; /* Максимальная ширина логотипа */
+}
+/* Стили для навигационного меню */
+header nav ul{
+  font-family: "Roboto", "OpenSans-Light", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Распределение пунктов меню с обеих сторон */
+  flex-grow: 1; /* Позволяет навигационному меню растягиваться */
+}
+
+
+
+
+header nav a {
+  color: #141312;
+font-size: 20px;
+font-weight: 300;
+font-family: 'Garamond';
+text-transform: uppercase;
+letter-spacing: 1.5px;
+ text-decoration: none; // отключение системного подчёркивания ссылок
+ border-bottom: 1px solid transparent; // прозрачная граница под ссылкой
+ transition: border 250ms ease-in-out; // эффект перехода между двумя состояниями элемента
+}
+
+header nav a:hover {
+ border-bottom: 1px solid black;
+}
+
+.gift{padding:  50px;
+  background-color:#161616;
+    margin-top: 0px; /* Применяем отрицательный отступ, чтобы поднять следующую секцию */
+  }
+
+.about-us{background-color:#161616;
+margin: 0px;
+padding: 50px;}
+
+.biograf img{width: 400px;}
+
+.content-right{ font-family:  'Times New Roman', Times, serif;
+color:#BABABA;
+padding: 40px;
+font-size: 18px;}
+
+.content-right img {
+    width: 100%; /* Устанавливаем ширину изображения на 100% ширины родительского контейнера */
+    height: auto; /* Поддерживаем пропорции изображения */
+    max-width: 100%; /* Гарантируем, что изображение не будет шире своего оригинального размера */
+    padding: 30px; /* Удаляем отступы, если они были */
+}
+.podrobnee {
+      background-color: transparent; /* Прозрачный фон */
+      border: 2px solid #ffffff; /* Белая полоса по контуру */
+      color: #ffffff; /* Белый цвет текста */
+      padding: 15px 32px; /* Отступы вокруг текста */
+      text-align: center; /* Выравнивание текста по центру */
+      text-decoration: none; /* Убираем подчеркивание текста */
+      display: inline-block; /* Элемент ведет себя как блочный элемент, но сохраняет размеры строчного элемента */
+      font-size: 16px; /* Размер текста кнопки */
+      cursor: pointer; /* Курсор при наведении на кнопку */
+      border-radius: 5px; /* Радиус скругления углов кнопки */
+      margin-top: 30px; /* Отступ сверху */
+  }
+
+
+  .album .card {
+      margin-bottom: 20px;
+  }
+
+
+
+
+
+  @media (min-width: 568px) {
+
+      .album .container .row {
+          display: flex;
+      }
+      .album .container .col-md-6 {
+          flex: 0 0 50%;
+      }
+      .album .container .col-md-12 {
+          flex: 0 0 100%;
+      }
+  }
+
+  .portfolio-section {
+      padding-top: 50px; /* Увеличиваем верхний отступ блока "Портфолио" */
+  }
+
+  .album {
+      margin-top: 70px; /* Увеличиваем отступ между заголовком и фотографиями */
+  }
+
+
+.tariffs-section{    padding-top: 100px;}
+
+  @media (max-width: 767px) {
+      .left-f,
+      .right-tariff {
+          width: 100%; /* Устанавливаем ширину 100% */
+          float: none; /* Отменяем плавающее выравнивание */
+      }
+  }
+
+@media screen and (max-width: 992px) {
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  .zagolovok {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      height: 800px;
+      color: white;
+      padding-top: 20px; /* Увеличьте верхний отступ, если необходимо */
+  }
+
+  .text-overlay {
+      position: absolute;
+      top: 0; /* Разместите контейнер текста вверху блока */
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      padding: 20px; /* Добавьте необходимые отступы вокруг текста */
+      box-sizing: border-box;
+  }
+
+  /* Стили для пунктов меню */
+  header li {
+    flex: 1; /* Распределение равномерно между пунктами меню */
+    text-align: center; /* Выравнивание текста по центру */
+    color: #141312;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'ex';
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  /* Стили для логотипа */
+  header img {
+    max-width: 100%; /* Максимальная ширина логотипа */
+  }
+  /* Стили для навигационного меню */
+  header nav ul {
+    font-family: "Roboto", "OpenSans-Light", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Распределение пунктов меню с обеих сторон */
+    flex-grow: 1; /* Позволяет навигационному меню растягиваться */
+  }
+
+  header nav a {
+    color:black;
+   text-decoration: none; // отключение системного подчёркивания ссылок
+   border-bottom: 1px solid transparent; // прозрачная граница под ссылкой
+   transition: border 250ms ease-in-out; // эффект перехода между двумя состояниями элемента
+  }
+
+  header nav a:hover{
+   border-bottom: 1px solid black;
+  }
+  .about-us{background-color:#161616;
+  margin: 0px;
+  padding: 50px;}
+
+  .biograf img{width: 400px;}
+
+  .content-right{ font-family:  'Times New Roman', Times, serif;
+  color:#BABABA;
+  padding: 30px;
+  font-size: 18px;}
+
+}
+
+
+
+
+
+
+.btn-details,
+.knopka2 {
+    background-color: transparent; /* Прозрачный фон */
+    border: 2px solid #807f7c; /* Черная полоса по контуру */
+    color: #141312; /* Черный цвет текста */
+    padding: 15px 32px; /* Отступы вокруг текста */
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    display: inline-block; /* Элемент ведет себя как блочный элемент, но сохраняет размеры строчного элемента */
+    font-size: 16px; /* Размер текста кнопки */
+    cursor: pointer; /* Курсор при наведении на кнопку */
+    border-radius: 5px; /* Радиус скругления углов кнопки */
+    margin-top: 30px; /* Отступ сверху */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход цвета */
+}
+
+.btn-details:hover,
+.knopka2:hover {
+    background-color: #807f7c; /* Цвет фона при наведении */
+    color: rgb(215, 208, 208); /* Цвет текста при наведении */
+}
+
+.card-text{    font-family: 'Garamond', serif; /* Применяем шрифт Garamond */
+font-size:30px;
+color:#26252A;}
+
+.portfolio-color{color:#504F52;
+  font-family: Arial, sans-serif;
+text-align: center;
+font-size: 32px;
+font-weight: 400;
+}
+
+.WHITE-COLOR{background-color: white;
+padding: 50px;}
+
+.tariffs-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.tariff {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.tariff h3 {
+    color: #333;
+}
+.tariff ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tariff ul li {
+    margin-bottom: 10px;
+    text-align: left; /* Добавленный стиль */
+}
+
+.VneOcheredi{margin: 50px;}
+
+
+
+.tariff p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.tariffs-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tariff {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.tariff h3 {
+    font-size: 32px;
+    font-family: 'ex';
+    color:#121212;
+    margin-bottom: 10px;
+}
+
+
+.tariff p {
+    font-size: 23px;
+    font-family: 'Garamond';/* Используем шрифт Montserrat с заменой на sans-serif в качестве альтернативы */
+color:#404248;
+    margin-bottom: 10px;
+}
+
+
+
+.tariff {
+  border: none; /* Удаляем контур */
+}
+
+.left-tariff {
+    float: left; /* Выравнивание по левому краю */
+    width: 50%; /* Ширина блока - половина контейнера */
+}
+.right-tariff {
+    float: right; /* Выравнивание по правому краю */
+    width: 50%; /* Ширина блока - половина контейнера */
+}
+
+.tariff-column {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+.tariff-column ul {
+    padding: 0;
+    list-style: none;
+}
+
+.tariff-column ul li {
+    margin-bottom: 10px;
+}
+
+
+
+.btn-subscribe {
+  font-size: 20px;
+  padding: 20px 40px; /* Увеличиваем отступы вокруг текста */
+  background-color: transparent;
+  border: 2px solid #000000;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.btn-subscribe:hover {
+  background-color: #121212; /* Цвет фона при наведении */
+  color: #504F52; /* Цвет текста при наведении */
+}
+
+.top-image { width: 100%; }
+
+
+.top-image-sub{
+
+  height: 200px;
+object-fit: cover;}
+
+
+.services {
+ text-align: center;
+ margin: 50px 0;
+ color:white;
+}
+.services h1 {
+ font-size: 32px;
+ font-weight: 300;
+  color:white;
+}
+.delimiter {
+ width: 100px;
+ margin: 10px auto 15px;
+ height: 1px;
+ background: rgba(206, 65, 110, 0.74);
+}
+.services p {
+ color: #616161;
+}
+
+.services-container{
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+
+}
+
+.container-row{
+  text-align: center;
+max-width: 960px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+padding: 40px  30px;
+ color:white;
+
+}
+
+
+.row-item{
+  width: calc(50% - 10px); /* Ширина элемента - 50%, минус половина отступа */
+margin-bottom: 50px; /* Отступ между строками */}
+
+.row-item img{width: 90px;
+opacity: 0.75;}
+
+.row-item p{
+font-family:"Cambria", serif;
+color:#BABABA;
+font-size: 21px;
+}
+
+
+
+
+
+@media screen and (max-width: 907px) {
+    .left-tariff,
+    .right-tariff {
+        float: none;
+        width: 100%;
+    }
+
+    .tariffs-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tariff {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .portfolio-section {
+        padding-top: 200px; /* Добавляем верхний отступ */
+        padding-bottom:30px; /* Добавляем нижний отступ */
+    }
+}
+
+
+@media screen and (max-width: 567px) {
+
+  .tariff h3 {
+      font-size: 24px;
+  }
+
+  .tariff p {
+      font-size: 18px;
+  }
+
+  .portfolio-section h1.portfolio-color {
+      font-size: 24px;
+
+  }
+
+  .portfolio-section p.card-text {
+      font-size: 12px;
+  }
+
+    .portfolio-section {
+        padding-top: 200px; /* Добавляем верхний отступ */
+        padding-bottom: 2250px; /* Добавляем нижний отступ */
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 45%; /* Увеличиваем ширину карты */
+    margin-bottom: 20px;
+    margin-right: 2.5%; /* Добавляем небольшой отступ справа */
+    box-sizing: border-box; /* Учитываем отступ в общей ширине элемента */
+  }
+
+
+  .card img {
+    width: 100%; /* Устанавливаем ширину изображения на 100% от родительского блока */
+    max-width: 10000px; /* Ограничиваем максимальную ширину изображения */
+    height: auto; /* Сохраняем пропорции изображения */
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+  .portfolio-section p.card-text {
+    font-size: 20px; /* Увеличиваем размер текста */
+    line-height: 1.4; /* Устанавливаем интервал между строками */
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .album .card {
+    width: 100%;
+    margin: 0; /* Убираем все отступы */
+    padding: 0; /* Убираем внутренние отступы */
+    box-sizing: border-box; /* Учитываем отступ в общей ширине элемента */
+  }
+
+  .album .card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 730px) {
+  .album .card {
+    width: 100%;
+    margin: 0; /* Убираем все отступы */
+    padding: 0; /* Убираем внутренние отступы */
+    box-sizing: border-box; /* Учитываем отступ в общей ширине элемента */
+  }
+
+  .album .card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1507px) {
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+
+  .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+  }
+
+  /* Стили для секции "about-us" */
+  .about-us {
+      text-align: center;
+      padding: 20px;
+  }
+
+  .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .about-column {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .about-column:last-child {
+      margin-bottom: 0;
+  }
+
+  .content-left img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .content-right {
+      text-align: left;
+  }
+
+  /* Стили для секции "obrachenie" */
+  .obrachenie {
+      text-align: center;
+      padding: 20px;
+  }
+
+  .services-iner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+
+  .row-item {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+  }
+
+  /* Стили для секции "portfolio" */
+  .portfolio-color {
+      text-align: center;
+      margin-top: 30px;
+
+  }
+
+  .album {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .card {
+      width: calc(50% - 20px);
+      margin: 10px;
+  }
+
+  .card img {
+width: 200px;
+      height: auto;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box; /* Учитываем padding внутри контейнера */
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden; /* Скрыть горизонтальную полосу прокрутки */
+}
+}
+
+
+.about-us, .tariffs {
+    width: 100%;
+    padding: 50px 0; /* Примерный отступ для каждой секции */
+    box-sizing: border-box;
+}
+
+
+
+
+.album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Высота контейнера равна высоте видимой области окна */
+}
+
+.row {
+    max-width: 1200px; /* Максимальная ширина строк для контроля отступов */
+    width: 100%;
+}
+
+.col {
+    flex: 1; /* Гибкость для равного распределения столбцов */
+    padding: 0 10px; /* Отступы между столбцами */
+    max-width: 500px; /* Максимальная ширина столбцов */
+    width: 100%;
+}
+
+
+
+
+
+
+.row-item h2{
+font-weight: 2000;
+font-size: 40px;
+margin: 8px 0;}
+
+
+
+
+
+
+
+
+
+
+.about-container {
+  opacity: 0; /* Начинаем с нулевой прозрачности */
+  animation: fadeInAnimation 2.5s ease forwards; /* Анимация с появлением в течение 1.5 секунд */
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0; /* Начальное значение прозрачности */
+    transform: translateY(-50px); /* Начальное положение элемента (сдвиг наверх) */
+  }
+  to {
+    opacity: 1; /* Конечное значение прозрачности */
+    transform: translateY(0); /* Конечное положение элемента (без сдвига) */
+  }
+}
+
+
+
+.row-item {
+  opacity: 0;
+  transform: translateY(-200px); /* Начальное смещение вверх */
+  transition: opacity 1.5s ease, transform 1.5s ease; /* Плавная анимация */
+}
+.animated {
+  opacity: 1;
+  transform: translateY(0); /* Конечное положение */
+}
+
+
+
+
+.icon {
+ display: none;
+}
+
+
+.card {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card.visible {
+    opacity: 1;
+}
+
+
+
+
+
+.tariff {
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 1.2s ease;
+}
+
+.left-tariff {
+    transform: translateX(-700px);
+}
+
+.right-tariff {
+    transform: translateX(700px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.gift .about-column {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .gift .about-column.show {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+  .gift .sertificat {
+      opacity: 0;
+      transform: translateY(90px);
+      transition: opacity 0.8s ease, transform 2s ease;
+  }
+
+  .gift .sertificat.show {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+
+
+@media screen and (max-width: 992px) {
+  .row-item{
+    width: 45%;
+  }
+  .icon {
+   display: block;
+   margin: auto 0;
+   color: #040404;
+   padding: 5px 10px;
+   cursor: pointer;
+   border-radius: 4px;
+   font-size: 20px; }
+
+   nav li {
+ padding: 15px 0;
+ }
+}
+
+@media screen and (max-width: 768px) {
+  .container-row{
+    flex-direction: column;
+}
+  .row-item{
+    width:unset;
+  }
+}
+
+.main-title{
+    font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.55;
+}
+.delimiter{
+  width: 300px;
+  margin: 10px auto 15px;
+  height: 1 px;
+  background: rgba(206, 65, 110, 0.74);
+}
+.main-title-description{
+  color: #616161;
+  text-align: center;
+
+}
+
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    background-size: cover;
+    background-position: center;
+    width: calc(50% - 20px);
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+
+.description-container {
+ padding: 20px; /* равные поля элемента */
+ display: flex; /* создание флекс-контейнера */
+ flex-direction: column; /* изменение направления дочерних элементов */
+ justify-content: center; /* выравнивание дочерних элементов по горизонтали в центре родительского контейнера */
+ text-align: center; /* выравнивание текста */
+ opacity: 0; /* прозрачность (от 0 до 1) */
+ height: 0; /* высота */
+ background: #2d2f31; /* фоновый цвет */
+ transition: all 250ms ease-in-out;}
+
+ .portfolio-item:hover .description-container {
+ opacity: 0.8;
+ height: 100%; }
+
+.portfolio-title,
+.portfolio-description {
+ color: white; }
+
+.portfolio-title {
+ font-weight: 400;
+ font-size: 22px;
+ margin-bottom: 5px; }
+
+ .portfolio-item {
+ width: 50%;
+ }
+
+
+
+.overlay {
+  margin: 80px 0;
+  padding: 80px 30px;
+  background: #2d2f31 url('C:/Users/Admin/Pictures/1640378989_37-pibig-info-p-chelovek-na-skale-priroda-krasivo-foto-39.jpg') no-repeat;
+
+  background-size: cover;
+  text-align: center;
+background-attachment: fixed;
+position: relative;
+z-index: 1;
+}
+
+.overlay::before {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #081828;
+content: "";
+transition: all .4s ease;
+opacity: .7;
+z-index: -1;
+}
+.common-button {
+  border: 1px solid #2d2f31;
+  background-color: transparent;
+  padding: 15px 25px;
+  border-radius: 4px;
+  color: #2d2f31;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: all 250ms ease;
+}
+
+.common-button:hover {
+  color: #fff;
+  background-color: #2d2f31;
+}
+
+.black-back .common-button{
+  border-color:rgba(206, 65, 110, 0.74);
+  color: #ce416e;
+
+}
+
+.black-back .common-button:hover{
+  color: #fff;
+  border-color:rgba(206, 65, 110, 0.74);
+}
+
+.black-back .main-title{
+  color: #fff;
+}
+.black-back .main-title-description{
+  color: #fff;
+}
+
+
+
+.contact-form {
+  max-width: 960px;
+  padding: 0 30px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  max-width: 960px;
+  padding: 0 30px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align the form elements horizontally */
+  align-items: center; /* Center-align the form elements vertically */
+}
+
+.contact-form .col {
+  width: calc(50% - 28px); /* Adjust width and margin as needed */
+  margin: 10px; /* Increase margin to add more spacing between the pairs */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #afafaf;
+  padding: 15px;
+  margin: 14px;
+  width: 96%; /* Make the input fields and textarea fill the available width */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+.contact-form.submit{
+  width: 50%;
+}
+
+.contact-form.row-col {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+
+.contact-form.submit {
+  background: #2d2f31;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.contact-form.submit:hover {
+  background: #4c4c4c;
+}
+
+.contact-form.submit:active {
+  background: #2c3b4a;
+}
+
+@media screen and (max-width: 576px) {
+  .contact-form.col:nth-child(odd) {
+    border: 1px solid #afafaf;
+  }
+
+  .contact-form.col {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .contact-form.submit {
+    font-size: 14px;
+  }
+}
+.row-col input{
+  color:#616161;
+  width: 25px;
+}
+.contact-form.check a{
+  color:#ce416e;
+}
+
+footer{
+  background: #2d2f31;
+  padding-bottom: 10px;
+
+}
+
+.brand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand span{
+  font-size: 42px;
+  font-weight: 400;
+  color: white;
+  font-family: "Roboto","OpenSans-Light",Helvetica,Arial,sans-serif;
+  line-height: 1;
+  margin-left: 15px;
+  margin: 15px;
+}
+
+.brand img{
+  width: 35px;
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+}
+.social a{
+  margin: 1px;
+}
+.social img{
+  width:30px;
+}
+.copyright{
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  color: rgba(255,255,255,0.5)
+}
+
+footer  ul {
+   justify-content: center;
+}
+.logot{display: none;}
+
+
+
+@media screen and (max-width: 992px) {
+  header nav ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #2d2f31;
+    height: 0;
+    top: 0;
+    transition: all 250ms ease-in-out;
+    flex-direction: column;    overflow: hidden; /* Добавлено свойство overflow для скрытия списка */
+  }
+
+
+
+
+.logot{display: inline;
+width: 40%;
+padding-top: 5px;
+padding-left: 50px;}
+
+
+
+  header img {display: none;
+  }
+
+  .responsive ul {
+    height: 799px; /* Изменено на auto для отображения списка */
+    background: #fcfcfc!important;
+    padding: 54px;
+    padding-top: 200px;
+  }
+
+  .icon {
+    position: absolute;
+    top: 54px;
+  right: 40px;
+    cursor: pointer;
+    font-size: 50px;
+    color: #black;
+    z-index: 100;
+  }
+
+}
+
+@media screen and (max-width: 775px) {
+
+header nav ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #2d2f31;
+  height: 0;
+  top: 0px;
+  transition: all 250ms ease-in-out;
+  flex-direction: column;
+  z-index: 100;
+  overflow: hidden; /* Добавлено свойство overflow для скрытия списка */
+}
+.logot{display: inline;
+width: 50%;
+padding-top: 5px;
+padding-left: 50px;}
+
+
+header img {display: none;
+}
+.responsive ul {
+  height: 799px; /* Изменено на auto для отображения списка */
+  background: #fcfcfc!important;
+  padding: 54px;
+  padding-top: 200px;
+}
+
+.icon {
+  position: absolute;
+  top: 54px;
+right: 40px;
+  cursor: pointer;
+  font-size: 50px;
+  color: #040404;
+  z-index: 101;
+}
+}
+
+@media screen and (max-width: 690px) {
+
+header nav ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #2d2f31;
+  height: 0px;
+  top: 0;
+  transition: all 250ms ease-in-out;
+  flex-direction: column;
+  z-index: 10;
+  overflow: hidden; /* Добавлено свойство overflow для скрытия списка */
+}
+.logot{display: inline;
+width: 50%;
+padding-top: 15px;
+padding-left: 50px;}
+
+
+header img {display: none;
+}
+.responsive ul {
+  height: 799px; /* Изменено на auto для отображения списка */
+  background: #fcfcfc!important;
+  padding: 54px;
+  padding-top: 200px;
+}
+.icon {
+  position: absolute;
+  top: 54px;
+right: 40px;
+  cursor: pointer;
+  font-size: 50px;
+  color: #040404;
+  z-index: 100;
+}
+}
+
+
+
+@media screen and (max-width: 610px) {
+
+header nav ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #2d2f31;
+  height: 0px;
+  top: 0;
+  transition: all 250ms ease-in-out;
+  flex-direction: column;
+  z-index: 10;
+  overflow: hidden; /* Добавлено свойство overflow для скрытия списка */
+}
+.logot{display: inline;
+width: 55%;
+padding-top: 15px;
+padding-left: 40px;}
+
+
+header img {display: none;
+}
+.responsive ul {
+  height: 799px; /* Изменено на auto для отображения списка */
+  background: #fcfcfc!important;
+  padding: 54px;
+  padding-top: 200px;
+}
+
+.icon {
+  position: absolute;
+  top: 54px;
+right: 40px;
+  cursor: pointer;
+  font-size: 50px;
+  color: #040404;
+  z-index: 100;
+}
+}
+
+@media screen and (max-width: 530px) {
+
+header nav ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #2d2f31;
+  height: 0px;
+  top: 0;
+  transition: all 250ms ease-in-out;
+  flex-direction: column;
+  z-index: 10;
+  overflow: hidden; /* Добавлено свойство overflow для скрытия списка */
+}
+.logot{display: inline;
+width: 60%;
+padding-top: 10px;
+padding-left: 30px;}
+
+
+header img {display: none;
+}
+.responsive ul {
+  height: 799px; /* Изменено на auto для отображения списка */
+  background: #fcfcfc!important;
+  padding: 54px;
+  padding-top: 200px;
+}
+
+.icon {
+  position: absolute;
+  top: 54px;
+right: 40px;
+  cursor: pointer;
+  font-size: 50px;
+  color: #040404;
+  z-index: 100;
+}
+}
+
+
+@media screen and (max-width: 485px) {
+
+header nav ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #2d2f31;
+  height: 0px;
+  top: 0;
+  transition: all 250ms ease-in-out;
+  flex-direction: column;
+  z-index: 10;
+  overflow: hidden; /* Добавлено свойство overflow для скрытия списка */
+}
+.logot{display: inline;
+width: 65%;
+padding-top: 16px;
+padding-left: 25px;}
+
+
+header img {display: none;
+}
+.responsive ul {
+  height: 799px; /* Изменено на auto для отображения списка */
+  background: #fcfcfc!important;
+  padding: 54px;
+  padding-top: 200px;
+}
+
+.icon {
+  position: absolute;
+  top: 54px;
+right: 40px;
+  cursor: pointer;
+  font-size: 50px;
+  color: #040404;
+  z-index: 100;
+}
+}
+
+
+@media screen and (max-width: 450px) {
+
+header nav ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #2d2f31;
+  height: 0px;
+  top: 0;
+  transition: all 250ms ease-in-out;
+  flex-direction: column;
+  z-index: 10;
+  overflow: hidden; /* Добавлено свойство overflow для скрытия списка */
+}
+.logot{display: inline;
+width: 270px;
+padding-top: 16px;
+padding-left: 15px;}
+
+
+header img {display: none;
+}
+.responsive ul {
+  height: 799px; /* Изменено на auto для отображения списка */
+  background: #fcfcfc!important;
+  padding: 54px;
+  padding-top: 200px;
+}
+
+.icon {
+  position: absolute;
+  top: 54px;
+right: 25px;
+  cursor: pointer;
+  font-size: 45px;
+  color: #040404;
+  z-index: 100;
+}
+}
+
+
+
+@media screen and (max-width: 430px) {
+
+header nav ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #2d2f31;
+  height: 0px;
+  top: 0;
+  transition: all 250ms ease-in-out;
+  flex-direction: column;
+  z-index: 10;
+  overflow: hidden; /* Добавлено свойство overflow для скрытия списка */
+}
+.logot{display: inline;
+width: 300px;
+padding-top: 16px;
+padding-left: 20px;}
+
+
+header img {display: none;
+}
+.responsive ul {
+  height: 799px; /* Изменено на auto для отображения списка */
+  background: #fcfcfc!important;
+  padding: 54px;
+  padding-top: 200px;
+}
+
+.icon {
+  position: absolute;
+  top: 54px;
+right: 20px;
+  cursor: pointer;
+  font-size: 50px;
+  color: #040404;
+  z-index: 100;
+}
+}
+
+
+@media screen and (max-width: 415px) {
+
+header nav ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #2d2f31;
+  height: 0px;
+  top: 0;
+  transition: all 250ms ease-in-out;
+  flex-direction: column;
+  z-index: 10;
+  overflow: hidden; /* Добавлено свойство overflow для скрытия списка */
+}
+.logot{display: inline;
+width: 230px;
+padding-top: 20px;
+padding-left: 10px;}
+
+
+header img {display: none;
+}
+.responsive ul {
+  height: 799px; /* Изменено на auto для отображения списка */
+  background: #fcfcfc!important;
+  padding: 54px;
+  padding-top: 200px;
+}
+
+.icon {
+  position: absolute;
+  top: 54px;
+right: 40px;
+  cursor: pointer;
+  font-size: 40px;
+  color: #040404;
+  z-index: 100;
+}
+}
+
+@media screen and (max-width: 370px) {
+
+header nav ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #2d2f31;
+  height: 0px;
+  top: 0;
+  transition: all 250ms ease-in-out;
+  flex-direction: column;
+  z-index: 10;
+  overflow: hidden; /* Добавлено свойство overflow для скрытия списка */
+}
+.logot{display: inline;
+width: 190px;
+padding-top: 28px;
+padding-left: 20px;}
+
+
+header img {display: none;
+}
+.responsive ul {
+  height: 799px; /* Изменено на auto для отображения списка */
+  background: #fcfcfc!important;
+  padding: 54px;
+  padding-top: 200px;
+}
+.icon {
+  position: absolute;
+  top: 54px;
+right: 40px;
+  cursor: pointer;
+  font-size: 35px;
+  color: #040404;
+  z-index: 100;
+}
+}
+
+
+@media screen and (max-width: 320px) {
+
+header nav ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #2d2f31;
+  height: 0px;
+  top: 0;
+  transition: all 250ms ease-in-out;
+  flex-direction: column;
+  z-index: 10;
+  overflow: hidden; /* Добавлено свойство overflow для скрытия списка */
+}
+.logot{display: inline;
+width: 180px;
+padding-top: 29px;
+padding-left: 20px;}
+
+
+.responsive ul {
+  height: 799px; /* Изменено на auto для отображения списка */
+  background: #fcfcfc!important;
+  padding: 54px;
+  padding-top: 200px;
+}
+
+.icon {
+  position: absolute;
+  top: 58px;
+right: 20px;
+  cursor: pointer;
+  font-size: 30px;
+  color: #040404;
+  z-index: 100;
+}
+}
+
+@media screen and (max-width: 260px) {
+
+header nav ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #2d2f31;
+  height: 0px;
+  top: 0;
+  transition: all 250ms ease-in-out;
+  flex-direction: column;
+  z-index: 10;
+  overflow: hidden; /* Добавлено свойство overflow для скрытия списка */
+}
+.logot{display: inline;
+width: 160px;
+padding-top: 28px;
+padding-left: 16px;}
+
+
+header img {display: none;
+}
+.responsive ul {
+  height: 799px; /* Изменено на auto для отображения списка */
+  background: #fcfcfc!important;
+  padding: 54px;
+  padding-top: 200px;
+}
+
+.icon {
+  position: absolute;
+  top: 54px;
+right: 20px;
+  cursor: pointer;
+  font-size: 30px;
+  color: #040404;
+  z-index: 100;
+}
+}
+
+
+.popup-container{
+  position: fixed;
+  z-index: 2;
+  background: rgba(0,0,0,0);
+  top: 0;
+  right: 0;
+  bottom: -1500px;
+  left: 0;
+display:flex;
+justify-content: center;
+align-items: center;
+transition: all 250ms ease;
+
+}
+
+.popup{
+  background: white;
+  border-radius: 10px;
+  padding: 15px 15px 35px;
+  max-width: 75%;
+  box-shadow: 0 0 0px 10px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+.popup-container.ready{
+background: rgba(0,0,0,0.5);
+bottom: 0;
+}
+
+
+.testimonials {
+  margin: 80px;
+}
+
+.testimonials-container {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.testimonials-inner {
+  display: flex;
+  padding: 40px 0;
+  transition: transform 350ms ease-in-out;
+}
+
+.testimonials-card {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  width: 47%;
+  flex-shrink: 0;
+  margin: 15px;
+  border-radius: 7px;
+  padding: 15px;
+  color: #454546;
+}
+
+.card-img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.card-row {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.card-head span {
+  line-height: 1.5em;
+  color: #c1c1c1;
+}
+
+
+
+.testimonials-controls {
+  display: flex; /* Отображаем элементы в строку */
+  justify-content: center; /* Выравниваем элементы по центру */
+  margin-top: 20px; /* Регулируйте отступ в соответствии с вашим дизайном */
+}
+
+.control-item {
+  border-radius: 8px;
+  width: 300px; /* Ширина полосок */
+  height: 4px; /* Высота полосок */
+  background-color: lightgray; /* Цвет полосок */
+  margin: 0 5px; /* Расстояние между полосками */
+  cursor: pointer; /* Показываем, что это элементы управления */
+  transition: background-color 250ms ease; /* Анимация изменения цвета */
+}
+.control-item:hover{
+  background-color: gray;
+}
+
+  .control-item.active{
+    cursor: default;
+    background-color: #ce416e;
+  }
+
+
+
+
+.content-right{ font-family: Cambria, serif;}
+
+  .about-contact span:first-child{
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+  }
+
+  .about-us{
+    color: #454546;
+  }
+  .about-container{
+    max-width: 960px;
+    margin: 80px auto;
+  }
+  .about-row{
+    display: flex;
+    align-items: center;
+  }
+  .about-column{width: 50%;
+  padding: 0 15px;}
+  .about-column img{width: 100%;}
+
+  .about-us h2,
+  .about-us h3,
+  .about-us p{margin-bottom: 15px; }
+
+  .about-contact{display: flex;}
+  .about-contact span{margin-bottom: 7px;}
+  .about-contact span:first-child{flex: 1;}
+  .about-contact span:last-child{color: #ce416e;
+  font-weight: 600;
+  flex: 3;}
+
+
+
+
+
+@media screen and (max-width: 992px) {
+  .about-container{
+    max-width: 450px;
+  }
+  .about-row{
+  flex-direction: column;
+  }
+  .about-column{
+    width: 100%;
+  }
+.content-left{margin-bottom: 25px;}
+}
+
+
+
+.achievement-container{max-width: 960px;
+margin:90px auto; }
+.achievement-row{display: flex;
+align-items: center;
+padding: 70px 0;
+}
+.achievement-column{width: 25%;
+padding: 0 15px;
+}
+
+.single-achievement{text-align:center;}
+.single-achievement p{font-size: 18px;}
+.counter{font-size: 40px;
+font-weight: 600;}
+.countup{display: inline-block;}
+
+@media screen and (max-width: 992px) {
+.achievement-container{max-width: 450px;}
+.achievement-row{flex-direction: column;
+padding: 40px 0;
+}
+.achievement-column{width: 100%;}
+.single-achievement{margin: 20px 0;}
+.counter{font-size: 32px;}
+}
+.our-achievement{background-color: #ce416e;
+color: white;
+padding: 300px;}
+
+
+
+.map{margin: 50px 0;}
+.map .main-title-description{margin-bottom: 30px;}
+
+@media screen and (max-width: 992px) {
+.testimonials{margin: 80px 0;}
+.testimonials-container{max-width: 760px;
+}
+.testimonials-card{width:350px;}
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials-container{max-width: 550px;
+  }
+  .testimonials-card{width:250px;}
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .testimonials-container{max-width: 100%;
+    padding: 0 15px;
+  }
+  .testimonials-inner{transform: translate(0px) !important;
+  flex-direction: column;}
+  .testimonials-card{width:auto;;}
+.testimonials-controls{display: none;}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .carousel {
+    position: relative;
+  }
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 1000px; /* Высота слайдера, настройте по своему усмотрению */
+  display: flex;
+    transition: transform 0.5s ease;
+
+
+}
+
+.carousel-item {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out; /* Анимация переключения слайдов */
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.slide-img {
+  width: 100%;
+  height: 100%;
+ object-fit: cover ; /* Изображение заполняет всю площадь слайда */
+}
+
+.slide-img-1 {object-position: center 20%;
+  /* Стили для первого изображения */
+}
+
+.slide-img-2 { object-position: center 38%; /* Позиционирование изображения внизу */
+  /* Стили для второго изображения */
+}
+
+.slide-img-3 { object-position: center 38%; /* Позиционирование изображения внизу */
+
+  /* Стили для третьего изображения */
+}
+.slide-img-5 { object-position: center 42%; /* Позиционирование изображения внизу */
+
+  /* Стили для третьего изображения */
+}
+
+.slide-img-6 { object-position: center 45%; /* Позиционирование изображения внизу */
+
+  /* Стили для третьего изображения */
+}
+
+
+.DopYsl{margin-bottom: 10px;}
+
+.carousel-caption h5{font-weight: 600px;
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 36px;
+    letter-spacing: 1px;
+line-height: 2.5; /* Установите желаемое значение для расстояния между строками */
+
+}
+
+
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  font-weight: 6000px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 1px;
+  line-height: 2.5; /* Установите желаемое значение для расстояния между строками */
+
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  color: white;
+  font-size: 24px;
+  width: 50px; /* Ширина кнопок */
+  height: 100%; /* Сделаем кнопки высотой как у контейнера */
+  cursor: pointer;
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+.carousel-control-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+.caption-slide2 {
+  /* Ваши стили для текста на втором слайде */
+  margin: 70px;
+  font-family: "Arial", sans-serif;
+      font-size: 14px;
+      color: white; /* Цвет текста */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 6000px;
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  letter-spacing: 1px;
+  line-height: 1.55;
+      text-align: center;
+}
+
+.caption-slide2 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 27px;
+    letter-spacing: 1px;
+line-height: 1.55;
+}
+
+
+
+.caption-slide3 {
+  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:50%;
+  left: 60%;
+  font-weight: 6000px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 1px;
+  line-height: 2.0; /* Установите желаемое значение для расстояния между строками */
+margin-left: -25%; /* Добавлено для создания отступа слева */
+margin-right: 0%; /* Добавлено для создания отступа справа */
+}
+
+.caption-slide3 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 25px;
+    letter-spacing: 2px;
+line-height: 2; /* Установите желаемое значение для расстояния между строками */
+
+}
+
+
+
+
+.caption-slide4{  /* Ваши стили для текста на втором слайде */
+
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:50%;
+  left: 60%;
+  font-weight: 6000px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 2px;
+  line-height: 2.2; /* Установите желаемое значение для расстояния между строками */
+}
+
+.caption-slide4 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 24px;
+  margin-bottom: 10px;
+    letter-spacing: 1px;
+line-height: 1.9; /* Установите желаемое значение для расстояния между строками */
+
+}
+
+
+
+.caption-slide5{  /* Ваши стили для текста на втором слайде */
+
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:50%;
+  left: 60%;
+  font-weight: 600px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 2px;
+  line-height: 2; /* Установите желаемое значение для расстояния между строками */
+}
+
+.caption-slide5 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 24px;
+
+}
+
+
+.caption-slide6{  /* Ваши стили для текста на втором слайде */
+
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:60%;
+  left: 60%;
+  font-weight: 600px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 26px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 2px;
+}
+
+.caption-slide6 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 24px;
+    line-height: 2;
+  }
+
+
+  .Podarok{
+      font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 24px;
+      padding: 50px;
+    font-weight: 400;
+    color: #e3dfdf;
+    text-align: left;
+  }
+
+  .sertificat{ font-family:  'Times New Roman', Times, serif;
+    color:#BABABA;
+    padding: 30px;
+    font-size: 18px;
+  line-height: 1.55;
+padding-top: 10px;}
+
+.price, .price a{font-size: 24px;
+}
+
+
+@media screen and (max-width: 1550px)  {
+  body {
+    overflow-x: hidden;
+  }
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 1000px; /* Высота слайдера, настройте по своему усмотрению */
+    display: flex;
+      transition: transform 0.5s ease;
+  }
+  .carousel-item {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out; /* Анимация переключения слайдов */
+  }
+  .slide-img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover; /* Изображение заполняет всю площадь слайда */
+  }
+
+  .carousel-caption h5{font-weight: 600px;
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 14px;
+      letter-spacing: 1px;
+  line-height: 1.5; /* Установите желаемое значение для расстояния между строками */
+
+  }
+
+.gift{padding:  50px;
+  background-color:#161616;
+    margin-top: -500px; /* Применяем отрицательный отступ, чтобы поднять следующую секцию */
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    font-weight: 6000px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff; /* Цвет текста */
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
+    letter-spacing: 1px;
+    line-height: 2.0; /* Установите желаемое значение для расстояния между строками */
+    width: 80%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: white;
+    font-size: 24px;
+    width: 50px; /* Ширина кнопок */
+    height: 50%; /* Сделаем кнопки высотой как у контейнера */
+    cursor: pointer;
+  }
+
+  .caption-slide2 {
+    /* Ваши стили для текста на втором слайде */
+    margin: 70px;
+    font-family: "Arial", sans-serif;
+    position: absolute;
+    top: 17%;
+    left: 40%;
+    color: black; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 1px;
+    line-height: 1.55;
+        text-align: left;
+  }
+
+  .caption-slide2 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 18px;
+      letter-spacing: 1px;
+
+  line-height: 1.55;
+  width: 100%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+  .caption-slide3 {
+    /* Ваши стили для текста на втором слайде */
+    font-family: "Arial", sans-serif;
+    color: #FF0000;
+    position: absolute;
+    top:24%;
+    left: 70%;
+    font-weight: 6000px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 1px;
+    line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
+  margin-left: -25%; /* Добавлено для создания отступа слева */
+  margin-right: 0%; /* Добавлено для создания отступа справа */
+  }
+
+.caption-slide3 h3,.caption-slide3 h5{font-size: 20px;}
+  .caption-slide3 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 19px;
+      letter-spacing: 1px;
+  line-height: 1.3; /* Установите желаемое значение для расстояния между строками */
+  width: 115%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+
+
+  .caption-slide4{  /* Ваши стили для текста на втором слайде */
+
+    font-family: "Arial", sans-serif;
+    color: #FF0000;
+    position: absolute;
+    top:25%;
+    left: 43%;
+    font-weight: 6000px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
+    letter-spacing: 2px;
+    line-height: 2.2; /* Установите желаемое значение для расстояния между строками */
+  }
+
+  .caption-slide4 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 18px;
+    margin-bottom: 10px;
+      letter-spacing: 1px;
+  line-height: 1.5; /* Установите желаемое значение для расстояния между строками */
+  width: 118%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+
+
+  .caption-slide5{  /* Ваши стили для текста на втором слайде */
+
+    font-family: "Arial", sans-serif;
+    color: #FF0000;
+    position: absolute;
+    top:25%;
+    left: 43%;
+    font-weight: 600px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
+    letter-spacing: 1px;
+  }
+.caption-slide5 h5{  font-size: 20px;    line-height: 4; /* Установите желаемое значение для расстояния между строками */
+}
+  .caption-slide5 p{font-weight: 600px;
+      line-height: 1.5; /* Установите желаемое значение для расстояния между строками */
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 20px;
+      width: 130%; /* Ширина текста */
+      word-wrap: break-word; /* Перенос слов */
+      overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+
+.caption-slide6 h5{font-size: 25px;    font-family: "Arial", sans-serif;
+}
+  .caption-slide6{  /* Ваши стили для текста на втором слайде */
+    font-family: "Arial", sans-serif;
+    color: #FF0000;
+    position: absolute;
+    top:22%;
+    left: 45%;
+    font-weight: 600px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 2px;
+  }
+
+  .caption-slide6 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 20px;
+      width: 120%; /* Ширина текста */
+      word-wrap: break-word; /* Перенос слов */
+      overflow-wrap: break-word; /* Современный вариант переноса слов */
+    }
+}
+
+
+@media screen and (max-width: 1048px) {
+
+.caption-slide4 h5{    font-family: "Arial", sans-serif;
+font-size: 22px; /* Размер шрифта, настройте по вашему усмотрению */
+
+}
+  .caption-slide4{  /* Ваши стили для текста на втором слайде */
+
+    font-family: "Arial", sans-serif;
+    color: #FF0000;
+    position: absolute;
+    top:25%;
+    left: 43%;
+    font-weight: 6000px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
+    letter-spacing: 2px;
+    line-height: 2.2; /* Установите желаемое значение для расстояния между строками */
+  }
+
+  .caption-slide4 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 17px;
+    margin-bottom: 10px;
+      letter-spacing: 1px;
+  line-height: 1.5; /* Установите желаемое значение для расстояния между строками */
+  width: 118%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 1105px) {
+
+  .caption-slide5 h5{font-size: 22px;    font-family: "Arial", sans-serif;
+  line-height: 2; /* Установите желаемое значение для расстояния между строками */
+
+  }
+
+.caption-slide5{  /* Ваши стили для текста на втором слайде */
+
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:26%;
+  left: 50%;
+  font-weight: 600px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 22px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 2px;
+  line-height: 0.4; /* Установите желаемое значение для расстояния между строками */
+}
+
+.caption-slide5 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 17px;
+    width: 100%; /* Ширина текста */
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+
+@media screen and (max-width: 845px) {
+
+  .caption-slide5 h5{font-size: 22px;    font-family: "Arial", sans-serif;
+  line-height: 2; /* Установите желаемое значение для расстояния между строками */
+
+  }
+
+.caption-slide5{  /* Ваши стили для текста на втором слайде */
+
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:26%;
+  left: 50%;
+  font-weight: 600px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 22px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 2px;
+  line-height: 0.4; /* Установите желаемое значение для расстояния между строками */
+}
+
+.caption-slide5 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 16px;
+    width: 110%; /* Ширина текста */
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+
+
+
+
+@media screen and (max-width: 795px) {
+
+.caption-slide6 h5{font-size: 24px;    font-family: "Arial", sans-serif;
+}
+  .caption-slide6{  /* Ваши стили для текста на втором слайде */
+    font-family: "Arial", sans-serif;
+    color: #FF0000;
+    position: absolute;
+    top:25%;
+    left: 43%;
+    font-weight: 600px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 2px;
+  }
+
+  .caption-slide6 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 19px;
+      width: 120%; /* Ширина текста */
+      word-wrap: break-word; /* Перенос слов */
+      overflow-wrap: break-word; /* Современный вариант переноса слов */
+    }
+}
+
+@media screen and (max-width: 772px) {
+
+.caption-slide6 h5{font-size: 24px;    font-family: "Arial", sans-serif;
+}
+  .caption-slide6{  /* Ваши стили для текста на втором слайде */
+    font-family: "Arial", sans-serif;
+    color: #FF0000;
+    position: absolute;
+    top:25%;
+    left: 48%;
+    font-weight: 600px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 2px;
+  }
+
+  .caption-slide6 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 19px;
+      line-height: 1.3;
+      width: 115%; /* Ширина текста */
+      word-wrap: break-word; /* Перенос слов */
+      overflow-wrap: break-word; /* Современный вариант переноса слов */
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 795px) {
+
+.caption-slide4 h5{    font-family: "Arial", sans-serif;
+font-size: 20px; /* Размер шрифта, настройте по вашему усмотрению */
+
+}
+  .caption-slide4{  /* Ваши стили для текста на втором слайде */
+
+    font-family: "Arial", sans-serif;
+    color: #FF0000;
+    position: absolute;
+    top:25%;
+    left: 42%;
+    font-weight: 6000px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
+    letter-spacing: 2px;
+    line-height: 2.2; /* Установите желаемое значение для расстояния между строками */
+  }
+
+  .caption-slide4 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 17px;
+    margin-bottom: 10px;
+      letter-spacing: 1px;
+  line-height: 1.2; /* Установите желаемое значение для расстояния между строками */
+  width: 118%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+
+@media screen and (max-width: 652px) {
+
+.caption-slide6 h5{font-size: 20px;    font-family: "Arial", sans-serif;
+}
+  .caption-slide6{  /* Ваши стили для текста на втором слайде */
+    font-family: "Arial", sans-serif;
+    color: #FF0000;
+    position: absolute;
+    top:25%;
+    left: 45%;
+    font-weight: 600px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 2px;
+  }
+
+  .caption-slide6 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 18px;
+      line-height: 1.2;
+      width: 115%; /* Ширина текста */
+      word-wrap: break-word; /* Перенос слов */
+      overflow-wrap: break-word; /* Современный вариант переноса слов */
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 555px) {
+
+.caption-slide6 h5{font-size: 20px;    font-family: "Arial", sans-serif;
+}
+  .caption-slide6{  /* Ваши стили для текста на втором слайде */
+    font-family: "Arial", sans-serif;
+    color: #FF0000;
+    position: absolute;
+    top:25%;
+    left: 48%;
+    font-weight: 600px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 2px;
+  }
+
+  .caption-slide6 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 17px;
+      line-height: 1.2;
+      width: 115%; /* Ширина текста */
+      word-wrap: break-word; /* Перенос слов */
+      overflow-wrap: break-word; /* Современный вариант переноса слов */
+    }
+}
+
+
+@media screen and (max-width: 402px) {
+
+  .caption-slide6 h5{font-size: 19px;    font-family: "Arial", sans-serif;
+  }
+    .caption-slide6{  /* Ваши стили для текста на втором слайде */
+      font-family: "Arial", sans-serif;
+      color: #FF0000;
+      position: absolute;
+      top:25%;
+      left: 48%;
+      font-weight: 600px;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      color: #fff; /* Цвет текста */
+      font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+      letter-spacing: 2px;
+    }
+
+    .caption-slide6 p{font-weight: 600px;
+      font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+        font-size: 16px;
+        line-height: 1.2;
+        width: 115%; /* Ширина текста */
+        word-wrap: break-word; /* Перенос слов */
+        overflow-wrap: break-word; /* Современный вариант переноса слов */
+      }
+
+}
+
+@media screen and (max-width: 354px) {
+  .caption-slide6 h5{font-size: 19px;    font-family: "Arial", sans-serif;
+  }
+    .caption-slide6{  /* Ваши стили для текста на втором слайде */
+      font-family: "Arial", sans-serif;
+      color: #FF0000;
+      position: absolute;
+      top:25%;
+      left: 44%;
+      font-weight: 600px;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      color: #fff; /* Цвет текста */
+      font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+      letter-spacing: 2px;
+    }
+
+    .caption-slide6 p{font-weight: 600px;
+      font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+        font-size: 15px;
+        line-height: 1.15;
+        width: 115%; /* Ширина текста */
+        word-wrap: break-word; /* Перенос слов */
+        overflow-wrap: break-word; /* Современный вариант переноса слов */
+      }
+}
+
+
+
+@media screen and (max-width: 330px) {
+  .caption-slide6 h5{font-size: 18px;    font-family: "Arial", sans-serif;
+  }
+    .caption-slide6{  /* Ваши стили для текста на втором слайде */
+      font-family: "Arial", sans-serif;
+      color: #FF0000;
+      position: absolute;
+      top:25%;
+      left: 44%;
+      font-weight: 600px;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      color: #fff; /* Цвет текста */
+      font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+      letter-spacing: 1.6px;
+    }
+
+    .caption-slide6 p{font-weight: 600px;
+      font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+        font-size: 14.5px;
+        line-height: 1.15;
+        width: 115%; /* Ширина текста */
+        word-wrap: break-word; /* Перенос слов */
+        overflow-wrap: break-word; /* Современный вариант переноса слов */
+      }
+
+}
+
+
+@media screen and (max-width: 276px) {
+  .caption-slide6 h5{font-size: 17px;    font-family: "Arial", sans-serif;
+  }
+    .caption-slide6{  /* Ваши стили для текста на втором слайде */
+      font-family: "Arial", sans-serif;
+      color: #FF0000;
+      position: absolute;
+      top:25%;
+      left: 44%;
+      font-weight: 600px;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      color: #fff; /* Цвет текста */
+      font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+      letter-spacing: 1.6px;
+    }
+
+    .caption-slide6 p{font-weight: 600px;
+      font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+        font-size: 14px;
+        line-height: 1.1;
+        width: 115%; /* Ширина текста */
+        word-wrap: break-word; /* Перенос слов */
+        overflow-wrap: break-word; /* Современный вариант переноса слов */
+      }
+
+}
+
+
+@media screen and (max-width: 680px) {
+
+.caption-slide5{  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 43%;
+  font-weight: 600px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 1px;
+}
+
+.caption-slide5 h5{  font-size: 19px;
+  line-height: 2; /* Установите желаемое значение для расстояния между строками */
+}
+
+.caption-slide5 p{font-weight: 600px;
+    line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 18px;
+    width: 110%; /* Ширина текста */
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+@media screen and (max-width: 550px) {
+
+.caption-slide5{  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 43%;
+  font-weight: 600px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 1px;
+}
+
+.caption-slide5 h5{  font-size: 19px;
+  line-height: 2; /* Установите желаемое значение для расстояния между строками */
+}
+
+.caption-slide5 p{font-weight: 600px;
+    line-height: 1; /* Установите желаемое значение для расстояния между строками */
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 17px;
+    width: 100%; /* Ширина текста */
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+
+
+
+@media screen and (max-width: 513px) {
+
+.caption-slide5{  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 43%;
+  font-weight: 600px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 1px;
+}
+
+.caption-slide5 h5{  font-size: 18px;
+  line-height: 2; /* Установите желаемое значение для расстояния между строками */
+}
+
+.caption-slide5 p{font-weight: 600px;
+    line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 17px;
+    width: 110%; /* Ширина текста */
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+@media screen and (max-width: 468px) {
+
+.caption-slide5{  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 43%;
+  font-weight: 600px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 1px;
+}
+
+.caption-slide5 h5{  font-size: 18px;
+  line-height: 1; /* Установите желаемое значение для расстояния между строками */
+}
+
+.caption-slide5 p{font-weight: 600px;
+    line-height: 1.2; /* Установите желаемое значение для расстояния между строками */
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 17px;
+    width: 117%; /* Ширина текста */
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+
+@media screen and (max-width: 463px) {
+
+.caption-slide5{  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 43%;
+  font-weight: 600px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 1px;
+}
+
+.caption-slide5 h5{  font-size: 17px;
+  line-height: 1; /* Установите желаемое значение для расстояния между строками */
+}
+
+.caption-slide5 p{font-weight: 600px;
+    line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 16px;
+    width: 122%; /* Ширина текста */
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+@media screen and (max-width: 427px) {
+
+.caption-slide5{  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 43%;
+  font-weight: 600px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 1px;
+}
+
+.caption-slide5 h5{  font-size: 17px;
+  line-height: 1; /* Установите желаемое значение для расстояния между строками */
+}
+
+.caption-slide5 p{font-weight: 600px;
+    line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 15px;
+    width: 122%; /* Ширина текста */
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+
+
+
+@media screen and (max-width: 386px) {
+
+.caption-slide5{  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 43%;
+  font-weight: 600px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 1px;
+}
+
+.caption-slide5 h5{  font-size: 16px;
+  line-height: 1; /* Установите желаемое значение для расстояния между строками */
+}
+
+.caption-slide5 p{font-weight: 600px;
+    line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 15px;
+    width: 122%; /* Ширина текста */
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+
+@media screen and (max-width: 344px) {
+
+.caption-slide5{  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 43%;
+  font-weight: 600px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 1px;
+}
+
+.caption-slide5 h5{  font-size: 16px;
+  line-height: 1; /* Установите желаемое значение для расстояния между строками */
+}
+
+.caption-slide5 p{font-weight: 600px;
+    line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 15px;
+    width: 132%; /* Ширина текста */
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+
+@media screen and (max-width: 324px) {
+
+.caption-slide5{  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 43%;
+  font-weight: 600px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 1px;
+}
+
+.caption-slide5 h5{  font-size: 15px;
+  line-height: 1; /* Установите желаемое значение для расстояния между строками */
+}
+
+.caption-slide5 p{font-weight: 600px;
+    line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 14px;
+    width: 122%; /* Ширина текста */
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+
+
+@media screen and (max-width: 304px) {
+
+.caption-slide5{  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 39%;
+  font-weight: 600px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 1px;
+}
+
+.caption-slide5 h5{  font-size: 14px;
+  line-height: 1; /* Установите желаемое значение для расстояния между строками */
+}
+
+.caption-slide5 p{font-weight: 600px;
+    line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 14px;
+    width: 130%; /* Ширина текста */
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+@media screen and (max-width: 290px) {
+
+.caption-slide5{  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 39%;
+  font-weight: 600px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 1px;
+}
+
+.caption-slide5 h5{  font-size: 14px;
+  line-height: 1; /* Установите желаемое значение для расстояния между строками */
+}
+
+.caption-slide5 p{font-weight: 600px;
+    line-height: 1; /* Установите желаемое значение для расстояния между строками */
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 14px;
+    width: 130%; /* Ширина текста */
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+
+@media screen and (max-width: 285px) {
+
+.caption-slide2{  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  position: absolute;
+  top:25%;
+  left: 43%;
+  font-weight: 600px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: black; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  font-size: 10px; /* Размер шрифта, настройте по вашему усмотрению */
+  letter-spacing: 1px;
+
+}
+
+.caption-slide2 h5{  font-size: 17px;
+  line-height: 0.7; /* Установите желаемое значение для расстояния между строками */
+}
+
+.caption-slide2 p{font-weight: 600px;
+    line-height: 0.4; /* Установите желаемое значение для расстояния между строками */
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 10px;
+    width: 130%; /* Ширина текста */
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+
+}
+
+
+
+@media screen and (max-width: 685px) {
+.caption-slide4 {
+  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:26%;
+  left: 66%;
+  font-weight: 6000px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  letter-spacing: 1px;
+  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
+margin-left: -25%; /* Добавлено для создания отступа слева */
+margin-right: 0%; /* Добавлено для создания отступа справа */
+}
+
+.caption-slide4 h3,.caption-slide3 h5{font-size: 19px;}
+.caption-slide4 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 17px;
+    letter-spacing: 1px;
+line-height: 1.25; /* Установите желаемое значение для расстояния между строками */
+width: 124%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+
+@media screen and (max-width: 624px) {
+
+.caption-slide4 h5{    font-family: "Arial", sans-serif;
+font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
+
+}
+  .caption-slide4{  /* Ваши стили для текста на втором слайде */
+
+    font-family: "Arial", sans-serif;
+    color: #FF0000;
+    position: absolute;
+    top:25%;
+    left: 65%;
+    font-weight: 6000px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
+    letter-spacing: 2px;
+    line-height: 1.5; /* Установите желаемое значение для расстояния между строками */
+  }
+
+  .caption-slide4 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 16px;
+    margin-bottom: 10px;
+      letter-spacing: 1px;
+  line-height: 1; /* Установите желаемое значение для расстояния между строками */
+  width: 125%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+@media screen and (max-width: 465px) {
+
+.caption-slide4 h5{    font-family: "Arial", sans-serif;
+font-size: 17px; /* Размер шрифта, настройте по вашему усмотрению */
+
+}
+  .caption-slide4{  /* Ваши стили для текста на втором слайде */
+
+    font-family: "Arial", sans-serif;
+    color: #FF0000;
+    position: absolute;
+    top:25%;
+    left: 65%;
+    font-weight: 6000px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
+    letter-spacing: 2px;
+    line-height: 1.4; /* Установите желаемое значение для расстояния между строками */
+  }
+
+  .caption-slide4 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 15.5px;
+    margin-bottom: 5px;
+      letter-spacing: 1px;
+  line-height: 1; /* Установите желаемое значение для расстояния между строками */
+  width: 120%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+.caption-slide4 h5{    font-family: "Arial", sans-serif;
+font-size: 17px; /* Размер шрифта, настройте по вашему усмотрению */
+
+}
+  .caption-slide4{  /* Ваши стили для текста на втором слайде */
+
+    font-family: "Arial", sans-serif;
+    color: #FF0000;
+    position: absolute;
+    top:25%;
+    left: 65%;
+    font-weight: 6000px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
+    letter-spacing: 2px;
+    line-height: 1.4; /* Установите желаемое значение для расстояния между строками */
+  }
+
+  .caption-slide4 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 15px;
+    margin-bottom: 5px;
+      letter-spacing: 1px;
+  line-height: 1; /* Установите желаемое значение для расстояния между строками */
+  width: 125%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+
+@media screen and (max-width: 365px) {
+
+.caption-slide4 h5{    font-family: "Arial", sans-serif;
+font-size: 15px; /* Размер шрифта, настройте по вашему усмотрению */
+
+}
+  .caption-slide4{  /* Ваши стили для текста на втором слайде */
+
+    font-family: "Arial", sans-serif;
+    color: #FF0000;
+    position: absolute;
+    top:25%;
+    left: 65%;
+    font-weight: 6000px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
+    letter-spacing: 2px;
+    line-height: 1.2; /* Установите желаемое значение для расстояния между строками */
+  }
+
+  .caption-slide4 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 15.5px;
+    margin-bottom: 2px;
+      letter-spacing: 0.5px;
+  line-height: 1; /* Установите желаемое значение для расстояния между строками */
+  width: 128%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 365px) {
+
+.caption-slide4 h5{    font-family: "Arial", sans-serif;
+font-size: 15px; /* Размер шрифта, настройте по вашему усмотрению */
+
+}
+  .caption-slide4{  /* Ваши стили для текста на втором слайде */
+
+    font-family: "Arial", sans-serif;
+    color: #FF0000;
+    position: absolute;
+    top:25%;
+    left: 65%;
+    font-weight: 6000px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
+    letter-spacing: 2px;
+    line-height: 1.2; /* Установите желаемое значение для расстояния между строками */
+  }
+
+  .caption-slide4 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 15.5px;
+    margin-bottom: 2px;
+      letter-spacing: 0.5px;
+  line-height: 1; /* Установите желаемое значение для расстояния между строками */
+  width: 128%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+
+@media screen and (max-width: 310px) {
+
+.caption-slide4 h5{    font-family: "Arial", sans-serif;
+font-size: 14px; /* Размер шрифта, настройте по вашему усмотрению */
+
+}
+  .caption-slide4{  /* Ваши стили для текста на втором слайде */
+
+    font-family: "Arial", sans-serif;
+    color: #FF0000;
+    position: absolute;
+    top:25%;
+    left: 65%;
+    font-weight: 6000px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
+    letter-spacing: 2px;
+    line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
+  }
+
+  .caption-slide4 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 15px;
+    margin-bottom: 2px;
+      letter-spacing: 0.5px;
+  line-height: 1; /* Установите желаемое значение для расстояния между строками */
+  width: 130%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+@media screen and (max-width: 274px) {
+  .caption-slide4 h5{    font-family: "Arial", sans-serif;
+  font-size: 12px; /* Размер шрифта, настройте по вашему усмотрению */
+
+  }
+    .caption-slide4{  /* Ваши стили для текста на втором слайде */
+
+      font-family: "Arial", sans-serif;
+      color: #FF0000;
+      position: absolute;
+      top:25%;
+      left: 65%;
+      font-weight: 6000px;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      color: #fff; /* Цвет текста */
+      font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
+      letter-spacing: 2px;
+      line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
+    }
+
+    .caption-slide4 p{font-weight: 600px;
+      font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+        font-size: 14px;
+      margin-bottom: 2px;
+        letter-spacing: 0.4px;
+    line-height: 1; /* Установите желаемое значение для расстояния между строками */
+    width: 134%; /* Ширина текста */
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+    }
+}
+
+
+@media screen and (max-width: 254px) {
+  .caption-slide4 h5{    font-family: "Arial", sans-serif;
+  font-size: 11px; /* Размер шрифта, настройте по вашему усмотрению */
+
+  }
+    .caption-slide4{  /* Ваши стили для текста на втором слайде */
+
+      font-family: "Arial", sans-serif;
+      color: #FF0000;
+      position: absolute;
+      top:25%;
+      left: 65%;
+      font-weight: 6000px;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      color: #fff; /* Цвет текста */
+      font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
+      letter-spacing: 2px;
+      line-height: 1; /* Установите желаемое значение для расстояния между строками */
+    }
+
+    .caption-slide4 p{font-weight: 600px;
+      font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+        font-size: 14px;
+      margin-bottom: 2px;
+        letter-spacing: 0.4px;
+    line-height: 1; /* Установите желаемое значение для расстояния между строками */
+    width: 134%; /* Ширина текста */
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 908px) {
+.caption-slide3 {
+  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:24%;
+  left: 70%;
+  font-weight: 6000px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  letter-spacing: 1px;
+  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
+margin-left: -25%; /* Добавлено для создания отступа слева */
+margin-right: 0%; /* Добавлено для создания отступа справа */
+}
+
+.caption-slide3 h3,.caption-slide3 h5{font-size: 20px;}
+.caption-slide3 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 18px;
+    letter-spacing: 1px;
+line-height: 1.3; /* Установите желаемое значение для расстояния между строками */
+width: 115%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+@media screen and (max-width: 747px) {
+.caption-slide3 {
+  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 67%;
+  font-weight: 6000px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  letter-spacing: 1px;
+  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
+margin-left: -25%; /* Добавлено для создания отступа слева */
+margin-right: 0%; /* Добавлено для создания отступа справа */
+}
+
+.caption-slide3 h3,.caption-slide3 h5{font-size: 20px;}
+.caption-slide3 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 17px;
+    letter-spacing: 1px;
+line-height: 1.3; /* Установите желаемое значение для расстояния между строками */
+width: 120%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+@media screen and (max-width: 684px) {
+.caption-slide3 {
+  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 68%;
+  font-weight: 6000px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  letter-spacing: 1px;
+  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
+margin-left: -25%; /* Добавлено для создания отступа слева */
+margin-right: 0%; /* Добавлено для создания отступа справа */
+}
+
+.caption-slide3 h3,.caption-slide3 h5{font-size: 20px;}
+.caption-slide3 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 17px;
+    letter-spacing: 1px;
+line-height: 1.3; /* Установите желаемое значение для расстояния между строками */
+width: 120%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+@media screen and (max-width: 654px) {
+.caption-slide3 {
+  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 67%;
+  font-weight: 6000px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  letter-spacing: 1px;
+  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
+margin-left: -25%; /* Добавлено для создания отступа слева */
+margin-right: 0%; /* Добавлено для создания отступа справа */
+}
+
+.caption-slide3 h3,.caption-slide3 h5{font-size: 20px;}
+.caption-slide3 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 17px;
+    letter-spacing: 1px;
+line-height: 1.25; /* Установите желаемое значение для расстояния между строками */
+width: 124%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+@media screen and (max-width: 615px) {
+.caption-slide3 {
+  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 66%;
+  font-weight: 6000px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  letter-spacing: 1px;
+  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
+margin-left: -25%; /* Добавлено для создания отступа слева */
+margin-right: 0%; /* Добавлено для создания отступа справа */
+}
+
+.caption-slide3 h3,.caption-slide3 h5{font-size: 20px;line-height: 2.0; /* Установите желаемое значение для расстояния между строками */}
+.caption-slide3 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 17px;
+    letter-spacing: 1px;
+line-height: 1.2; /* Установите желаемое значение для расстояния между строками */
+width: 126%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+@media screen and (max-width: 578px) {
+.caption-slide3 {
+  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 65%;
+  font-weight: 6000px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  letter-spacing: 1px;
+  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
+margin-left: -25%; /* Добавлено для создания отступа слева */
+margin-right: 0%; /* Добавлено для создания отступа справа */
+}
+
+.caption-slide3 h3,.caption-slide3 h5{font-size: 20px;line-height: 2.0; /* Установите желаемое значение для расстояния между строками */}
+.caption-slide3 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 17px;
+    letter-spacing: 1px;
+line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
+width: 128%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+@media screen and (max-width: 495px) {
+.caption-slide3 {
+  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 65%;
+  font-weight: 6000px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  letter-spacing: 1px;
+  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
+margin-left: -25%; /* Добавлено для создания отступа слева */
+margin-right: 0%; /* Добавлено для создания отступа справа */
+}
+
+.caption-slide3 h3,.caption-slide3 h5{font-size: 18px;line-height: 1.5; /* Установите желаемое значение для расстояния между строками */}
+.caption-slide3 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 17px;
+    letter-spacing: 1px;
+line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
+width: 132%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+@media screen and (max-width: 478px) {
+.caption-slide3 {
+  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 65%;
+  font-weight: 6000px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  letter-spacing: 1px;
+  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
+margin-left: -25%; /* Добавлено для создания отступа слева */
+margin-right: 0%; /* Добавлено для создания отступа справа */
+}
+
+.caption-slide3 h3,.caption-slide3 h5{font-size: 17px;line-height: 1.4; /* Установите желаемое значение для расстояния между строками */}
+.caption-slide3 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 16px;
+    letter-spacing: 1px;
+line-height: 1.2; /* Установите желаемое значение для расстояния между строками */
+width: 132%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+@media screen and (max-width: 458px) {
+.caption-slide3 {
+  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 65%;
+  font-weight: 6000px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  letter-spacing: 1px;
+  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
+margin-left: -25%; /* Добавлено для создания отступа слева */
+margin-right: 0%; /* Добавлено для создания отступа справа */
+}
+
+.caption-slide3 h3,.caption-slide3 h5{font-size: 16px;line-height: 1.4; /* Установите желаемое значение для расстояния между строками */}
+.caption-slide3 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 15px;
+    letter-spacing: 1px;
+line-height: 1.2; /* Установите желаемое значение для расстояния между строками */
+width: 132%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+@media screen and (max-width: 392px) {
+.caption-slide3 {
+  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 65%;
+  font-weight: 6000px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  letter-spacing: 1px;
+  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
+margin-left: -25%; /* Добавлено для создания отступа слева */
+margin-right: 0%; /* Добавлено для создания отступа справа */
+}
+
+.caption-slide3 h3,.caption-slide3 h5{font-size: 15px;line-height: 1.4; /* Установите желаемое значение для расстояния между строками */}
+.caption-slide3 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 15px;
+    letter-spacing: 1px;
+line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
+width: 132%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+@media screen and (max-width: 347px) {
+.caption-slide3 {
+  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 65%;
+  font-weight: 6000px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  letter-spacing: 1px;
+  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
+margin-left: -25%; /* Добавлено для создания отступа слева */
+margin-right: 0%; /* Добавлено для создания отступа справа */
+}
+
+.caption-slide3 h3,.caption-slide3 h5{font-size: 14px;line-height: 1.3; /* Установите желаемое значение для расстояния между строками */}
+.caption-slide3 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 14px;
+    letter-spacing: 1px;
+line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
+width: 132%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+@media screen and (max-width: 328px) {
+.caption-slide3 {
+  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 65%;
+  font-weight: 6000px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  letter-spacing: 1px;
+  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
+margin-left: -25%; /* Добавлено для создания отступа слева */
+margin-right: 0%; /* Добавлено для создания отступа справа */
+}
+
+.caption-slide3 h3,.caption-slide3 h5{font-size: 14px;line-height: 1.3; /* Установите желаемое значение для расстояния между строками */}
+.caption-slide3 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 14px;
+    letter-spacing: 0.8px;
+line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
+width: 132%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+@media screen and (max-width: 317px) {
+.caption-slide3 {
+  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 65%;
+  font-weight: 6000px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  letter-spacing: 1px;
+  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
+margin-left: -25%; /* Добавлено для создания отступа слева */
+margin-right: 0%; /* Добавлено для создания отступа справа */
+}
+
+.caption-slide3 h3,.caption-slide3 h5{font-size: 13px;line-height: 1.2; /* Установите желаемое значение для расстояния между строками */}
+.caption-slide3 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 14px;
+    letter-spacing: 0.7px;
+line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
+width: 132%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+@media screen and (max-width: 312px) {
+.caption-slide3 {
+  /* Ваши стили для текста на втором слайде */
+  font-family: "Arial", sans-serif;
+  color: #FF0000;
+  position: absolute;
+  top:25%;
+  left: 63%;
+  font-weight: 6000px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #fff; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+  letter-spacing: 0.7px;
+  line-height: 0.5; /* Установите желаемое значение для расстояния между строками */
+margin-left: -25%; /* Добавлено для создания отступа слева */
+margin-right: 0%; /* Добавлено для создания отступа справа */
+}
+
+.caption-slide3 h3,.caption-slide3 h5{font-size: 13px;line-height: 1.2; /* Установите желаемое значение для расстояния между строками */}
+.caption-slide3 p{font-weight: 600px;
+  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+    font-size: 15px;
+    letter-spacing: 0.7px;
+line-height: 0.8; /* Установите желаемое значение для расстояния между строками */
+width: 140%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+
+@media screen and (max-width: 935px) {
+  .caption-slide2 {
+    /* Ваши стили для текста на втором слайде */
+    margin: 70px;
+    font-family: "Arial", sans-serif;
+    position: absolute;
+    top: 17%;
+    left: 40%;
+    color: black; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 1px;
+    line-height: 1.55;
+        text-align: left;
+  }
+  .caption-slide2 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 17px;
+      letter-spacing: 1px;
+  line-height: 1.55;
+  width: 100%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+
+@media screen and (max-width: 770px) {
+  .caption-slide2 {
+    /* Ваши стили для текста на втором слайде */
+    margin: 70px;
+    font-family: "Arial", sans-serif;
+    color: black; /* Цвет текста */
+    position: absolute;
+    top: 18%;
+    left: 40%;
+    font-weight: 6000px;
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 1px;
+    line-height: 1.55;
+        text-align: left;
+  }
+  .caption-slide2 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 16px;
+      letter-spacing: 1px;
+  line-height: 1.65;
+  width: 100%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+@media screen and (max-width: 727px) {
+  .caption-slide2 {
+    /* Ваши стили для текста на втором слайде */
+    margin: 70px;
+    font-family: "Arial", sans-serif;
+    color: black; /* Цвет текста */
+    position: absolute;
+    top: 18%;
+    left: 40%;
+    font-weight: 6000px;
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 1px;
+    line-height: 1.55;
+        text-align: left;
+  }
+  .caption-slide2 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 15px;
+      letter-spacing: 1px;
+  line-height: 1.65;
+  width: 100%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .caption-slide2 {
+    /* Ваши стили для текста на втором слайде */
+    margin: 70px;
+    font-family: "Arial", sans-serif;
+    position: absolute;
+    top: 18%;
+    left: 35%;
+    font-weight: 6000px;
+    color: black; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 1px;
+    line-height: 1.55;
+        text-align: left;
+  }
+  .caption-slide2 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 15px;
+      letter-spacing: 1px;
+  line-height: 1.65;
+  width: 110%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .caption-slide2 {
+    /* Ваши стили для текста на втором слайде */
+    margin: 70px;
+    font-family: "Arial", sans-serif;
+    position: absolute;
+    top: 18%;
+    left: 33%;
+    font-weight: 6000px;
+    color: black; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 1px;
+    line-height: 1.55;
+        text-align: left;
+  }
+  .caption-slide2 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 15px;
+      letter-spacing: 1px;
+  line-height: 1.65;
+  width: 120%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+
+@media screen and (max-width: 552px) {
+
+  .caption-slide2 {
+    /* Ваши стили для текста на втором слайде */
+    margin: 70px;
+    font-family: "Arial", sans-serif;
+    position: absolute;
+    top: 18%;
+    left: 30%;
+    font-weight: 6000px;
+    color: black; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 1px;
+    line-height: 1.55;
+        text-align: left;
+  }
+  .caption-slide2 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 15px;
+      letter-spacing: 1px;
+  line-height: 1.55;
+  width: 120%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+@media screen and (max-width: 460px) {
+
+  .caption-slide2 {
+    /* Ваши стили для текста на втором слайде */
+    margin: 70px;
+    font-family: "Arial", sans-serif;
+    color: black; /* Цвет текста */
+    position: absolute;
+    top: 18%;
+    left: 27%;
+    font-weight: 6000px;
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 1px;
+    line-height: 1.55;
+        text-align: left;
+  }
+  .caption-slide2 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 15px;
+      letter-spacing: 1px;
+  line-height: 1.55;
+  width: 130%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+
+@media screen and (max-width: 428px) {
+
+  .caption-slide2 {
+    /* Ваши стили для текста на втором слайде */
+    margin: 70px;
+    font-family: "Arial", sans-serif;
+    position: absolute;
+    top: 18%;
+    left: 25%;
+    font-weight: 6000px;
+    color: black; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 1px;
+    line-height: 1.55;
+        text-align: left;
+  }
+  .caption-slide2 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 15px;
+      letter-spacing: 1px;
+  line-height: 1.5;
+  width: 130%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+@media screen and (max-width: 417px) {
+
+  .caption-slide2 {
+    /* Ваши стили для текста на втором слайде */
+    margin: 70px;
+    font-family: "Arial", sans-serif;
+    color: black; /* Цвет текста */
+    position: absolute;
+    top: 18%;
+    left: 25%;
+    font-weight: 6000px;
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 1px;
+    line-height: 1.55;
+        text-align: left;
+  }
+  .caption-slide2 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 15px;
+      letter-spacing: 1px;
+  line-height: 1.3;
+  width: 130%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+@media screen and (max-width: 397px) {
+
+  .caption-slide2 {
+    /* Ваши стили для текста на втором слайде */
+    margin: 70px;
+    font-family: "Arial", sans-serif;
+    color: black; /* Цвет текста */
+    position: absolute;
+    top: 18%;
+    left: 23%;
+    font-weight: 6000px;
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 1px;
+    line-height: 1.5;
+        text-align: left;
+  }
+  .caption-slide2 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 15px;
+      letter-spacing: 1px;
+  line-height: 1.2;
+  width: 130%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+@media screen and (max-width: 352px) {
+
+  .caption-slide2 {
+    /* Ваши стили для текста на втором слайде */
+    margin: 70px;
+    font-family: "Arial", sans-serif;
+    color: black; /* Цвет текста */
+    position: absolute;
+    top: 18%;
+    left: 20%;
+    font-weight: 6000px;
+     /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 1px;
+    line-height: 1.5;
+        text-align: left;
+  }
+  .caption-slide2 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 14px;
+      letter-spacing: 1px;
+  line-height: 1.3;
+  width: 132%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+@media screen and (max-width: 331px) {
+
+  .caption-slide2 {
+    /* Ваши стили для текста на втором слайде */
+    margin: 70px;
+    font-family: "Arial", sans-serif;
+    color: black; /* Цвет текста */
+    position: absolute;
+    top: 18%;
+    left: 19%;
+    font-weight: 6000px;
+    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
+    letter-spacing: 1px;
+    line-height: 1.5;
+        text-align: left;
+  }
+  .caption-slide2 p{font-weight: 600px;
+    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
+      font-size: 14px;
+      letter-spacing: 1px;
+  line-height: 1.21;
+  width: 134%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+
+}
+
+
+@media screen and (max-width: 750px) {
+    .carousel-caption h5 {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .carousel-caption {
+        font-size: 19px;
+        line-height: 1.5;
+        width: 80%; /* Ширина текста */
+   word-wrap: break-word; /* Перенос слов */
+   overflow-wrap: break-word; /* Современный вариант переноса слов */
+    }
+}
+
+
+
+@media screen and (max-width: 680px) {
+    .carousel-caption h5 {
+        font-size: 19px;
+        line-height: 1.5;
+    }
+
+    .carousel-caption {
+        font-size: 19px;
+        line-height: 1.5;
+        width: 80%; /* Ширина текста */
+   word-wrap: break-word; /* Перенос слов */
+   overflow-wrap: break-word; /* Современный вариант переноса слов */
+    }
+}
+
+@media screen and (max-width: 616px) {
+    .carousel-caption h5 {
+        font-size: 19px;
+        line-height: 1.5;
+    }
+
+    .carousel-caption {
+        font-size: 18px;
+        line-height: 1.5;
+        width: 80%; /* Ширина текста */
+   word-wrap: break-word; /* Перенос слов */
+   overflow-wrap: break-word; /* Современный вариант переноса слов */
+    }
+}
+
+@media screen and (max-width: 517px) {
+    .carousel-caption h5 {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .carousel-caption {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 453px) {
+    .carousel-caption h5 {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .carousel-caption {
+        font-size: 16px;
+        line-height: 1.5;
+        width: 80%; /* Ширина текста */
+   word-wrap: break-word; /* Перенос слов */
+   overflow-wrap: break-word; /* Современный вариант переноса слов */
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    .carousel-caption h5 {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .carousel-caption {
+        font-size: 16px;
+        line-height: 1.5;
+        width: 80%; /* Ширина текста */
+   word-wrap: break-word; /* Перенос слов */
+   overflow-wrap: break-word; /* Современный вариант переноса слов */
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .carousel-caption h5 {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .carousel-caption {
+        font-size: 16px;
+        line-height: 1.5;
+        width: 80%; /* Ширина текста */
+   word-wrap: break-word; /* Перенос слов */
+   overflow-wrap: break-word; /* Современный вариант переноса слов */
+    }
+}
+@media screen and (max-width: 310px) {
+    .carousel-caption h5 {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .carousel-caption {
+        font-size: 15px;
+        line-height: 1.5;
+        width: 80%; /* Ширина текста */
+   word-wrap: break-word; /* Перенос слов */
+   overflow-wrap: break-word; /* Современный вариант переноса слов */
+    }
+}
+
+
+@media screen and (max-width: 1010px) {
+.sertificat {text-align: left;}
+
+}
+
+@media (min-width: 1000px) {
+  .about-row {
+    flex-direction: row;
+  }
+  .about-column {
+    width: 50%;
+  }
+}
+
+.cnopka2{margin-left: 50px;}
+.zacazat {
+      background-color: transparent; /* Прозрачный фон */
+      border: 2px solid #ffffff; /* Белая полоса по контуру */
+      color: #ffffff; /* Белый цвет текста */
+      padding: 22px 36px; /* Отступы вокруг текста */
+      text-align: center; /* Выравнивание текста по центру */
+      text-decoration: none; /* Убираем подчеркивание текста */
+      display: inline-block; /* Элемент ведет себя как блочный элемент, но сохраняет размеры строчного элемента */
+      font-size: 18px; /* Размер текста кнопки */
+      cursor: pointer; /* Курсор при наведении на кнопку */
+      border-radius: 8px; /* Радиус скругления углов кнопки */
+      margin-top: 30px; /* Отступ сверху */
+  }
+
+  #nomer {
+    font-family: 'Arial';
+    padding: 20px;
+margin-top: 50px;
+font-weight: 600px;
+    text-align: left;
+  }
+
+  #nomer p {
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    display: inline;
+    margin-top: 10px;
+  }
+
+  .social-icons .t-sociallinks__item {
+    display: inline-block;
+    margin-right: 1px;
+  }
+
+  .social-icons .t-sociallinks__svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Для мобильных устройств */
+  @media screen and (max-width: 768px) {
+    #nomer p {
+      font-size: 20px;
+    }
+
+    .social-icons .t-sociallinks__svg {
+      width: 30px;
+      height: 0px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+    footer {
+      background-color: #141312;
+      padding: 20px;
+    }
+    .container {
+        display: flex;
+    }
+
+    .brand {
+        margin-right: 480px; /* Отступ между логотипом и меню */
+    }
+
+    .brand img {
+      margin-left: 600px; /* Отступ между логотипом и меню */
+  width: 380px;
+  height: auto;
+}
+
+.menu-fot{margin-right: 40px;
+}
+
+    nav.menu-nav {
+        margin-right: 20px; /* Отступ между меню и контактами */
+    }
+
+    nav.additional-nav {
+        margin-left: auto; /* Это сдвигает контакты вправо */
+    }
+
+    .menu-fot,
+    .additional-menu {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .menu-fot h2,
+    .additional-menu h2 {
+        margin-bottom: 10px;
+        font-size: 29px;
+    }
+
+    .menu-fot li,
+    .additional-menu li {
+        margin-bottom: 15px;
+    }
+
+footer  h2{color:#d1cdcd;
+  font-family: 'Garamond';
+margin-bottom: 20px;
+  font-size: 29px;}
+
+    .menu-fot {
+        text-decoration: none;
+color:#d1cdcd;
+  font-family: 'Garamond';
+  font-size: 20px;
+    }
+
+
+
+
+
+        @media screen and (max-width: 1508px) {
+
+          .brand {
+              margin-right: 270px; /* Отступ между логотипом и меню */
+          }
+          .brand img {
+            margin-left: 150px; /* Отступ между логотипом и меню */
+        width: 300px;
+        height: auto;
+        }
+
+
+        .menu-fot{margin-right: 10px;
+        }
+
+        footer  h2{padding-top: 10px;
+          color:#d1cdcd;
+          font-family: 'Garamond';
+        margin-bottom: 20px;
+          font-size: 26px;
+        line-height: 0.5;}
+
+            .menu-fot {
+                text-decoration: none;
+        color:#d1cdcd;
+          font-family: 'Garamond';
+          font-size: 19px;
+            }
+
+            .menu-fot li,
+            .additional-menu li {
+                margin-bottom: 10px;
+                line-height: 1.5;
+            }
+          .menu-fot li{line-height: 1.5;}
+
+
+    }
+
+
+
+    @media screen and (max-width: 1068px) {
+
+      .brand {
+          margin-right: 140px; /* Отступ между логотипом и меню */
+      }
+      .brand img {
+        margin-left: 120px; /* Отступ между логотипом и меню */
+    width: 220px;
+    height: auto;
+    }
+
+
+    .menu-fot{margin-right: 10px;
+    }
+
+    footer  h2{padding-top: 10px;
+      color:#d1cdcd;
+      font-family: 'Garamond';
+    margin-bottom: 20px;
+      font-size: 20px;
+    line-height: 0.5;}
+
+        .menu-fot {
+            text-decoration: none;
+    color:#d1cdcd;
+      font-family: 'Garamond';
+      font-size: 16px;
+        }
+
+        .menu-fot li,
+        .additional-menu li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+      .menu-fot li{line-height: 1.5;}
+
+
+}
+
+@media screen and (max-width: 993px) {
+
+  .brand {
+      margin-right: 180px; /* Отступ между логотипом и меню */
+  }
+  .brand img {
+    margin-left: 50px; /* Отступ между логотипом и меню */
+width: 220px;
+height: auto;
+}
+
+
+.menu-fot{margin-right: 10px;
+}
+
+footer  h2{padding-top: 10px;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+margin-bottom: 20px;
+  font-size: 20px;
+line-height: 0.5;}
+
+    .menu-fot {
+        text-decoration: none;
+color:#d1cdcd;
+  font-family: 'Garamond';
+  font-size: 16px;
+    }
+
+    .menu-fot li,
+    .additional-menu li {
+        margin-bottom: 0px;
+        line-height: 1;
+    }
+  .menu-fot li{line-height: 1;}
+
+
+}
+@media screen and (max-width: 854px) {
+
+  .brand {
+      margin-right: 160px; /* Отступ между логотипом и меню */
+  }
+  .brand img {
+    margin-left: 50px; /* Отступ между логотипом и меню */
+width: 180px;
+height: auto;
+}
+
+
+.menu-fot{margin-right: 10px;
+}
+
+footer  h2{padding-top: 10px;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+margin-bottom: 20px;
+  font-size: 19px;
+line-height: 0.5;}
+
+    .menu-fot {
+        text-decoration: none;
+color:#d1cdcd;
+  font-family: 'Garamond';
+  font-size: 15px;
+    }
+
+    .menu-fot li,
+    .additional-menu li {
+        margin-bottom: 0px;
+        line-height: 1;
+    }
+  .menu-fot li{line-height: 1;}
+
+
+}
+
+
+
+
+@media screen and (max-width: 785px) {
+  .brand {
+      margin-right: 100px; /* Отступ между логотипом и меню */
+  }
+  .brand img {
+    margin-left: 50px; /* Отступ между логотипом и меню */
+width: 200px;
+height: auto;
+}
+
+
+.menu-fot{margin-right: 10px;
+}
+
+footer  h2{padding-top: 10px;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+margin-bottom: 20px;
+  font-size: 22px;
+line-height: 0.5;}
+
+    .menu-fot {
+        text-decoration: none;
+color:#d1cdcd;
+  font-family: 'Garamond';
+  font-size: 16px;
+    }
+
+    .menu-fot li,
+    .additional-menu li {
+        margin-bottom: 0px;
+        line-height: 0.5;
+    }
+
+}
+
+
+
+@media screen and (max-width: 714px) {
+  .brand {
+      margin-right: 100px; /* Отступ между логотипом и меню */
+  }
+  .brand img {
+    margin-left: 30px; /* Отступ между логотипом и меню */
+width: 150px;
+height: auto;
+}
+
+
+.menu-fot{margin-right: 10px;
+}
+
+footer  h2{padding-top: 10px;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+margin-bottom: 20px;
+  font-size: 22px;
+line-height: 0.5;}
+
+    .menu-fot {
+        text-decoration: none;
+color:#d1cdcd;
+  font-family: 'Garamond';
+  font-size: 16px;
+    }
+
+    .menu-fot li,
+    .additional-menu li {
+        margin-bottom: 0px;
+        line-height: 0.5;
+    }
+
+}
+@media screen and (max-width: 675px) {
+
+  .brand {
+      margin-right: 100px; /* Отступ между логотипом и меню */
+  }
+  .brand img {
+    margin-left: 10px; /* Отступ между логотипом и меню */
+width: 180px;
+height: auto;
+}
+
+
+.menu-fot{margin-right: -10px;
+}
+
+footer  h2{padding-top: 10px;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+margin-bottom: 20px;
+  font-size: 19px;
+line-height: 0.5;}
+
+    .menu-fot {
+        text-decoration: none;
+color:#d1cdcd;
+  font-family: 'Garamond';
+  font-size: 15px;
+    }
+
+    .menu-fot li,
+    .additional-menu li {
+        margin-bottom: 0px;
+        line-height: 0.5;
+    }
+  .menu-fot li{line-height: 1;}
+
+
+}
+
+@media screen and (max-width: 644px) {
+  .brand {
+      margin-right: 100px; /* Отступ между логотипом и меню */
+  }
+  .brand img {
+    margin-left: 20px; /* Отступ между логотипом и меню */
+width: 150px;
+height: auto;
+}
+
+
+.menu-fot{margin-right: 10px;
+}
+
+footer  h2{padding-top: 10px;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+margin-bottom: 20px;
+  font-size: 20px;
+line-height: 0.5;}
+
+    .menu-fot {
+        text-decoration: none;
+color:#d1cdcd;
+  font-family: 'Garamond';
+  font-size: 16px;
+    }
+
+    .menu-fot li,
+    .additional-menu li {
+        margin-bottom: 0px;
+        line-height: 0.3;
+    }
+  .menu-fot li{line-height: 1;}
+
+}
+@media screen and (max-width: 597px) {
+
+  .brand {
+      margin-right: 70px; /* Отступ между логотипом и меню */
+  }
+  .brand img {
+    margin-left: 10px; /* Отступ между логотипом и меню */
+width: 150px;
+height: auto;
+}
+
+
+.menu-fot{margin-right: 5px;
+}
+
+footer  h2{padding-top: 10px;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+margin-bottom: 20px;
+  font-size: 19px;
+line-height: 0.5;}
+
+    .menu-fot {
+        text-decoration: none;
+color:#d1cdcd;
+  font-family: 'Garamond';
+  font-size: 15px;
+    }
+
+    .menu-fot li,
+    .additional-menu li {
+        margin-bottom: 0px;
+        line-height: 1;
+    }
+  .menu-fot li{line-height: 1;}
+
+
+}
+
+
+@media screen and (max-width: 542px) {
+  .brand {
+      margin-right: 50px; /* Отступ между логотипом и меню */
+  }
+  .brand img {
+    margin-left: 1px; /* Отступ между логотипом и меню */
+width: 150px;
+height: auto;
+}
+
+
+.menu-fot{margin-right: 20px;
+}
+
+footer  h2{padding-top: 10px;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+margin-bottom: 20px;
+  font-size: 20px;
+line-height: 0.5;}
+
+    .menu-fot {
+        text-decoration: none;
+color:#d1cdcd;
+  font-family: 'Garamond';
+  font-size: 16px;
+    }
+
+    .menu-fot li,
+    .additional-menu li {
+        margin-bottom: 0px;
+        line-height: 0.3;
+    }
+  .menu-fot li{line-height: 1;}
+
+}
+
+
+
+@media screen and (max-width: 487px) {
+  .brand {
+      margin-right: -270px; /* Отступ между логотипом и меню */
+  }
+  .brand img {margin-top: -480px;
+    margin-left:90px; /* Отступ между логотипом и меню */
+  width: 250px;
+  height: auto;
+  }
+  .menu-fot{margin-right: 20px;
+  }
+
+  footer  h2{padding-top:140px;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+  margin-bottom: 20px;
+  font-size: 19px;
+  line-height: 0.5;}
+
+    .menu-fot {
+        text-decoration: none;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+  font-size: 15.5px;
+    }
+
+    .menu-fot li,
+    .additional-menu li {
+        margin-bottom: 0px;
+        line-height: 0.2;
+    }
+  .menu-fot li{line-height: 1;}
+
+
+}
+
+
+@media screen and (max-width: 450px) {
+  .brand {
+      margin-right: -290px; /* Отступ между логотипом и меню */
+  }
+  .brand img {margin-top: -480px;
+    margin-left:80px; /* Отступ между логотипом и меню */
+  width: 250px;
+  height: auto;
+  }
+  .menu-fot{margin-right: 20px;
+  }
+
+  footer  h2{padding-top:140px;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+  margin-bottom: 20px;
+  font-size: 19px;
+  line-height: 0.5;}
+
+    .menu-fot {
+        text-decoration: none;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+  font-size: 15.5px;
+    }
+
+    .menu-fot li,
+    .additional-menu li {
+        margin-bottom: 0px;
+        line-height: 0.2;
+    }
+  .menu-fot li{line-height: 1;}
+
+
+}
+
+
+@media screen and (max-width: 410px) {
+  .brand {
+      margin-right: -250px; /* Отступ между логотипом и меню */
+  }
+  .brand img {margin-top: -480px;
+    margin-left:50px; /* Отступ между логотипом и меню */
+  width: 230px;
+  height: auto;
+  }
+  .menu-fot{margin-right: 20px;
+  }
+
+  footer  h2{padding-top:140px;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+  margin-bottom: 20px;
+  font-size: 19px;
+  line-height: 0.5;}
+
+    .menu-fot {
+        text-decoration: none;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+  font-size: 15.5px;
+    }
+
+    .menu-fot li,
+    .additional-menu li {
+        margin-bottom: 0px;
+        line-height: 0.2;
+    }
+  .menu-fot li{line-height: 1;}
+
+}
+
+
+
+@media screen and (max-width: 355px) {
+  .brand {
+      margin-right: -240px; /* Отступ между логотипом и меню */
+  }
+  .brand img {margin-top: -480px;
+    margin-left:30px; /* Отступ между логотипом и меню */
+  width: 230px;
+  height: auto;
+  }
+  .menu-fot{margin-right: 10px;
+  }
+
+  footer  h2{padding-top:140px;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+  margin-bottom: 20px;
+  font-size: 19px;
+  line-height: 0.5;}
+
+    .menu-fot {
+        text-decoration: none;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+  font-size: 15.5px;
+    }
+
+    .menu-fot li,
+    .additional-menu li {
+        margin-bottom: 0px;
+        line-height: 0.2;
+    }
+  .menu-fot li{line-height: 1;}
+
+
+
+}
+@media screen and (max-width: 320px) {
+  .brand {
+      margin-right: -240px; /* Отступ между логотипом и меню */
+  }
+  .brand img {margin-top: -480px;
+    margin-left:20px; /* Отступ между логотипом и меню */
+  width: 220px;
+  height: auto;
+  }
+  .menu-fot{margin-right: 10px;
+  }
+
+  footer  h2{padding-top:140px;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+  margin-bottom: 20px;
+  font-size: 19px;
+  line-height: 0.5;}
+
+    .menu-fot {
+        text-decoration: none;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+  font-size: 15.5px;
+    }
+
+    .menu-fot li,
+    .additional-menu li {
+        margin-bottom: 0px;
+        line-height: 0.2;
+    }
+  .menu-fot li{line-height: 1;}
+
+}
+
+@media screen and (max-width: 275px) {
+  .brand {
+      margin-right: -200px; /* Отступ между логотипом и меню */
+  }
+  .brand img {margin-top: -480px;
+    margin-left:20px; /* Отступ между логотипом и меню */
+  width: 180px;
+  height: auto;
+  }
+  .menu-fot{margin-right: 10px;
+  }
+
+  footer  h2{padding-top:100px;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 0.5;}
+
+    .menu-fot {
+        text-decoration: none;
+  color:#d1cdcd;
+  font-family: 'Garamond';
+  font-size: 15px;
+    }
+
+    .menu-fot li,
+    .additional-menu li {
+        margin-bottom: 0px;
+        line-height: 0.2;
+    }
+  .menu-fot li{line-height: 1;}
+
+}
+
+
+
+.social-icons img {
+    width: 50px; /* Ширина иконок */
+    height: 50px; /* Высота иконок */
+    margin-right: 20px;
+}
