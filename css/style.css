@@ -84,9 +84,12 @@ header nav a:hover {
  border-bottom: 1px solid black;
 }
 
-.gift{padding:  50px;
+
+
+.gift{
+  padding-top:100px;
   background-color:#161616;
-    margin-top: 0px; /* Применяем отрицательный отступ, чтобы поднять следующую секцию */
+    margin-top: -80px; /* Применяем отрицательный отступ, чтобы поднять следующую секцию */
   }
 
 .about-us{background-color:#161616;
@@ -824,6 +827,9 @@ margin: 8px 0;}
  padding: 15px 0;
  }
 }
+
+
+
 
 @media screen and (max-width: 768px) {
   .container-row{
@@ -1701,6 +1707,12 @@ bottom: 0;
     max-width: 960px;
     margin: 80px auto;
   }
+
+  .about-container-gift{
+    max-width: 960px;
+    margin: 80px auto;
+    padding-bottom: 50px;
+  }
   .about-row{
     display: flex;
     align-items: center;
@@ -1810,248 +1822,8 @@ padding: 300px;}
 
 
 
-  .carousel {
-    position: relative;
-  }
-
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  height: 1000px; /* Высота слайдера, настройте по своему усмотрению */
-  display: flex;
-    transition: transform 0.5s ease;
-
-
-}
-
-.carousel-item {
-  position: absolute;
-  display: none;
-  width: 100%;
-  height: 100%;
-  transition: opacity 0.5s ease-in-out; /* Анимация переключения слайдов */
-}
-
-.carousel-item.active {
-  display: block;
-}
-
-.slide-img {
-  width: 100%;
-  height: 100%;
- object-fit: cover ; /* Изображение заполняет всю площадь слайда */
-}
-
-.slide-img-1 {object-position: center 20%;
-  /* Стили для первого изображения */
-}
-
-.slide-img-2 { object-position: center 38%; /* Позиционирование изображения внизу */
-  /* Стили для второго изображения */
-}
-
-.slide-img-3 { object-position: center 38%; /* Позиционирование изображения внизу */
-
-  /* Стили для третьего изображения */
-}
-.slide-img-5 { object-position: center 42%; /* Позиционирование изображения внизу */
-
-  /* Стили для третьего изображения */
-}
-
-.slide-img-6 { object-position: center 45%; /* Позиционирование изображения внизу */
-
-  /* Стили для третьего изображения */
-}
-
 
 .DopYsl{margin-bottom: 10px;}
-
-.carousel-caption h5{font-weight: 600px;
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 36px;
-    letter-spacing: 1px;
-line-height: 2.5; /* Установите желаемое значение для расстояния между строками */
-
-}
-
-
-
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  font-weight: 6000px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 1px;
-  line-height: 2.5; /* Установите желаемое значение для расстояния между строками */
-
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.3);
-  border: none;
-  color: white;
-  font-size: 24px;
-  width: 50px; /* Ширина кнопок */
-  height: 100%; /* Сделаем кнопки высотой как у контейнера */
-  cursor: pointer;
-}
-
-.carousel-control-prev {
-  left: 0;
-}
-
-.carousel-control-next {
-  right: 0;
-}
-
-.carousel-control-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-
-
-.caption-slide2 {
-  /* Ваши стили для текста на втором слайде */
-  margin: 70px;
-  font-family: "Arial", sans-serif;
-      font-size: 13px;
-      color: white; /* Цвет текста */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-weight: 6000px;
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  letter-spacing: 1px;
-  line-height: 1.55;
-      text-align: center;
-}
-
-.caption-slide2 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 23px;
-    letter-spacing: 1px;
-line-height: 1.55;
-}
-
-
-
-.caption-slide3 {
-  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:50%;
-  left: 60%;
-  font-weight: 6000px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 1px;
-  line-height: 2.0; /* Установите желаемое значение для расстояния между строками */
-margin-left: -25%; /* Добавлено для создания отступа слева */
-margin-right: 0%; /* Добавлено для создания отступа справа */
-}
-
-.caption-slide3 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 24px;
-    letter-spacing: 2px;
-line-height: 2; /* Установите желаемое значение для расстояния между строками */
-
-}
-
-
-
-
-.caption-slide4{  /* Ваши стили для текста на втором слайде */
-
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:50%;
-  left: 60%;
-  font-weight: 6000px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 2px;
-  line-height: 2.2; /* Установите желаемое значение для расстояния между строками */
-}
-
-.caption-slide4 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 24px;
-  margin-bottom: 10px;
-    letter-spacing: 1px;
-line-height: 1.9; /* Установите желаемое значение для расстояния между строками */
-
-}
-
-
-
-.caption-slide5{  /* Ваши стили для текста на втором слайде */
-
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:50%;
-  left: 60%;
-  font-weight: 600px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 27px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 2px;
-  line-height: 2; /* Установите желаемое значение для расстояния между строками */
-}
-
-.caption-slide5 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 23px;
-
-}
-
-
-.caption-slide6{  /* Ваши стили для текста на втором слайде */
-
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:60%;
-  left: 60%;
-  font-weight: 600px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 26px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 2px;
-}
-
-.caption-slide6 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 24px;
-    line-height: 2;
-  }
 
 
   .Podarok{
@@ -2079,2228 +1851,2869 @@ padding-top: 10px;}
   body {
     overflow-x: hidden;
   }
-  .carousel-inner {
+
+
+}
+
+
+
+/* Стили для фотографий и текста */
+.section-foto {
     position: relative;
+    overflow: hidden;
     width: 100%;
-    height: 1000px; /* Высота слайдера, настройте по своему усмотрению */
-    display: flex;
-      transition: transform 0.5s ease;
-  }
-  .carousel-item {
-    position: absolute;
-    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.image-foto1 {
+    display: block;
+object-position: center 25%;
     width: 100%;
-    height: 100%;
-    transition: opacity 0.5s ease-in-out; /* Анимация переключения слайдов */
-  }
-  .slide-img {
-    width: 100%;
-    height: 50%;
-    object-fit: cover; /* Изображение заполняет всю площадь слайда */
-  }
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
 
-  .carousel-caption h5{font-weight: 600px;
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 14px;
-      letter-spacing: 1px;
-  line-height: 1.5; /* Установите желаемое значение для расстояния между строками */
-
-  }
-
-.gift{padding:  50px;
-  background-color:#161616;
-    margin-top: -500px; /* Применяем отрицательный отступ, чтобы поднять следующую секцию */
-  }
-  .carousel-caption {
+.text-foto1 {
     position: absolute;
-    top: 25%;
-    left: 50%;
-    font-weight: 6000px;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    color: #fff; /* Цвет текста */
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
-    letter-spacing: 1px;
-    line-height: 2.0; /* Установите желаемое значение для расстояния между строками */
-    width: 80%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
-
-  .carousel-control-prev,
-  .carousel-control-next {
-    position: absolute;
-    top: 25%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.3);
-    border: none;
-    color: white;
-    font-size: 24px;
-    width: 50px; /* Ширина кнопок */
-    height: 50%; /* Сделаем кнопки высотой как у контейнера */
-    cursor: pointer;
-  }
-
-  .caption-slide2 {
-    /* Ваши стили для текста на втором слайде */
-    margin: 70px;
-    font-family: "Arial", sans-serif;
-    position: absolute;
-    top: 17%;
+    top: 50%;
     left: 40%;
-    color: black; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    letter-spacing: 1px;
-    line-height: 1.55;
-        text-align: left;
-  }
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
-  .caption-slide2 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 18px;
-      letter-spacing: 1px;
+.text-foto h2 {
+  font-family: 'Calibri';
+    font-size: 40px; /* Размер заголовка */
+    line-height: 1.7;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
 
-  line-height: 1.55;
-  width: 100%; /* Ширина текста */
+.text-foto p {
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 35px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 2;
+}
+
+
+
+
+
+.image-foto2 {
+    display: block;
+object-position: center 25%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto2 h2 {
+  font-family: 'Calibri';
+    font-size: 28px; /* Размер заголовка */
+    line-height: 1.2;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto2 p {
+  text-align:center;
+font-family: 'Garamond';
+    font-size: 28px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+.image-foto3 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto3 {
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto3 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 32px; /* Размер заголовка */
+    line-height: 1.9;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto3 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 28px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.3;
+    width: 110%; /* Ширина текста */
 word-wrap: break-word; /* Перенос слов */
 overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
-  .caption-slide3 {
-    /* Ваши стили для текста на втором слайде */
-    font-family: "Arial", sans-serif;
-    color: #FF0000;
+}
+
+
+
+
+
+.image-foto4 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto4 {
     position: absolute;
-    top:24%;
-    left: 70%;
-    font-weight: 6000px;
+    top: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
     padding: 20px;
-    color: #fff; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    letter-spacing: 1px;
-    line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
-  margin-left: -25%; /* Добавлено для создания отступа слева */
-  margin-right: 0%; /* Добавлено для создания отступа справа */
-  }
+}
 
-.caption-slide3 h3,.caption-slide3 h5{font-size: 20px;}
-  .caption-slide3 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 19px;
-      letter-spacing: 1px;
-  line-height: 1.3; /* Установите желаемое значение для расстояния между строками */
-  width: 115%; /* Ширина текста */
-  word-wrap: break-word; /* Перенос слов */
-  overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
+.text-foto4 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 33px; /* Размер заголовка */
+    line-height: 1.9;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto4 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 29px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.3;
+    width: 115%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
 
 
-  .caption-slide4{  /* Ваши стили для текста на втором слайде */
 
-    font-family: "Arial", sans-serif;
-    color: #FF0000;
+
+
+.image-foto5 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto5 {
     position: absolute;
-    top:25%;
-    left: 43%;
-    font-weight: 6000px;
+    top: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
     padding: 20px;
-    color: #fff; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
-    letter-spacing: 2px;
-    line-height: 2.2; /* Установите желаемое значение для расстояния между строками */
-  }
-
-  .caption-slide4 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 18px;
-    margin-bottom: 10px;
-      letter-spacing: 1px;
-  line-height: 1.5; /* Установите желаемое значение для расстояния между строками */
-  width: 118%; /* Ширина текста */
-  word-wrap: break-word; /* Перенос слов */
-  overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
-
-
-  .caption-slide5{  /* Ваши стили для текста на втором слайде */
-
-    font-family: "Arial", sans-serif;
-    color: #FF0000;
-    position: absolute;
-    top:25%;
-    left: 43%;
-    font-weight: 600px;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    color: #fff; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
-    letter-spacing: 1px;
-  }
-.caption-slide5 h5{  font-size: 20px;    line-height: 4; /* Установите желаемое значение для расстояния между строками */
-}
-  .caption-slide5 p{font-weight: 600px;
-      line-height: 1.5; /* Установите желаемое значение для расстояния между строками */
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 20px;
-      width: 130%; /* Ширина текста */
-      word-wrap: break-word; /* Перенос слов */
-      overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
-
-.caption-slide6 h5{font-size: 25px;    font-family: "Arial", sans-serif;
-}
-  .caption-slide6{  /* Ваши стили для текста на втором слайде */
-    font-family: "Arial", sans-serif;
-    color: #FF0000;
-    position: absolute;
-    top:22%;
-    left: 45%;
-    font-weight: 600px;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    color: #fff; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    letter-spacing: 2px;
-  }
-
-  .caption-slide6 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 20px;
-      width: 120%; /* Ширина текста */
-      word-wrap: break-word; /* Перенос слов */
-      overflow-wrap: break-word; /* Современный вариант переноса слов */
-    }
 }
 
-
-@media screen and (max-width: 1048px) {
-
-.caption-slide4 h5{    font-family: "Arial", sans-serif;
-font-size: 22px; /* Размер шрифта, настройте по вашему усмотрению */
-
-}
-  .caption-slide4{  /* Ваши стили для текста на втором слайде */
-
-    font-family: "Arial", sans-serif;
-    color: #FF0000;
-    position: absolute;
-    top:25%;
-    left: 43%;
-    font-weight: 6000px;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    color: #fff; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
-    letter-spacing: 2px;
-    line-height: 2.2; /* Установите желаемое значение для расстояния между строками */
-  }
-
-  .caption-slide4 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 17px;
-    margin-bottom: 10px;
-      letter-spacing: 1px;
-  line-height: 1.5; /* Установите желаемое значение для расстояния между строками */
-  width: 118%; /* Ширина текста */
-  word-wrap: break-word; /* Перенос слов */
-  overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
-
+.text-foto5 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 32px; /* Размер заголовка */
+    line-height: 1.8;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
 }
 
-
-
-
-@media screen and (max-width: 1105px) {
-
-  .caption-slide5 h5{font-size: 22px;    font-family: "Arial", sans-serif;
-  line-height: 2; /* Установите желаемое значение для расстояния между строками */
-
-  }
-
-.caption-slide5{  /* Ваши стили для текста на втором слайде */
-
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:26%;
-  left: 50%;
-  font-weight: 600px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 22px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 2px;
-  line-height: 0.4; /* Установите желаемое значение для расстояния между строками */
-}
-
-.caption-slide5 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 17px;
-    width: 100%; /* Ширина текста */
-    word-wrap: break-word; /* Перенос слов */
-    overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-
-
-@media screen and (max-width: 845px) {
-
-  .caption-slide5 h5{font-size: 22px;    font-family: "Arial", sans-serif;
-  line-height: 2; /* Установите желаемое значение для расстояния между строками */
-
-  }
-
-.caption-slide5{  /* Ваши стили для текста на втором слайде */
-
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:26%;
-  left: 50%;
-  font-weight: 600px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 22px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 2px;
-  line-height: 0.4; /* Установите желаемое значение для расстояния между строками */
-}
-
-.caption-slide5 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 16px;
+.text-foto5 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 28px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.3;
     width: 110%; /* Ширина текста */
-    word-wrap: break-word; /* Перенос слов */
-    overflow-wrap: break-word; /* Современный вариант переноса слов */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
 }
+
+
+
+
+
+
+.image-foto6 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
 }
 
-
-
-
-
-
-@media screen and (max-width: 795px) {
-
-.caption-slide6 h5{font-size: 24px;    font-family: "Arial", sans-serif;
-}
-  .caption-slide6{  /* Ваши стили для текста на втором слайде */
-    font-family: "Arial", sans-serif;
-    color: #FF0000;
+.text-foto6 {
     position: absolute;
-    top:25%;
-    left: 43%;
-    font-weight: 600px;
+    top: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
     padding: 20px;
-    color: #fff; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    letter-spacing: 2px;
+}
+
+.text-foto6 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 35px; /* Размер заголовка */
+    line-height: 1.9;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto6 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 33px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.4;
+    width: 105%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+
+
+@media screen and (max-width: 1130px) {
+  .image-foto1 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
   }
 
-  .caption-slide6 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 19px;
-      width: 120%; /* Ширина текста */
-      word-wrap: break-word; /* Перенос слов */
-      overflow-wrap: break-word; /* Современный вариант переноса слов */
-    }
-}
-
-@media screen and (max-width: 772px) {
-
-.caption-slide6 h5{font-size: 24px;    font-family: "Arial", sans-serif;
-}
-  .caption-slide6{  /* Ваши стили для текста на втором слайде */
-    font-family: "Arial", sans-serif;
-    color: #FF0000;
-    position: absolute;
-    top:25%;
-    left: 48%;
-    font-weight: 600px;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    color: #fff; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    letter-spacing: 2px;
+  .text-foto1 {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 20px;
   }
 
-  .caption-slide6 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 19px;
+  .text-foto h2 {
+    font-family: 'Calibri';
+      font-size: 40px; /* Размер заголовка */
+      line-height: 1.5;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto p {
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 32px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.7;
+  }
+
+}
+
+
+@media screen and (max-width: 860px) {
+  .image-foto1 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto1 {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto h2 {
+    font-family: 'Calibri';
+      font-size: 38px; /* Размер заголовка */
+      line-height: 1.5;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto p {
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 30px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.6;
+  }
+
+}
+
+
+
+@media screen and (max-width: 762px) {
+  .image-foto1 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto1 {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto h2 {
+    font-family: 'Calibri';
+      font-size: 37px; /* Размер заголовка */
+      line-height: 1.4;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto p {
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 30px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.4;
+  }
+
+}
+
+@media screen and (max-width: 630px) {
+  .image-foto1 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto1 {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto h2 {
+    font-family: 'Calibri';
+      font-size: 35px; /* Размер заголовка */
+      line-height: 1.4;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto p {
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 28px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.4;
+  }
+
+}
+
+@media screen and (max-width: 558px) {
+  .image-foto1 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto1 {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto h2 {
+    font-family: 'Calibri';
+      font-size: 30px; /* Размер заголовка */
+      line-height: 1.4;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto p {
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 25px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.4;
+  }
+
+}
+
+
+@media screen and (max-width: 493px) {
+  .image-foto1 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto1 {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto h2 {
+    font-family: 'Calibri';
+      font-size: 26px; /* Размер заголовка */
       line-height: 1.3;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto p {
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 24px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.3;
+  }
+
+}
+
+
+
+@media screen and (max-width: 435px) {
+  .image-foto1 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto1 {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto h2 {
+    font-family: 'Calibri';
+      font-size: 25px; /* Размер заголовка */
+      line-height: 1.2;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
       width: 115%; /* Ширина текста */
       word-wrap: break-word; /* Перенос слов */
       overflow-wrap: break-word; /* Современный вариант переноса слов */
-    }
-}
-
-
-
-
-
-@media screen and (max-width: 795px) {
-
-.caption-slide4 h5{    font-family: "Arial", sans-serif;
-font-size: 20px; /* Размер шрифта, настройте по вашему усмотрению */
-
-}
-  .caption-slide4{  /* Ваши стили для текста на втором слайде */
-
-    font-family: "Arial", sans-serif;
-    color: #FF0000;
-    position: absolute;
-    top:25%;
-    left: 42%;
-    font-weight: 6000px;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    color: #fff; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
-    letter-spacing: 2px;
-    line-height: 2.2; /* Установите желаемое значение для расстояния между строками */
   }
 
-  .caption-slide4 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 17px;
-    margin-bottom: 10px;
-      letter-spacing: 1px;
-  line-height: 1.2; /* Установите желаемое значение для расстояния между строками */
-  width: 118%; /* Ширина текста */
+  .text-foto p {
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 23px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.3;
+  }
+
+}
+
+
+
+@media screen and (max-width: 374px) {
+  .image-foto1 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto1 {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto h2 {
+    font-family: 'Calibri';
+      font-size: 23px; /* Размер заголовка */
+      line-height: 1.2;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+      width: 125%; /* Ширина текста */
+      word-wrap: break-word; /* Перенос слов */
+      overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+
+  .text-foto p {
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 22px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.2;
+  }
+
+}
+@media screen and (max-width: 327px) {
+  .image-foto1 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto1 {
+      position: absolute;
+      top: 50%;
+      left: 38%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto h2 {
+    font-family: 'Calibri';
+      font-size: 22px; /* Размер заголовка */
+      line-height: 1.1;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+      width: 125%; /* Ширина текста */
+      word-wrap: break-word; /* Перенос слов */
+      overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+
+  .text-foto p {
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 22px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.1;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 1360px) {
+
+  .image-foto2 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto2 {
+    color:black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto2 h2 {
+    font-family: 'Calibri';
+      font-size: 27px; /* Размер заголовка */
+      line-height: 1.1;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto2 p {
+    text-align:center;
+  font-family: 'Garamond';
+      font-size: 25px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.4;
+      width: 115%; /* Ширина текста */
+      word-wrap: break-word; /* Перенос слов */
+      overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+
+  @media screen and (max-width: 1221px) {
+
+    .image-foto2 {
+        display: block;
+    object-position: center 25%;
+        width: 100%;
+        height: 1100px; /* Измените высоту по вашему усмотрению */
+        object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+    }
+
+    .text-foto2 {
+      color:black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 20px;
+    }
+
+    .text-foto2 h2 {
+      font-family: 'Calibri';
+        font-size: 23px; /* Размер заголовка */
+        line-height: 1.1;
+        margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+    }
+
+    .text-foto2 p {
+      text-align:center;
+    font-family: 'Garamond';
+        font-size: 24px; /* Размер абзаца */
+        margin-bottom: 10px; /* Расстояние между абзацами */
+        line-height: 1.34;
+    }
+
+}
+
+
+@media screen and (max-width: 1146px) {
+
+  .image-foto2 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto2 {
+    color:black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto2 h2 {
+    font-family: 'Calibri';
+      font-size: 22px; /* Размер заголовка */
+      line-height: 1;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto2 p {
+    text-align:center;
+  font-family: 'Garamond';
+      font-size: 23px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.30;
+  }
+}
+
+
+
+@media screen and (max-width: 1085px) {
+
+  .image-foto2 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto2 {
+    color:black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto2 h2 {
+    font-family: 'Calibri';
+      font-size: 20px; /* Размер заголовка */
+      line-height: 1;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto2 p {
+    text-align:center;
+  font-family: 'Garamond';
+      font-size: 22px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.30;
+      width: 110%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+
+}
+
+@media screen and (max-width: 970px) {
+
+  .image-foto2 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto2 {
+    color:black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto2 h2 {
+    font-family: 'Calibri';
+      font-size: 22px; /* Размер заголовка */
+      line-height: 1;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto2 p {
+    text-align:center;
+  font-family: 'Garamond';
+      font-size: 22px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.20;
+      width: 116%; /* Ширина текста */
   word-wrap: break-word; /* Перенос слов */
   overflow-wrap: break-word; /* Современный вариант переноса слов */
   }
 }
 
 
-@media screen and (max-width: 652px) {
 
-.caption-slide6 h5{font-size: 20px;    font-family: "Arial", sans-serif;
-}
-  .caption-slide6{  /* Ваши стили для текста на втором слайде */
-    font-family: "Arial", sans-serif;
-    color: #FF0000;
-    position: absolute;
-    top:25%;
-    left: 45%;
-    font-weight: 600px;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    color: #fff; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    letter-spacing: 2px;
+@media screen and (max-width: 905px) {
+
+  .image-foto2 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
   }
 
-  .caption-slide6 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 18px;
+  .text-foto2 {
+    color:black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto2 h2 {
+    font-family: 'Calibri';
+      font-size: 21px; /* Размер заголовка */
+      line-height: 1;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto2 p {
+    text-align:center;
+  font-family: 'Garamond';
+      font-size: 21px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.15;
+      width: 116%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .image-foto2 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto2 {
+    color:black;
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto2 h2 {
+
+
+    font-family: 'Calibri';
+      font-size: 22px; /* Размер заголовка */
+      line-height: 1;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto2 p {
+    text-align:center;
+  font-family: 'Garamond';
+      font-size: 22px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.15;
+      width: 125%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+
+}
+
+
+@media screen and (max-width: 745px) {
+
+  .image-foto2 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto2 {
+    color:black;
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto2 h2 {
+
+
+    font-family: 'Calibri';
+      font-size: 21px; /* Размер заголовка */
+      line-height: 1;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto2 p {
+    text-align:center;
+  font-family: 'Garamond';
+      font-size: 21px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.11;
+      width: 125%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+
+}
+
+
+@media screen and (max-width: 635px) {
+
+  .image-foto2 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto2 {
+    color:black;
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto2 h2 {
+
+
+    font-family: 'Calibri';
+      font-size: 20px; /* Размер заголовка */
+      line-height: 1;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto2 p {
+    text-align:center;
+  font-family: 'Garamond';
+      font-size: 20px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.11;
+      width: 135%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+
+}
+
+
+@media screen and (max-width: 525px) {
+
+  .image-foto2 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto2 {
+    color:black;
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto2 h2 {
+
+
+    font-family: 'Calibri';
+      font-size: 20px; /* Размер заголовка */
+      line-height: 1;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto2 p {
+    text-align:center;
+  font-family: 'Garamond';
+      font-size: 20px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.11;
+      width: 138%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+
+}
+
+@media screen and (max-width: 385px) {
+
+  .image-foto2 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto2 {
+    color:black;
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto2 h2 {
+
+
+    font-family: 'Calibri';
+      font-size: 20px; /* Размер заголовка */
+      line-height: 1;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto2 p {
+    text-align:center;
+  font-family: 'Garamond';
+      font-size: 19px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 0.9;
+      width: 125%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+
+}
+
+@media screen and (max-width: 300px) {
+
+  .image-foto2 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto2 {
+    color:black;
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto2 h2 {
+
+
+    font-family: 'Calibri';
+      font-size: 20px; /* Размер заголовка */
+      line-height: 1;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto2 p {
+    text-align:center;
+  font-family: 'Garamond';
+      font-size: 18px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 0.9;
+      width: 138%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+
+}
+
+
+
+@media screen and (max-width: 1131px) {
+
+
+
+  .image-foto3 {
+      display: block;
+  object-position: center 40%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto3 {
+      position: absolute;
+      top: 50%;
+      left: 37%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto3 h2 {
+    text-align: left;
+    font-family: 'Calibri';
+      font-size: 30px; /* Размер заголовка */
+      line-height: 1.7;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto3 p {
+        letter-spacing: 1.1px;
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 26px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.3;
+      width: 110%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 1040px) {
+
+  .image-foto3 {
+      display: block;
+  object-position: center 40%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto3 {
+      position: absolute;
+      top: 50%;
+      left: 37%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto3 h2 {
+    text-align: left;
+    font-family: 'Calibri';
+      font-size: 27px; /* Размер заголовка */
+      line-height: 1.5;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto3 p {
+        letter-spacing: 1.1px;
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 24px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.3;
+      width: 110%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+@media screen and (max-width: 780px) {
+
+  .image-foto3 {
+      display: block;
+  object-position: center 40%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto3 {
+      position: absolute;
+      top: 50%;
+      left: 37%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto3 h2 {
+    text-align: left;
+    font-family: 'Calibri';
+      font-size: 25px; /* Размер заголовка */
       line-height: 1.2;
-      width: 115%; /* Ширина текста */
-      word-wrap: break-word; /* Перенос слов */
-      overflow-wrap: break-word; /* Современный вариант переноса слов */
-    }
-}
-
-
-
-
-
-@media screen and (max-width: 555px) {
-
-.caption-slide6 h5{font-size: 20px;    font-family: "Arial", sans-serif;
-}
-  .caption-slide6{  /* Ваши стили для текста на втором слайде */
-    font-family: "Arial", sans-serif;
-    color: #FF0000;
-    position: absolute;
-    top:25%;
-    left: 48%;
-    font-weight: 600px;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    color: #fff; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    letter-spacing: 2px;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
   }
 
-  .caption-slide6 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 17px;
+  .text-foto3 p {
+        letter-spacing: 1.1px;
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 22px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
       line-height: 1.2;
-      width: 115%; /* Ширина текста */
-      word-wrap: break-word; /* Перенос слов */
-      overflow-wrap: break-word; /* Современный вариант переноса слов */
-    }
-}
-
-
-@media screen and (max-width: 402px) {
-
-  .caption-slide6 h5{font-size: 19px;    font-family: "Arial", sans-serif;
+      width: 112%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
   }
-    .caption-slide6{  /* Ваши стили для текста на втором слайде */
-      font-family: "Arial", sans-serif;
-      color: #FF0000;
-      position: absolute;
-      top:25%;
-      left: 48%;
-      font-weight: 600px;
-      transform: translate(-50%, -50%);
-      padding: 20px;
-      color: #fff; /* Цвет текста */
-      font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-      letter-spacing: 2px;
-    }
-
-    .caption-slide6 p{font-weight: 600px;
-      font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-        font-size: 16px;
-        line-height: 1.2;
-        width: 115%; /* Ширина текста */
-        word-wrap: break-word; /* Перенос слов */
-        overflow-wrap: break-word; /* Современный вариант переноса слов */
-      }
-
 }
-
-@media screen and (max-width: 354px) {
-  .caption-slide6 h5{font-size: 19px;    font-family: "Arial", sans-serif;
-  }
-    .caption-slide6{  /* Ваши стили для текста на втором слайде */
-      font-family: "Arial", sans-serif;
-      color: #FF0000;
-      position: absolute;
-      top:25%;
-      left: 44%;
-      font-weight: 600px;
-      transform: translate(-50%, -50%);
-      padding: 20px;
-      color: #fff; /* Цвет текста */
-      font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-      letter-spacing: 2px;
-    }
-
-    .caption-slide6 p{font-weight: 600px;
-      font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-        font-size: 15px;
-        line-height: 1.15;
-        width: 115%; /* Ширина текста */
-        word-wrap: break-word; /* Перенос слов */
-        overflow-wrap: break-word; /* Современный вариант переноса слов */
-      }
-}
-
-
-
-@media screen and (max-width: 330px) {
-  .caption-slide6 h5{font-size: 18px;    font-family: "Arial", sans-serif;
-  }
-    .caption-slide6{  /* Ваши стили для текста на втором слайде */
-      font-family: "Arial", sans-serif;
-      color: #FF0000;
-      position: absolute;
-      top:25%;
-      left: 44%;
-      font-weight: 600px;
-      transform: translate(-50%, -50%);
-      padding: 20px;
-      color: #fff; /* Цвет текста */
-      font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-      letter-spacing: 1.6px;
-    }
-
-    .caption-slide6 p{font-weight: 600px;
-      font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-        font-size: 14.5px;
-        line-height: 1.15;
-        width: 115%; /* Ширина текста */
-        word-wrap: break-word; /* Перенос слов */
-        overflow-wrap: break-word; /* Современный вариант переноса слов */
-      }
-
-}
-
-
-@media screen and (max-width: 276px) {
-  .caption-slide6 h5{font-size: 17px;    font-family: "Arial", sans-serif;
-  }
-    .caption-slide6{  /* Ваши стили для текста на втором слайде */
-      font-family: "Arial", sans-serif;
-      color: #FF0000;
-      position: absolute;
-      top:25%;
-      left: 44%;
-      font-weight: 600px;
-      transform: translate(-50%, -50%);
-      padding: 20px;
-      color: #fff; /* Цвет текста */
-      font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-      letter-spacing: 1.6px;
-    }
-
-    .caption-slide6 p{font-weight: 600px;
-      font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-        font-size: 14px;
-        line-height: 1.1;
-        width: 115%; /* Ширина текста */
-        word-wrap: break-word; /* Перенос слов */
-        overflow-wrap: break-word; /* Современный вариант переноса слов */
-      }
-
-}
-
 
 @media screen and (max-width: 680px) {
 
-.caption-slide5{  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 43%;
-  font-weight: 600px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 1px;
-}
-
-.caption-slide5 h5{  font-size: 19px;
-  line-height: 2; /* Установите желаемое значение для расстояния между строками */
-}
-
-.caption-slide5 p{font-weight: 600px;
-    line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 18px;
-    width: 110%; /* Ширина текста */
-    word-wrap: break-word; /* Перенос слов */
-    overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-@media screen and (max-width: 550px) {
-
-.caption-slide5{  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 43%;
-  font-weight: 600px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 1px;
-}
-
-.caption-slide5 h5{  font-size: 19px;
-  line-height: 2; /* Установите желаемое значение для расстояния между строками */
-}
-
-.caption-slide5 p{font-weight: 600px;
-    line-height: 1; /* Установите желаемое значение для расстояния между строками */
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 17px;
-    width: 100%; /* Ширина текста */
-    word-wrap: break-word; /* Перенос слов */
-    overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-
-
-
-
-@media screen and (max-width: 513px) {
-
-.caption-slide5{  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 43%;
-  font-weight: 600px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 1px;
-}
-
-.caption-slide5 h5{  font-size: 18px;
-  line-height: 2; /* Установите желаемое значение для расстояния между строками */
-}
-
-.caption-slide5 p{font-weight: 600px;
-    line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 17px;
-    width: 110%; /* Ширина текста */
-    word-wrap: break-word; /* Перенос слов */
-    overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-
-@media screen and (max-width: 468px) {
-
-.caption-slide5{  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 43%;
-  font-weight: 600px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 1px;
-}
-
-.caption-slide5 h5{  font-size: 18px;
-  line-height: 1; /* Установите желаемое значение для расстояния между строками */
-}
-
-.caption-slide5 p{font-weight: 600px;
-    line-height: 1.2; /* Установите желаемое значение для расстояния между строками */
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 17px;
-    width: 117%; /* Ширина текста */
-    word-wrap: break-word; /* Перенос слов */
-    overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-
-
-@media screen and (max-width: 463px) {
-
-.caption-slide5{  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 43%;
-  font-weight: 600px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 1px;
-}
-
-.caption-slide5 h5{  font-size: 17px;
-  line-height: 1; /* Установите желаемое значение для расстояния между строками */
-}
-
-.caption-slide5 p{font-weight: 600px;
-    line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 16px;
-    width: 122%; /* Ширина текста */
-    word-wrap: break-word; /* Перенос слов */
-    overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-
-@media screen and (max-width: 427px) {
-
-.caption-slide5{  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 43%;
-  font-weight: 600px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 1px;
-}
-
-.caption-slide5 h5{  font-size: 17px;
-  line-height: 1; /* Установите желаемое значение для расстояния между строками */
-}
-
-.caption-slide5 p{font-weight: 600px;
-    line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 15px;
-    width: 122%; /* Ширина текста */
-    word-wrap: break-word; /* Перенос слов */
-    overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-
-
-
-
-@media screen and (max-width: 386px) {
-
-.caption-slide5{  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 43%;
-  font-weight: 600px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 1px;
-}
-
-.caption-slide5 h5{  font-size: 16px;
-  line-height: 1; /* Установите желаемое значение для расстояния между строками */
-}
-
-.caption-slide5 p{font-weight: 600px;
-    line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 15px;
-    width: 122%; /* Ширина текста */
-    word-wrap: break-word; /* Перенос слов */
-    overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-
-
-@media screen and (max-width: 344px) {
-
-.caption-slide5{  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 43%;
-  font-weight: 600px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 1px;
-}
-
-.caption-slide5 h5{  font-size: 16px;
-  line-height: 1; /* Установите желаемое значение для расстояния между строками */
-}
-
-.caption-slide5 p{font-weight: 600px;
-    line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 15px;
-    width: 132%; /* Ширина текста */
-    word-wrap: break-word; /* Перенос слов */
-    overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-
-
-@media screen and (max-width: 324px) {
-
-.caption-slide5{  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 43%;
-  font-weight: 600px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 1px;
-}
-
-.caption-slide5 h5{  font-size: 15px;
-  line-height: 1; /* Установите желаемое значение для расстояния между строками */
-}
-
-.caption-slide5 p{font-weight: 600px;
-    line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 14px;
-    width: 122%; /* Ширина текста */
-    word-wrap: break-word; /* Перенос слов */
-    overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-
-
-
-@media screen and (max-width: 304px) {
-
-.caption-slide5{  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 39%;
-  font-weight: 600px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 1px;
-}
-
-.caption-slide5 h5{  font-size: 14px;
-  line-height: 1; /* Установите желаемое значение для расстояния между строками */
-}
-
-.caption-slide5 p{font-weight: 600px;
-    line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 14px;
-    width: 130%; /* Ширина текста */
-    word-wrap: break-word; /* Перенос слов */
-    overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-@media screen and (max-width: 290px) {
-
-.caption-slide5{  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 39%;
-  font-weight: 600px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 1px;
-}
-
-.caption-slide5 h5{  font-size: 14px;
-  line-height: 1; /* Установите желаемое значение для расстояния между строками */
-}
-
-.caption-slide5 p{font-weight: 600px;
-    line-height: 1; /* Установите желаемое значение для расстояния между строками */
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 14px;
-    width: 130%; /* Ширина текста */
-    word-wrap: break-word; /* Перенос слов */
-    overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-
-
-@media screen and (max-width: 285px) {
-
-.caption-slide2{  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  position: absolute;
-  top:25%;
-  left: 43%;
-  font-weight: 600px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: black; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  font-size: 10px; /* Размер шрифта, настройте по вашему усмотрению */
-  letter-spacing: 1px;
-
-}
-
-.caption-slide2 h5{  font-size: 17px;
-  line-height: 0.7; /* Установите желаемое значение для расстояния между строками */
-}
-
-.caption-slide2 p{font-weight: 600px;
-    line-height: 0.4; /* Установите желаемое значение для расстояния между строками */
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 10px;
-    width: 130%; /* Ширина текста */
-    word-wrap: break-word; /* Перенос слов */
-    overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-
-}
-
-
-
-@media screen and (max-width: 685px) {
-.caption-slide4 {
-  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:26%;
-  left: 66%;
-  font-weight: 6000px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  letter-spacing: 1px;
-  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
-margin-left: -25%; /* Добавлено для создания отступа слева */
-margin-right: 0%; /* Добавлено для создания отступа справа */
-}
-
-.caption-slide4 h3,.caption-slide3 h5{font-size: 19px;}
-.caption-slide4 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 17px;
-    letter-spacing: 1px;
-line-height: 1.25; /* Установите желаемое значение для расстояния между строками */
-width: 124%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-
-
-@media screen and (max-width: 624px) {
-
-.caption-slide4 h5{    font-family: "Arial", sans-serif;
-font-size: 18px; /* Размер шрифта, настройте по вашему усмотрению */
-
-}
-  .caption-slide4{  /* Ваши стили для текста на втором слайде */
-
-    font-family: "Arial", sans-serif;
-    color: #FF0000;
-    position: absolute;
-    top:25%;
-    left: 65%;
-    font-weight: 6000px;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    color: #fff; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
-    letter-spacing: 2px;
-    line-height: 1.5; /* Установите желаемое значение для расстояния между строками */
+  .image-foto3 {
+      display: block;
+  object-position: center 40%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
   }
 
-  .caption-slide4 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 16px;
-    margin-bottom: 10px;
-      letter-spacing: 1px;
-  line-height: 1; /* Установите желаемое значение для расстояния между строками */
-  width: 125%; /* Ширина текста */
+  .text-foto3 {
+      position: absolute;
+      top: 50%;
+      left: 37%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto3 h2 {
+    text-align: left;
+    font-family: 'Calibri';
+      font-size: 23px; /* Размер заголовка */
+      line-height: 1.2;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto3 p {
+        letter-spacing: 1.1px;
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 20px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.2;
+      width: 112%; /* Ширина текста */
   word-wrap: break-word; /* Перенос слов */
   overflow-wrap: break-word; /* Современный вариант переноса слов */
   }
 }
 
-@media screen and (max-width: 465px) {
+@media screen and (max-width: 581px) {
 
-.caption-slide4 h5{    font-family: "Arial", sans-serif;
-font-size: 17px; /* Размер шрифта, настройте по вашему усмотрению */
-
-}
-  .caption-slide4{  /* Ваши стили для текста на втором слайде */
-
-    font-family: "Arial", sans-serif;
-    color: #FF0000;
-    position: absolute;
-    top:25%;
-    left: 65%;
-    font-weight: 6000px;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    color: #fff; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
-    letter-spacing: 2px;
-    line-height: 1.4; /* Установите желаемое значение для расстояния между строками */
+  .image-foto3 {
+      display: block;
+  object-position: center 40%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
   }
 
-  .caption-slide4 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 15.5px;
-    margin-bottom: 5px;
-      letter-spacing: 1px;
-  line-height: 1; /* Установите желаемое значение для расстояния между строками */
-  width: 120%; /* Ширина текста */
+  .text-foto3 {
+      position: absolute;
+      top: 50%;
+      left: 37%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto3 h2 {
+    text-align: left;
+    font-family: 'Calibri';
+      font-size: 23px; /* Размер заголовка */
+      line-height: 1.2;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto3 p {
+        letter-spacing: 1.1px;
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 19px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.1;
+      width: 112%; /* Ширина текста */
   word-wrap: break-word; /* Перенос слов */
   overflow-wrap: break-word; /* Современный вариант переноса слов */
   }
 }
+
+
+@media screen and (max-width: 525px) {
+
+  .image-foto3 {
+      display: block;
+  object-position: center 40%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto3 {
+      position: absolute;
+      top: 50%;
+      left: 37%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto3 h2 {
+    text-align: left;
+    font-family: 'Calibri';
+      font-size: 22px; /* Размер заголовка */
+      line-height: 1.1;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto3 p {
+        letter-spacing: 1.1px;
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 17px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.1;
+      width: 112%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+
 
 @media screen and (max-width: 400px) {
 
-.caption-slide4 h5{    font-family: "Arial", sans-serif;
-font-size: 17px; /* Размер шрифта, настройте по вашему усмотрению */
-
-}
-  .caption-slide4{  /* Ваши стили для текста на втором слайде */
-
-    font-family: "Arial", sans-serif;
-    color: #FF0000;
-    position: absolute;
-    top:25%;
-    left: 65%;
-    font-weight: 6000px;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    color: #fff; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
-    letter-spacing: 2px;
-    line-height: 1.4; /* Установите желаемое значение для расстояния между строками */
+  .image-foto3 {
+      display: block;
+  object-position: center 40%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
   }
 
-  .caption-slide4 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 15px;
-    margin-bottom: 5px;
-      letter-spacing: 1px;
-  line-height: 1; /* Установите желаемое значение для расстояния между строками */
-  width: 125%; /* Ширина текста */
-  word-wrap: break-word; /* Перенос слов */
-  overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
-}
-
-
-@media screen and (max-width: 365px) {
-
-.caption-slide4 h5{    font-family: "Arial", sans-serif;
-font-size: 15px; /* Размер шрифта, настройте по вашему усмотрению */
-
-}
-  .caption-slide4{  /* Ваши стили для текста на втором слайде */
-
-    font-family: "Arial", sans-serif;
-    color: #FF0000;
-    position: absolute;
-    top:25%;
-    left: 65%;
-    font-weight: 6000px;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    color: #fff; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
-    letter-spacing: 2px;
-    line-height: 1.2; /* Установите желаемое значение для расстояния между строками */
-  }
-
-  .caption-slide4 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 15.5px;
-    margin-bottom: 2px;
-      letter-spacing: 0.5px;
-  line-height: 1; /* Установите желаемое значение для расстояния между строками */
-  width: 128%; /* Ширина текста */
-  word-wrap: break-word; /* Перенос слов */
-  overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
-}
-
-
-
-
-
-@media screen and (max-width: 365px) {
-
-.caption-slide4 h5{    font-family: "Arial", sans-serif;
-font-size: 15px; /* Размер шрифта, настройте по вашему усмотрению */
-
-}
-  .caption-slide4{  /* Ваши стили для текста на втором слайде */
-
-    font-family: "Arial", sans-serif;
-    color: #FF0000;
-    position: absolute;
-    top:25%;
-    left: 65%;
-    font-weight: 6000px;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    color: #fff; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
-    letter-spacing: 2px;
-    line-height: 1.2; /* Установите желаемое значение для расстояния между строками */
-  }
-
-  .caption-slide4 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 15.5px;
-    margin-bottom: 2px;
-      letter-spacing: 0.5px;
-  line-height: 1; /* Установите желаемое значение для расстояния между строками */
-  width: 128%; /* Ширина текста */
-  word-wrap: break-word; /* Перенос слов */
-  overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
-}
-
-
-@media screen and (max-width: 310px) {
-
-.caption-slide4 h5{    font-family: "Arial", sans-serif;
-font-size: 14px; /* Размер шрифта, настройте по вашему усмотрению */
-
-}
-  .caption-slide4{  /* Ваши стили для текста на втором слайде */
-
-    font-family: "Arial", sans-serif;
-    color: #FF0000;
-    position: absolute;
-    top:25%;
-    left: 65%;
-    font-weight: 6000px;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    color: #fff; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
-    letter-spacing: 2px;
-    line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
-  }
-
-  .caption-slide4 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 15px;
-    margin-bottom: 2px;
-      letter-spacing: 0.5px;
-  line-height: 1; /* Установите желаемое значение для расстояния между строками */
-  width: 130%; /* Ширина текста */
-  word-wrap: break-word; /* Перенос слов */
-  overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
-}
-
-@media screen and (max-width: 274px) {
-  .caption-slide4 h5{    font-family: "Arial", sans-serif;
-  font-size: 12px; /* Размер шрифта, настройте по вашему усмотрению */
-
-  }
-    .caption-slide4{  /* Ваши стили для текста на втором слайде */
-
-      font-family: "Arial", sans-serif;
-      color: #FF0000;
+  .text-foto3 {
       position: absolute;
-      top:25%;
-      left: 65%;
-      font-weight: 6000px;
+      top: 50%;
+      left: 37%;
       transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
       padding: 20px;
-      color: #fff; /* Цвет текста */
-      font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
-      letter-spacing: 2px;
-      line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
-    }
+  }
 
-    .caption-slide4 p{font-weight: 600px;
-      font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-        font-size: 14px;
-      margin-bottom: 2px;
-        letter-spacing: 0.4px;
-    line-height: 1; /* Установите желаемое значение для расстояния между строками */
-    width: 134%; /* Ширина текста */
-    word-wrap: break-word; /* Перенос слов */
-    overflow-wrap: break-word; /* Современный вариант переноса слов */
-    }
+  .text-foto3 h2 {
+    text-align: left;
+    font-family: 'Calibri';
+      font-size: 20px; /* Размер заголовка */
+      line-height: 1.1;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto3 p {
+        letter-spacing: 1.1px;
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 16px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.1;
+      width: 110%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
 }
 
 
-@media screen and (max-width: 254px) {
-  .caption-slide4 h5{    font-family: "Arial", sans-serif;
-  font-size: 11px; /* Размер шрифта, настройте по вашему усмотрению */
 
+@media screen and (max-width: 350px) {
+
+  .image-foto3 {
+      display: block;
+  object-position: center 40%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
   }
-    .caption-slide4{  /* Ваши стили для текста на втором слайде */
 
-      font-family: "Arial", sans-serif;
-      color: #FF0000;
+  .text-foto3 {
       position: absolute;
-      top:25%;
-      left: 65%;
-      font-weight: 6000px;
+      top: 50%;
+      left: 37%;
       transform: translate(-50%, -50%);
-      padding: 20px;
-      color: #fff; /* Цвет текста */
-      font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 28px; /* Размер шрифта, настройте по вашему усмотрению */
-      letter-spacing: 2px;
-      line-height: 1; /* Установите желаемое значение для расстояния между строками */
-    }
-
-    .caption-slide4 p{font-weight: 600px;
-      font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-        font-size: 14px;
-      margin-bottom: 2px;
-        letter-spacing: 0.4px;
-    line-height: 1; /* Установите желаемое значение для расстояния между строками */
-    width: 134%; /* Ширина текста */
-    word-wrap: break-word; /* Перенос слов */
-    overflow-wrap: break-word; /* Современный вариант переноса слов */
-    }
-}
-
-
-
-
-
-
-@media screen and (max-width: 908px) {
-.caption-slide3 {
-  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:24%;
-  left: 70%;
-  font-weight: 6000px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  letter-spacing: 1px;
-  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
-margin-left: -25%; /* Добавлено для создания отступа слева */
-margin-right: 0%; /* Добавлено для создания отступа справа */
-}
-
-.caption-slide3 h3,.caption-slide3 h5{font-size: 20px;}
-.caption-slide3 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 18px;
-    letter-spacing: 1px;
-line-height: 1.3; /* Установите желаемое значение для расстояния между строками */
-width: 115%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-
-@media screen and (max-width: 747px) {
-.caption-slide3 {
-  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 67%;
-  font-weight: 6000px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  letter-spacing: 1px;
-  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
-margin-left: -25%; /* Добавлено для создания отступа слева */
-margin-right: 0%; /* Добавлено для создания отступа справа */
-}
-
-.caption-slide3 h3,.caption-slide3 h5{font-size: 20px;}
-.caption-slide3 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 17px;
-    letter-spacing: 1px;
-line-height: 1.3; /* Установите желаемое значение для расстояния между строками */
-width: 120%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-@media screen and (max-width: 684px) {
-.caption-slide3 {
-  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 68%;
-  font-weight: 6000px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  letter-spacing: 1px;
-  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
-margin-left: -25%; /* Добавлено для создания отступа слева */
-margin-right: 0%; /* Добавлено для создания отступа справа */
-}
-
-.caption-slide3 h3,.caption-slide3 h5{font-size: 20px;}
-.caption-slide3 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 17px;
-    letter-spacing: 1px;
-line-height: 1.3; /* Установите желаемое значение для расстояния между строками */
-width: 120%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-@media screen and (max-width: 654px) {
-.caption-slide3 {
-  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 67%;
-  font-weight: 6000px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  letter-spacing: 1px;
-  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
-margin-left: -25%; /* Добавлено для создания отступа слева */
-margin-right: 0%; /* Добавлено для создания отступа справа */
-}
-
-.caption-slide3 h3,.caption-slide3 h5{font-size: 20px;}
-.caption-slide3 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 17px;
-    letter-spacing: 1px;
-line-height: 1.25; /* Установите желаемое значение для расстояния между строками */
-width: 124%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-@media screen and (max-width: 615px) {
-.caption-slide3 {
-  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 66%;
-  font-weight: 6000px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  letter-spacing: 1px;
-  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
-margin-left: -25%; /* Добавлено для создания отступа слева */
-margin-right: 0%; /* Добавлено для создания отступа справа */
-}
-
-.caption-slide3 h3,.caption-slide3 h5{font-size: 20px;line-height: 2.0; /* Установите желаемое значение для расстояния между строками */}
-.caption-slide3 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 17px;
-    letter-spacing: 1px;
-line-height: 1.2; /* Установите желаемое значение для расстояния между строками */
-width: 126%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-
-@media screen and (max-width: 578px) {
-.caption-slide3 {
-  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 65%;
-  font-weight: 6000px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  letter-spacing: 1px;
-  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
-margin-left: -25%; /* Добавлено для создания отступа слева */
-margin-right: 0%; /* Добавлено для создания отступа справа */
-}
-
-.caption-slide3 h3,.caption-slide3 h5{font-size: 20px;line-height: 2.0; /* Установите желаемое значение для расстояния между строками */}
-.caption-slide3 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 17px;
-    letter-spacing: 1px;
-line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
-width: 128%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-@media screen and (max-width: 495px) {
-.caption-slide3 {
-  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 65%;
-  font-weight: 6000px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  letter-spacing: 1px;
-  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
-margin-left: -25%; /* Добавлено для создания отступа слева */
-margin-right: 0%; /* Добавлено для создания отступа справа */
-}
-
-.caption-slide3 h3,.caption-slide3 h5{font-size: 18px;line-height: 1.5; /* Установите желаемое значение для расстояния между строками */}
-.caption-slide3 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 17px;
-    letter-spacing: 1px;
-line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
-width: 132%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-@media screen and (max-width: 478px) {
-.caption-slide3 {
-  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 65%;
-  font-weight: 6000px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  letter-spacing: 1px;
-  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
-margin-left: -25%; /* Добавлено для создания отступа слева */
-margin-right: 0%; /* Добавлено для создания отступа справа */
-}
-
-.caption-slide3 h3,.caption-slide3 h5{font-size: 17px;line-height: 1.4; /* Установите желаемое значение для расстояния между строками */}
-.caption-slide3 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 16px;
-    letter-spacing: 1px;
-line-height: 1.2; /* Установите желаемое значение для расстояния между строками */
-width: 132%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-
-@media screen and (max-width: 458px) {
-.caption-slide3 {
-  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 65%;
-  font-weight: 6000px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  letter-spacing: 1px;
-  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
-margin-left: -25%; /* Добавлено для создания отступа слева */
-margin-right: 0%; /* Добавлено для создания отступа справа */
-}
-
-.caption-slide3 h3,.caption-slide3 h5{font-size: 16px;line-height: 1.4; /* Установите желаемое значение для расстояния между строками */}
-.caption-slide3 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 15px;
-    letter-spacing: 1px;
-line-height: 1.2; /* Установите желаемое значение для расстояния между строками */
-width: 132%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-@media screen and (max-width: 392px) {
-.caption-slide3 {
-  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 65%;
-  font-weight: 6000px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  letter-spacing: 1px;
-  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
-margin-left: -25%; /* Добавлено для создания отступа слева */
-margin-right: 0%; /* Добавлено для создания отступа справа */
-}
-
-.caption-slide3 h3,.caption-slide3 h5{font-size: 15px;line-height: 1.4; /* Установите желаемое значение для расстояния между строками */}
-.caption-slide3 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 15px;
-    letter-spacing: 1px;
-line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
-width: 132%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-@media screen and (max-width: 347px) {
-.caption-slide3 {
-  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 65%;
-  font-weight: 6000px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  letter-spacing: 1px;
-  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
-margin-left: -25%; /* Добавлено для создания отступа слева */
-margin-right: 0%; /* Добавлено для создания отступа справа */
-}
-
-.caption-slide3 h3,.caption-slide3 h5{font-size: 14px;line-height: 1.3; /* Установите желаемое значение для расстояния между строками */}
-.caption-slide3 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 14px;
-    letter-spacing: 1px;
-line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
-width: 132%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-@media screen and (max-width: 328px) {
-.caption-slide3 {
-  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 65%;
-  font-weight: 6000px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  letter-spacing: 1px;
-  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
-margin-left: -25%; /* Добавлено для создания отступа слева */
-margin-right: 0%; /* Добавлено для создания отступа справа */
-}
-
-.caption-slide3 h3,.caption-slide3 h5{font-size: 14px;line-height: 1.3; /* Установите желаемое значение для расстояния между строками */}
-.caption-slide3 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 14px;
-    letter-spacing: 0.8px;
-line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
-width: 132%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-@media screen and (max-width: 317px) {
-.caption-slide3 {
-  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 65%;
-  font-weight: 6000px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  letter-spacing: 1px;
-  line-height: 1.0; /* Установите желаемое значение для расстояния между строками */
-margin-left: -25%; /* Добавлено для создания отступа слева */
-margin-right: 0%; /* Добавлено для создания отступа справа */
-}
-
-.caption-slide3 h3,.caption-slide3 h5{font-size: 13px;line-height: 1.2; /* Установите желаемое значение для расстояния между строками */}
-.caption-slide3 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 14px;
-    letter-spacing: 0.7px;
-line-height: 1.1; /* Установите желаемое значение для расстояния между строками */
-width: 132%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-
-@media screen and (max-width: 312px) {
-.caption-slide3 {
-  /* Ваши стили для текста на втором слайде */
-  font-family: "Arial", sans-serif;
-  color: #FF0000;
-  position: absolute;
-  top:25%;
-  left: 63%;
-  font-weight: 6000px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  color: #fff; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-  letter-spacing: 0.7px;
-  line-height: 0.5; /* Установите желаемое значение для расстояния между строками */
-margin-left: -25%; /* Добавлено для создания отступа слева */
-margin-right: 0%; /* Добавлено для создания отступа справа */
-}
-
-.caption-slide3 h3,.caption-slide3 h5{font-size: 13px;line-height: 1.2; /* Установите желаемое значение для расстояния между строками */}
-.caption-slide3 p{font-weight: 600px;
-  font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-    font-size: 15px;
-    letter-spacing: 0.7px;
-line-height: 0.8; /* Установите желаемое значение для расстояния между строками */
-width: 140%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-}
-}
-
-
-
-@media screen and (max-width: 935px) {
-  .caption-slide2 {
-    /* Ваши стили для текста на втором слайде */
-    margin: 70px;
-    font-family: "Arial", sans-serif;
-    position: absolute;
-    top: 17%;
-    left: 40%;
-    color: black; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    letter-spacing: 1px;
-    line-height: 1.55;
-        text-align: left;
+      color: white;
+      text-align: center;
+      padding: 10px;
   }
-  .caption-slide2 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 17px;
-      letter-spacing: 1px;
-  line-height: 1.55;
-  width: 100%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
-}
 
+  .text-foto3 h2 {
+    text-align: left;
+    font-family: 'Calibri';
+      font-size: 20px; /* Размер заголовка */
+      line-height: 1;
+      margin-bottom: 10px; /* Расстояние между заголовком и абзацами */
+  }
 
-@media screen and (max-width: 770px) {
-  .caption-slide2 {
-    /* Ваши стили для текста на втором слайде */
-    margin: 70px;
-    font-family: "Arial", sans-serif;
-    color: black; /* Цвет текста */
-    position: absolute;
-    top: 18%;
-    left: 40%;
-    font-weight: 6000px;
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    letter-spacing: 1px;
-    line-height: 1.55;
-        text-align: left;
-  }
-  .caption-slide2 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 16px;
-      letter-spacing: 1px;
-  line-height: 1.65;
-  width: 100%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
-}
-
-@media screen and (max-width: 727px) {
-  .caption-slide2 {
-    /* Ваши стили для текста на втором слайде */
-    margin: 70px;
-    font-family: "Arial", sans-serif;
-    color: black; /* Цвет текста */
-    position: absolute;
-    top: 18%;
-    left: 40%;
-    font-weight: 6000px;
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    letter-spacing: 1px;
-    line-height: 1.55;
-        text-align: left;
-  }
-  .caption-slide2 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 15px;
-      letter-spacing: 1px;
-  line-height: 1.65;
-  width: 100%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
-}
-
-@media screen and (max-width: 625px) {
-  .caption-slide2 {
-    /* Ваши стили для текста на втором слайде */
-    margin: 70px;
-    font-family: "Arial", sans-serif;
-    position: absolute;
-    top: 18%;
-    left: 35%;
-    font-weight: 6000px;
-    color: black; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    letter-spacing: 1px;
-    line-height: 1.55;
-        text-align: left;
-  }
-  .caption-slide2 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 15px;
-      letter-spacing: 1px;
-  line-height: 1.65;
-  width: 110%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
-}
-
-@media screen and (max-width: 572px) {
-  .caption-slide2 {
-    /* Ваши стили для текста на втором слайде */
-    margin: 70px;
-    font-family: "Arial", sans-serif;
-    position: absolute;
-    top: 18%;
-    left: 33%;
-    font-weight: 6000px;
-    color: black; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    letter-spacing: 1px;
-    line-height: 1.55;
-        text-align: left;
-  }
-  .caption-slide2 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 15px;
-      letter-spacing: 1px;
-  line-height: 1.65;
-  width: 120%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
-}
-
-
-@media screen and (max-width: 552px) {
-
-  .caption-slide2 {
-    /* Ваши стили для текста на втором слайде */
-    margin: 70px;
-    font-family: "Arial", sans-serif;
-    position: absolute;
-    top: 18%;
-    left: 30%;
-    font-weight: 6000px;
-    color: black; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    letter-spacing: 1px;
-    line-height: 1.55;
-        text-align: left;
-  }
-  .caption-slide2 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 15px;
-      letter-spacing: 1px;
-  line-height: 1.55;
-  width: 120%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
-}
-
-@media screen and (max-width: 530px) {
-
-  .caption-slide2 {
-    /* Ваши стили для текста на втором слайде */
-    margin: 70px;
-    font-family: "Arial", sans-serif;
-    position: absolute;
-    top: 18%;
-    left: 30%;
-    font-weight: 6000px;
-    color: black; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    letter-spacing: 1px;
-    line-height: 1.35;
-        text-align: left;
-  }
-  .caption-slide2 h5{      font-size: 15px;
-}
-  .caption-slide2 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 14px;
-      letter-spacing: 1px;
-  line-height: 1.35;
-  width: 120%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
-}
-
-@media screen and (max-width: 460px) {
-
-    .caption-slide2 {
-      /* Ваши стили для текста на втором слайде */
-      margin: 70px;
-      font-family: "Arial", sans-serif;
-      position: absolute;
-      top: 18%;
-      left: 30%;
-      font-weight: 6000px;
-      color: black; /* Цвет текста */
-      font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-      letter-spacing: 1px;
-      line-height: 1.35;
-          text-align: left;
-    }
-    .caption-slide2 h5{      font-size: 15px;
-  }
-    .caption-slide2 p{font-weight: 600px;
-      font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-        font-size: 14px;
-        letter-spacing: 1px;
-    line-height: 1.35;
-    width: 120%; /* Ширина текста */
+  .text-foto3 p {
+        letter-spacing: 1.1px;
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 18px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1;
+      width: 110%; /* Ширина текста */
   word-wrap: break-word; /* Перенос слов */
   overflow-wrap: break-word; /* Современный вариант переноса слов */
-    }
+  }
 }
 
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 320px) {
 
-    .caption-slide2 {
-      /* Ваши стили для текста на втором слайде */
-      margin: 70px;
-      font-family: "Arial", sans-serif;
-      position: absolute;
-      top: 18%;
-      left: 30%;
-      font-weight: 6000px;
-      color: black; /* Цвет текста */
-      font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-      letter-spacing: 1px;
-      line-height: 1.35;
-          text-align: left;
-    }
-    .caption-slide2 h5{      font-size: 15px;
+  .image-foto3 {
+      display: block;
+  object-position: center 40%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
   }
-    .caption-slide2 p{font-weight: 600px;
-      font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-        font-size: 14px;
-        letter-spacing: 1px;
-    line-height: 1.35;
-    width: 120%; /* Ширина текста */
+
+  .text-foto3 {
+      position: absolute;
+      top: 50%;
+      left: 37%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 10px;
+  }
+
+  .text-foto3 h2 {
+    text-align: left;
+    font-family: 'Calibri';
+      font-size: 19px; /* Размер заголовка */
+      line-height: 1;
+      margin-bottom: 10px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto3 p {
+        letter-spacing: 1.1px;
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 17px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1;
+      width: 110%; /* Ширина текста */
   word-wrap: break-word; /* Перенос слов */
   overflow-wrap: break-word; /* Современный вариант переноса слов */
-    }
+  }
 }
 
-@media screen and (max-width: 417px) {
+@media screen and (max-width: 280px) {
 
-  .caption-slide2 {
-    /* Ваши стили для текста на втором слайде */
-    margin: 70px;
-    font-family: "Arial", sans-serif;
-    color: black; /* Цвет текста */
+  .image-foto3 {
+      display: block;
+  object-position: center 40%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto3 {
+      position: absolute;
+      top: 50%;
+      left: 37%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 10px;
+  }
+
+  .text-foto3 h2 {
+    text-align: left;
+    font-family: 'Calibri';
+      font-size: 18px; /* Размер заголовка */
+      line-height: 1;
+      margin-bottom: 10px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto3 p {
+        letter-spacing: 1.1px;
+    text-align:left;
+  font-family: 'Garamond';
+      font-size: 16px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1;
+      width: 110%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 1131px) {
+
+.image-foto4 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto4 {
     position: absolute;
-    top: 18%;
-    left: 25%;
-    font-weight: 6000px;
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    letter-spacing: 1px;
-    line-height: 1.55;
-        text-align: left;
-  }
-  .caption-slide2 h5{      font-size: 14px;
-  }
-  .caption-slide2 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 14px;
-      letter-spacing: 1px;
-  line-height: 1.3;
-  width: 130%; /* Ширина текста */
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto4 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 32px; /* Размер заголовка */
+    line-height: 1.8;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto4 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 28px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.3;
+    width: 115%; /* Ширина текста */
 word-wrap: break-word; /* Перенос слов */
 overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
+}
 }
 
-@media screen and (max-width: 397px) {
 
-  .caption-slide2 {
-    /* Ваши стили для текста на втором слайде */
-    margin: 70px;
-    font-family: "Arial", sans-serif;
-    color: black; /* Цвет текста */
+
+
+@media screen and (max-width: 1050px) {
+
+.image-foto4 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto4 {
     position: absolute;
-    top: 18%;
-    left: 23%;
-    font-weight: 6000px;
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    letter-spacing: 1px;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto4 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 31px; /* Размер заголовка */
+    line-height: 1.7;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto4 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 27px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.3;
+    width: 115%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+@media screen and (max-width: 950px) {
+
+.image-foto4 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto4 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto4 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 30px; /* Размер заголовка */
     line-height: 1.5;
-        text-align: left;
-  }
-  .caption-slide2 h5{      font-size: 14px;
-  }
-  .caption-slide2 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 14px;
-      letter-spacing: 1px;
-  line-height: 1.2;
-  width: 130%; /* Ширина текста */
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto4 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 25px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.2;
+    width: 115%; /* Ширина текста */
 word-wrap: break-word; /* Перенос слов */
 overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
 }
-@media screen and (max-width: 352px) {
+}
 
-  .caption-slide2 {
-    /* Ваши стили для текста на втором слайде */
-    margin: 70px;
-    font-family: "Arial", sans-serif;
-    color: black; /* Цвет текста */
+@media screen and (max-width: 730px) {
+
+.image-foto4 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto4 {
     position: absolute;
-    top: 18%;
-    left: 20%;
-    font-weight: 6000px;
-     /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    letter-spacing: 1px;
-    line-height: 1.5;
-        text-align: left;
-  }  .caption-slide2 h5{      font-size: 14px;
-    }
-  .caption-slide2 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 13px;
-      letter-spacing: 1px;
-  line-height: 1.2;
-  width: 132%; /* Ширина текста */
-word-wrap: break-word; /* Перенос слов */
-overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-@media screen and (max-width: 331px) {
+.text-foto4 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 29px; /* Размер заголовка */
+    line-height: 1.4;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
 
-  .caption-slide2 {
-    /* Ваши стили для текста на втором слайде */
-    margin: 70px;
-    font-family: "Arial", sans-serif;
-    color: black; /* Цвет текста */
+.text-foto4 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 24px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.1;
+    width: 115%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+@media screen and (max-width: 630px) {
+
+.image-foto4 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto4 {
     position: absolute;
-    top: 18%;
-    left: 19%;
-    font-weight: 6000px;
-    font-family: 'Arial', sans-serif; /* Установка красивого и современного шрифта */
-    letter-spacing: 1px;
-    line-height: 1.5;
-        text-align: left;
-  }
-  .caption-slide2 h5{      font-size: 14px;
-    }
-  .caption-slide2 p{font-weight: 600px;
-    font-family: 'Garamond', sans-serif; /* Установка красивого и современного шрифта */
-      font-size: 13px;
-      letter-spacing: 1px;
-  line-height: 1.21;
-  width: 134%; /* Ширина текста */
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto4 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 26px; /* Размер заголовка */
+    line-height: 1.3;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto4 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 22px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.1;
+    width: 115%; /* Ширина текста */
 word-wrap: break-word; /* Перенос слов */
 overflow-wrap: break-word; /* Современный вариант переноса слов */
-  }
+}
+}
+
+@media screen and (max-width: 549px) {
+
+.image-foto4 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto4 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto4 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 24px; /* Размер заголовка */
+    line-height: 1.2;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto4 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 20px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.1;
+    width: 115%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+@media screen and (max-width: 508px) {
+
+.image-foto4 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto4 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto4 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 22px; /* Размер заголовка */
+    line-height: 1.1;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+    width: 115%; /* Ширина текста */
+
+}
+
+.text-foto4 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 20px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.1;
+    width: 115%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
 }
 
 
+@media screen and (max-width: 400px) {
+
+.image-foto4 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
 }
+
+.text-foto4 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto4 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 20px; /* Размер заголовка */
+    line-height: 1.1;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+    width: 115%; /* Ширина текста */
+
+}
+
+.text-foto4 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 18px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.1;
+    width: 115%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1131px) {
+
+.image-foto5 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto5 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto5 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 30px; /* Размер заголовка */
+    line-height: 1.7;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto5 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 27px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.3;
+    width: 110%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+
+@media screen and (max-width: 1050px) {
+
+.image-foto5 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto5 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto5 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 28px; /* Размер заголовка */
+    line-height: 1.6;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+width: 115%;
+}
+
+.text-foto5 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 26px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.2;
+    width: 110%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+
+@media screen and (max-width: 900px) {
+
+.image-foto5 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto5 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto5 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 27px; /* Размер заголовка */
+    line-height: 1.5;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+width: 115%;
+}
+
+.text-foto5 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 23.5px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.2;
+    width: 110%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
 
 
 @media screen and (max-width: 750px) {
-    .carousel-caption h5 {
-        font-size: 17px;
-        line-height: 1.5;
-    }
 
-    .carousel-caption {
-        font-size: 19px;
-        line-height: 1.5;
-        width: 80%; /* Ширина текста */
-   word-wrap: break-word; /* Перенос слов */
-   overflow-wrap: break-word; /* Современный вариант переноса слов */
-    }
+.image-foto5 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto5 {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto5 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 26px; /* Размер заголовка */
+    line-height: 1.5;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+width: 115%;
+}
+
+.text-foto5 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 23px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.2;
+    width: 110%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+@media screen and (max-width: 590px) {
+
+.image-foto5 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto5 {
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto5 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 25px; /* Размер заголовка */
+    line-height: 1.3;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+width: 115%;
+}
+
+.text-foto5 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 21px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.2;
+    width: 110%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+@media screen and (max-width: 500px) {
+
+.image-foto5 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto5 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 20px; /* Размер заголовка */
+    line-height: 1.3;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+width: 115%;
+}
+
+.text-foto5 p {
+      letter-spacing: 0.9px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 20px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.2;
+    width: 110%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+@media screen and (max-width: 450px) {
+
+.image-foto5 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto5 {
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto5 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 19px; /* Размер заголовка */
+    line-height: 1.3;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto5 p {
+      letter-spacing: 0.9px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 19px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.2;
+    width: 100%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+@media screen and (max-width: 415px) {
+
+.image-foto5 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 80%; /* Ширина текста */
+
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+
+.text-foto5 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 19px; /* Размер заголовка */
+    line-height: 1.2;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto5 p {
+      letter-spacing: 0.9px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 18px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.1;
+    width: 110%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+@media screen and (max-width: 370px) {
+
+.image-foto5 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto5 {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 80%; /* Ширина текста */
+
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+
+.text-foto5 h2 {
+
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 18px; /* Размер заголовка */
+    line-height: 1.1;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto5 p {
+      letter-spacing: 0.9px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 18px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1;
+    width: 110%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+@media screen and (max-width: 285px) {
+
+.image-foto5 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto5 {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 80%; /* Ширина текста */
+
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+
+.text-foto5 h2 {
+
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 18px; /* Размер заголовка */
+    line-height: 1.1;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto5 p {
+      letter-spacing: 0.9px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 17px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1;
+    width: 110%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
 }
 
 
 
-@media screen and (max-width: 680px) {
-    .carousel-caption h5 {
-        font-size: 19px;
-        line-height: 1.5;
-    }
+@media screen and (max-width: 250px) {
 
-    .carousel-caption {
-        font-size: 19px;
-        line-height: 1.5;
-        width: 80%; /* Ширина текста */
-   word-wrap: break-word; /* Перенос слов */
-   overflow-wrap: break-word; /* Современный вариант переноса слов */
-    }
+.image-foto5 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
 }
 
-@media screen and (max-width: 616px) {
-    .carousel-caption h5 {
-        font-size: 19px;
-        line-height: 1.5;
-    }
+.text-foto5 {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 80%; /* Ширина текста */
 
-    .carousel-caption {
-        font-size: 18px;
-        line-height: 1.5;
-        width: 80%; /* Ширина текста */
-   word-wrap: break-word; /* Перенос слов */
-   overflow-wrap: break-word; /* Современный вариант переноса слов */
-    }
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
 }
 
-@media screen and (max-width: 517px) {
-    .carousel-caption h5 {
-        font-size: 18px;
-        line-height: 1.5;
-    }
+.text-foto5 h2 {
 
-    .carousel-caption {
-        font-size: 18px;
-        line-height: 1.5;
-    }
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 17px; /* Размер заголовка */
+    line-height: 1;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
 }
 
-@media screen and (max-width: 453px) {
-    .carousel-caption h5 {
-        font-size: 17px;
-        line-height: 1.5;
-    }
+.text-foto5 p {
+      letter-spacing: 0.9px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 16px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1;
+    width: 110%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
 
-    .carousel-caption {
-        font-size: 16px;
-        line-height: 1.5;
-        width: 80%; /* Ширина текста */
-   word-wrap: break-word; /* Перенос слов */
-   overflow-wrap: break-word; /* Современный вариант переноса слов */
-    }
+@media screen and (max-width: 220px) {
+
+.image-foto5 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto5 {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 80%; /* Ширина текста */
+
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+
+.text-foto5 h2 {
+
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 16px; /* Размер заголовка */
+    line-height: 1;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto5 p {
+      letter-spacing: 0.9px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 15px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1;
+    width: 110%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+}
+
+@media screen and (max-width: 200px) {
+
+.image-foto5 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto5 {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 80%; /* Ширина текста */
+    word-wrap: break-word; /* Перенос слов */
+    overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
+
+.text-foto5 h2 {
+
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 15px; /* Размер заголовка */
+    line-height: 1;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto5 p {
+      letter-spacing: 0.9px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 14px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1;
+    width: 110%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}
 }
 
 
-@media screen and (max-width: 430px) {
-    .carousel-caption h5 {
-        font-size: 17px;
-        line-height: 1.5;
-    }
 
-    .carousel-caption {
-        font-size: 16px;
-        line-height: 1.5;
-        width: 80%; /* Ширина текста */
-   word-wrap: break-word; /* Перенос слов */
-   overflow-wrap: break-word; /* Современный вариант переноса слов */
-    }
+
+
+
+
+
+
+@media screen and (max-width: 1145px) {
+
+.image-foto6 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
 }
 
-@media screen and (max-width: 375px) {
-    .carousel-caption h5 {
-        font-size: 16px;
-        line-height: 1.5;
-    }
-
-    .carousel-caption {
-        font-size: 16px;
-        line-height: 1.5;
-        width: 80%; /* Ширина текста */
-   word-wrap: break-word; /* Перенос слов */
-   overflow-wrap: break-word; /* Современный вариант переноса слов */
-    }
+.text-foto6 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
-@media screen and (max-width: 310px) {
-    .carousel-caption h5 {
-        font-size: 15px;
-        line-height: 1.5;
-    }
 
-    .carousel-caption {
-        font-size: 15px;
-        line-height: 1.5;
-        width: 80%; /* Ширина текста */
-   word-wrap: break-word; /* Перенос слов */
-   overflow-wrap: break-word; /* Современный вариант переноса слов */
-    }
+.text-foto6 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 31px; /* Размер заголовка */
+    line-height: 1.4;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
 }
+
+.text-foto6 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 28px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.3;
+    width: 105%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}}
+
+
+@media screen and (max-width: 960px) {
+
+.image-foto6 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto6 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto6 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 30px; /* Размер заголовка */
+    line-height: 1.3;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto6 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 27px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.2;
+    width: 115%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}}
+
+
+
+
+@media screen and (max-width: 730px) {
+
+.image-foto6 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto6 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto6 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 28px; /* Размер заголовка */
+    line-height: 1.3;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto6 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 25px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.2;
+    width: 115%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}}
+
+@media screen and (max-width: 670px) {
+
+.image-foto6 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto6 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto6 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 27px; /* Размер заголовка */
+    line-height: 1.3;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto6 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 24px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.1;
+    width: 115%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}}
+
+@media screen and (max-width: 590px) {
+
+.image-foto6 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto6 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto6 h2 {
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 25px; /* Размер заголовка */
+    line-height: 1.2;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto6 p {
+      letter-spacing: 1.1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 23px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.1;
+    width: 115%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}}
+
+
+@media screen and (max-width: 505px) {
+
+.image-foto6 {
+    display: block;
+object-position: center 40%;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto6 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto6 h2 {    width: 120%;
+
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 24px; /* Размер заголовка */
+    line-height: 1.2;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto6 p {
+      letter-spacing: 1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 21px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.1;
+    width: 115%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}}
+
+
+@media screen and (max-width: 460px) {
+
+.image-foto6 {
+    display: block;
+object-position: center ;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto6 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto6 h2 {    width: 120%;
+
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 23px; /* Размер заголовка */
+    line-height: 1.2;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto6 p {
+      letter-spacing: 1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 20px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.1;
+    width: 115%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}}
+
+
+@media screen and (max-width: 340px) {
+
+.image-foto6 {
+    display: block;
+object-position: center ;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto6 {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto6 h2 {    width: 120%;
+
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 22px; /* Размер заголовка */
+    line-height: 1.2;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto6 p {
+      letter-spacing: 1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 19px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.1;
+    width: 115%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}}
+
+@media screen and (max-width: 270px) {
+
+.image-foto6 {
+    display: block;
+object-position: center ;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto6 {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto6 h2 {    width: 110%;
+
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 20px; /* Размер заголовка */
+    line-height: 1.2;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto6 p {
+      letter-spacing: 1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 19px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1.1;
+    width: 105%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}}
+
+
+@media screen and (max-width: 230px) {
+
+.image-foto6 {
+    display: block;
+object-position: center ;
+    width: 100%;
+    height: 1100px; /* Измените высоту по вашему усмотрению */
+    object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+}
+
+.text-foto6 {
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-foto6 h2 {    width: 110%;
+
+  text-align: left;
+  font-family: 'Calibri';
+    font-size: 19px; /* Размер заголовка */
+    line-height: 1.2;
+    margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+}
+
+.text-foto6 p {
+      letter-spacing: 1px;
+  text-align:left;
+font-family: 'Garamond';
+    font-size: 17px; /* Размер абзаца */
+    margin-bottom: 10px; /* Расстояние между абзацами */
+    line-height: 1;
+    width: 110%; /* Ширина текста */
+word-wrap: break-word; /* Перенос слов */
+overflow-wrap: break-word; /* Современный вариант переноса слов */
+}}
 
 
 @media screen and (max-width: 1010px) {
@@ -4331,6 +4744,13 @@ overflow-wrap: break-word; /* Современный вариант перено
       border-radius: 8px; /* Радиус скругления углов кнопки */
       margin-top: 30px; /* Отступ сверху */
   }
+
+
+
+
+
+
+
 
   #nomer {
     font-family: 'Arial';
@@ -4373,14 +4793,16 @@ font-weight: 600px;
     }
   }
 
+  .section-foto {
+      opacity: 0;
+      transform: translateY(100px);
+      transition: opacity 0.5s ease, transform 2s ease;
+  }
 
-
-
-
-
-
-
-
+  .section-foto.show {
+      opacity: 1;
+      transform: translateY(0);
+  }
     footer {
       background-color: #141312;
       padding: 20px;
@@ -4399,7 +4821,7 @@ font-weight: 600px;
   height: auto;
 }
 
-.menu-fot{margin-right: 40px;
+.menu-fot{margin-right: 0px;
 }
 
     nav.menu-nav {
