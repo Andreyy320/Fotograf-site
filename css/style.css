@@ -2062,7 +2062,7 @@ overflow-wrap: break-word; /* Современный вариант перено
 
 .image-foto6 {
     display: block;
-object-position: center 40%;
+object-position: center 20%;
     width: 100%;
     height: 1100px; /* Измените высоту по вашему усмотрению */
     object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
