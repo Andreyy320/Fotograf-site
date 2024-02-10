@@ -2851,6 +2851,49 @@ overflow-wrap: break-word; /* Современный вариант перено
 
 }
 
+@media screen and (max-width: 450px) {
+
+  .image-foto2 {
+      display: block;
+  object-position: center 25%;
+      width: 100%;
+      height: 1100px; /* Измените высоту по вашему усмотрению */
+      object-fit: cover; /* Это позволит изображению заполнить контейнер без искажения */
+  }
+
+  .text-foto2 {
+    color:black;
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-foto2 h2 {
+
+
+    font-family: 'Calibri';
+      font-size: 19px; /* Размер заголовка */
+      line-height: 1;
+      margin-bottom: 20px; /* Расстояние между заголовком и абзацами */
+  }
+
+  .text-foto2 p {
+    text-align:center;
+  font-family: 'Garamond';
+      font-size: 19px; /* Размер абзаца */
+      margin-bottom: 10px; /* Расстояние между абзацами */
+      line-height: 1.07;
+      width: 135%; /* Ширина текста */
+  word-wrap: break-word; /* Перенос слов */
+  overflow-wrap: break-word; /* Современный вариант переноса слов */
+  }
+
+}
+
+
 @media screen and (max-width: 385px) {
 
   .image-foto2 {
