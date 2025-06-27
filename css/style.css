@@ -5849,3 +5849,11 @@ color:#d1cdcd;
     opacity: 1;
     transform: translateY(0);
 }
+
+.with-check::before,
+.with-check2::before,
+.with-check3::before {
+  content: "✔";
+  color: #d9534f; /* твой оранжевый цвет */
+  margin-right: 8px;
+}
