@@ -374,7 +374,7 @@ padding: 50px;}
     position: relative;
     padding-left: 25px;
     font-size: 18px;
-    color: #404248;
+    color: #d9534f;
     line-height: 1.5;
 }
 
@@ -392,7 +392,7 @@ padding: 50px;}
     position: relative;
     padding-left: 25px;
     font-size: 18px;
-    color: #404248;
+    color: #d9534f;
     line-height: 1.5;
 }
 
@@ -409,7 +409,7 @@ padding: 50px;}
     position: relative;
     padding-left: 25px;
     font-size: 18px;
-    color: #404248;
+    color: #d9534f;
     line-height: 1.5;
 }
 
@@ -5854,6 +5854,6 @@ color:#d1cdcd;
 .with-check2::before,
 .with-check3::before {
   content: "✔";
-  color: #d9534f; /* твой оранжевый цвет */
+  color: #d9534f !important; /* твой оранжевый цвет */
   margin-right: 8px;
 }
