@@ -161,7 +161,7 @@ font-size: 18px;}
   .portfolio-section {
       padding-top: 50px; /* Увеличиваем верхний отступ блока "Портфолио" */
   }
-
+ 
   .album {
       margin-top: 70px; /* Увеличиваем отступ между заголовком и фотографиями */
   }
@@ -176,6 +176,8 @@ font-size: 18px;}
           float: none; /* Отменяем плавающее выравнивание */
       }
   }
+
+ 
 
 @media screen and (max-width: 992px) {
   *{
@@ -255,8 +257,27 @@ font-size: 18px;}
 }
 
 
+.butn-portfolio {
+    background-color: transparent; /* Прозрачный фон */
+    border: 2px solid #807f7c; /* Черная полоса по контуру */
+    color: #141312; /* Черный цвет текста */
+    padding: 26px 48px; /* Отступы вокруг текста */
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    display: inline-block; /* Элемент ведет себя как блочный элемент, но сохраняет размеры строчного элемента */
+    font-size: 20px; /* Размер текста кнопки */
+    cursor: pointer; /* Курсор при наведении на кнопку */
+    border-radius: 15px; /* Радиус скругления углов кнопки */
+    margin-top: 30px; /* Отступ сверху */
+    margin-left: 55px;
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход цвета */
+}
 
-
+.butn-portfolio:hover {
+    background-color: #d9534f; /* Цвет фона при наведении */
+    border-color: #d9534f;
+    color: rgb(255, 255, 255); /* Цвет текста при наведении */
+}
 
 
 .btn-details,
@@ -325,7 +346,6 @@ padding: 50px;}
 .VneOcheredi{margin: 50px;}
 
 
-
 .tariff p {
     margin-top: 10px;
     font-weight: bold;
@@ -344,20 +364,80 @@ padding: 50px;}
 
 .tariff h3 {
     font-size: 32px;
-    font-family: 'ex';
+   font-family: 'Lora', serif;
     color:#121212;
     margin-bottom: 10px;
 }
 
 
+.with-check {
+    position: relative;
+    padding-left: 25px;
+    font-size: 18px;
+    color: #404248;
+    line-height: 1.5;
+}
+
+.with-check::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 10%;
+    transform: translateY(-30%); /* Смещаем ниже линии */
+    color: #d9534f;
+    font-size: 18px;
+}
+
+.with-check2 {
+    position: relative;
+    padding-left: 25px;
+    font-size: 18px;
+    color: #404248;
+    line-height: 1.5;
+}
+
+.with-check2::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 15%;
+    color: #d9534f;
+    font-size: 18px;
+}
+
+.with-check3 {
+    position: relative;
+    padding-left: 25px;
+    font-size: 18px;
+    color: #404248;
+    line-height: 1.5;
+}
+
+.with-check3::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 15%;
+    color: #d9534f;
+    font-size: 18px;
+}
+
+
 .tariff p {
-    font-size: 23px;
+    font-size: 22px;
     font-family: 'Garamond';/* Используем шрифт Montserrat с заменой на sans-serif в качестве альтернативы */
 color:#404248;
     margin-bottom: 10px;
 }
 
-
+.tariff h1.prise {
+   font-family: 'Lora', serif;   
+    font-size: 26px ;  /* !important чтобы точно перебить */
+    color: #d9534f ;   /* нужный цвет */
+    font-weight: 700 ; /* жирный */
+    margin-bottom: 15px ;
+    text-align: center;
+}
 
 .tariff {
   border: none; /* Удаляем контур */
@@ -371,6 +451,9 @@ color:#404248;
     float: right; /* Выравнивание по правому краю */
     width: 50%; /* Ширина блока - половина контейнера */
 }
+
+
+
 
 .tariff-column {
     flex: 1;
@@ -400,15 +483,16 @@ color:#404248;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 55px;
   margin-top: 30px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 
 .btn-subscribe:hover {
-  background-color: #121212; /* Цвет фона при наведении */
-  color: #504F52; /* Цвет текста при наведении */
+  background-color: #d9534f; /* Цвет фона при наведении */
+  color: #ffffff; /* Цвет текста при наведении */
+   border: 2px solid #d9534f;
 }
 
 .top-image { width: 100%; }
@@ -473,9 +557,24 @@ color:#BABABA;
 font-size: 21px;
 }
 
+@media screen and (max-width: 925px) {
 
+  .tariffs-carousel {
+        display: flex;
+        flex-direction: column;
+        overflow-x: visible; /* Сбрасываем горизонтальный скролл */
+        scroll-snap-type: none;
+        -webkit-overflow-scrolling: auto;
+        scroll-behavior: auto;
+        gap: 20px; /* расстояние между тарифами */
+        padding: 10px;
+    }
 
+    .tariff {
+        width: 100%;
+    }
 
+}
 
 @media screen and (max-width: 907px) {
     .left-tariff,
@@ -500,6 +599,27 @@ font-size: 21px;
 }
 
 
+@media screen and (max-width: 742px) {
+
+  .tariffs-carousel {
+        display: flex;
+        flex-direction: column;
+        overflow-x: visible; /* Сбрасываем горизонтальный скролл */
+        scroll-snap-type: none;
+        -webkit-overflow-scrolling: auto;
+        scroll-behavior: auto;
+        gap: 20px; /* расстояние между тарифами */
+        padding: 10px;
+    }
+
+    .tariff {
+        width: 100%;
+    }
+
+}
+
+
+
 @media screen and (max-width: 567px) {
 
   .tariff h3 {
@@ -520,8 +640,23 @@ font-size: 21px;
   }
 
     .portfolio-section {
-        padding-top: 200px; /* Добавляем верхний отступ */
-        padding-bottom: 2250px; /* Добавляем нижний отступ */
+        padding-top: 95px; /* Добавляем верхний отступ */
+        padding-bottom: 70px; /* Добавляем нижний отступ */
+    }
+
+    .tariffs-carousel {
+        display: flex;
+        flex-direction: column;
+        overflow-x: visible; /* Сбрасываем горизонтальный скролл */
+        scroll-snap-type: none;
+        -webkit-overflow-scrolling: auto;
+        scroll-behavior: auto;
+        gap: 20px; /* расстояние между тарифами */
+        padding: 10px;
+    }
+
+    .tariff {
+        width: 100%;
     }
 }
 
@@ -684,6 +819,9 @@ width: 200px;
 }
 
 
+
+
+
 .about-us, .tariffs {
     width: 100%;
     padding: 50px 0; /* Примерный отступ для каждой секции */
@@ -777,14 +915,28 @@ margin: 8px 0;}
 }
 
 
-
+.tariffs-carousel {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  gap: 20px; /* Промежуток между карточками */
+  padding: 10px;
+}
 
 
 .tariff {
-    opacity: 0;
-    transition: opacity 0.5s ease, transform 1.2s ease;
+  flex: 0 %; /* Чтобы на экране оставался небольшой отступ по бокам */
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Центрируем карточку */
 }
-
 .left-tariff {
     transform: translateX(-700px);
 }
@@ -821,6 +973,19 @@ margin: 8px 0;}
 
 
 
+@media screen and (max-width: 924px) {
+
+.tariffs-carousel {
+        display: flex;
+        flex-direction: column;
+        overflow-x: visible; /* Сбрасываем горизонтальный скролл */
+        scroll-snap-type: none;
+        -webkit-overflow-scrolling: auto;
+        scroll-behavior: auto;
+        gap: 45px; /* расстояние между тарифами */
+        padding: 10px;
+    }
+  }
 
 @media screen and (max-width: 768px) {
   .container-row{
@@ -1502,6 +1667,72 @@ right: 40px;
 }
 
 
+.background-image-container {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  height: 840px; /* Высоту можно менять */
+  margin: 0 auto;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Чтобы картинка полностью покрывала контейнер */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px; /* отступ сверху, чтобы кнопка не прилипала */
+}
+
+@media screen and (max-width: 690px) {
+  .background-image-container {
+    position: relative;
+    max-width: 555px;      /* максимум 400px, чтобы не было слишком широко */
+    height: 735px;         /* фиксированная высота для пропорций */
+    margin: 0 auto;        /* центрируем по горизонтали */
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .background-image-container {
+    position: relative;
+    
+    max-width: 555px;      /* максимум 400px, чтобы не было слишком широко */
+    height: 735px;         /* фиксированная высота для пропорций */
+    margin: 0 auto;        /* центрируем по горизонтали */
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .butn-portfolio {
+    background-color: transparent;
+    border: 2px solid #807f7c;
+    color: #141312;
+    padding: 26px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+    .tariff {
+        width: 100%;
+    }
+}
 @media screen and (max-width: 320px) {
 
 header nav ul {
@@ -4939,6 +5170,44 @@ color:#d1cdcd;
   font-size: 20px;
     }
 
+@media screen and (max-width: 1928px) {
+
+          .brand {
+              margin-right: 380px; /* Отступ между логотипом и меню */
+          }
+          .brand img {
+            margin-left: 330px; /* Отступ между логотипом и меню */
+        width: 300px;
+        height: auto;
+        }
+
+
+        .menu-fot{margin-right: 10px;
+        }
+
+        footer  h2{padding-top: 10px;
+          color:#d1cdcd;
+          font-family: 'Garamond';
+        margin-bottom: 20px;
+          font-size: 26px;
+        line-height: 0.5;}
+
+            .menu-fot {
+                text-decoration: none;
+        color:#d1cdcd;
+          font-family: 'Garamond';
+          font-size: 19px;
+            }
+
+            .menu-fot li,
+            .additional-menu li {
+                margin-bottom: 10px;
+                line-height: 1.5;
+            }
+          .menu-fot li{line-height: 1.5;}
+
+
+    }
 
 
 
@@ -5512,6 +5781,10 @@ color:#d1cdcd;
 
 }
 
+
+
+
+
 @media screen and (max-width: 275px) {
   .brand {
       margin-right: -200px; /* Отступ между логотипом и меню */
@@ -5547,10 +5820,32 @@ color:#d1cdcd;
 
 }
 
+.tariff {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.7s ease;
+}
+
+.tariff.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
-.social-icons img {
-    width: 50px; /* Ширина иконок */
-    height: 50px; /* Высота иконок */
-    margin-right: 20px;
+
+.background-image-container,
+.button-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+
+.background-image-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.button-container.visible {
+    opacity: 1;
+    transform: translateY(0);
 }

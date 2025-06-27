@@ -1,13 +1,17 @@
-$(document).ready(function() {
-    $(window).scroll(function() {
-        $('.tariff').each(function() {
-            var position = $(this).offset().top;
-            var scrollPosition = $(window).scrollTop();
-            var windowHeight = $(window).height();
+document.addEventListener('DOMContentLoaded', function() {
+    const tariffs = document.querySelectorAll('.tariff');
 
-            if (position < scrollPosition + windowHeight - 100) {
-                $(this).addClass('visible');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
             }
         });
+    }, {
+        threshold: 0.1
+    });
+
+    tariffs.forEach(tariff => {
+        observer.observe(tariff);
     });
 });
