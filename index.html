@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
 
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="img/logotip/camera.png" type="image/png">
     <title>Фотограф ПМР Татьяна Мартыненко</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap&subset=cyrillic" rel="stylesheet">
-    <!-- подключаем внешнюю таблицу стилей -->
-
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- Подключение Animate.css -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  
-
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
@@ -24,392 +24,451 @@
     <script src="js/tarf.js"></script>
     <script src="js/gift.js"></script>
     <script src="js/fotografi.js"></script>
-      <script src="js/portfolio.js"></script>
-    </script>
+    <script src="js/portfolio.js"></script>
   </head>
-
-
 
   <body>
 
-    <header>
-      <div class="cont">
+    <header class="site-header">
+      <div class="cont header-navigation">
           <section class="zagolovok" id="zagolovok" style="background-image: url('img/logotip/Fotohea.jpg');">
             <div class="logo-container">
                <img src="img/logotip/noroot.png" alt="Логотип" class="logot">
             </div>
-              <nav id="myTopnav">
+              <nav id="myTopnav" class="nav-holder">
                   <div id="hamburger" class="icon">&#9776;</div>
                   <ul class="menu">
                       <li><a href="#Portfolio" class="menu-element" data-link="portfolio" title="Портфолио">Портфолио</a></li>
                       <li><a href="#tariffs-section" class="menu-element" data-link="services" title="Тарифы">Тарифы</a></li>
-                      <li class="logo"><img src="img/logotip/noroot.png" alt="Логотип"></li>
                       <li><a href="https://www.instagram.com/tanyamartynenko.foto/" class="menu-element" data-link="contact" title="Студия">Студия</a></li>
                       <li><a href="#fooot" class="menu-element" data-link="contact" title="Контакты">Контакты</a></li>
-                      <li><a href="https://www.instagram.com/tanyamartynenko.foto/" class="menu-element" title="Записаться">Записаться</a></li>
+                      <li><a href="https://www.instagram.com/tanyamartynenko.foto/" class="menu-element modern-btn-cta" title="Записаться">Записаться</a></li>
                   </ul>
               </nav>
           </section>
       </div>
-  </header>
+    </header>
 
-
-      <section class="about-us"id="obomne">
-      <div class="about-container">
-        <h1 class="main-title">Татьяна Мартыненко-фотограф ПМР и Молдовы</h1>
-        <div class="delimiter"></div>
-        <div class="about-row">
-          <div class="about-column">
-            <div class="content-left">
-              <img src="img/logotip/foto1.jpg" alt="О нас">
+    <section class="about-us modern-section" id="obomne">
+  <div class="about-container section-wrapper">
+    <h1 class="main-title premium-heading">Татьяна Мартыненко-фотограф ПМР и Молдовы</h1>
+    <div class="delimiter luxury-line"></div>
+    
+    <div class="about-row modern-grid-2">
+      <!-- БЛОК С ИНТЕРАКТИВНЫМ СЛАЙДЕРОМ ДО/ПОСЛЕ -->
+      <div class="about-column img-premium-block">
+        <div class="content-left">
+          
+          <div class="modern-before-after premium-round-img">
+            <div class="bal-container">
+              
+              <!-- Фото ПОСЛЕ (Итоговая журнальная ретушь) -->
+              <div class="bal-after">
+                <img src="img/logotip/foto-posle.jfif"  class="img-after" alt="После ретуши">
+                <span class="bal-label label-after">После</span>
+              </div>
+              
+              <!-- Фото ДО (Исходный кадр без обработки) -->
+              <div class="bal-before">
+                <div class="bal-before-inset">
+                  <img src="img/logotip/foto-do.jfif" class="img-before" alt="До ретуши">
+                  <span class="bal-label label-before">До</span>
+                </div>
+              </div>
+              
+              <!-- Ползунок управления -->
+              <div class="bal-handle">
+                <span class="handle-arrow-left"></span>
+                <span class="handle-arrow-right"></span>
+              </div>
+              
             </div>
           </div>
-          <div class="about-column">
-            <div class="content-right">
-              <h1 class="main-title">Кто я и почему меня выбирают</h1>
 
-              <br>— Вхожу в топ 40 фотографов Молдовы по мнению международной фотопремии «35 awards»</br>
-              <br> — Автор креативных проектов</br>
-              <br>— Создатель авторского курса по фотографии. Выпустила несколько групп творческих людей в этом направлении</br>
-              <br>— Режиссер проекта «Грехи»</br>
-              <br>— Участница благотворительной фотовыставки «Краски лета 2017»</br>
-              <br>— «BEAUTY fest 2017» в направлении макияжа, 1 место, г. Кишинев</br>
-              <br>— «Гармония красоты 2017» в направлении макияжа, бронза, г.Бендеры</br>
-              <br>— Участница первого в Молдове форума по макияжу</br>
-              <br>— Была в составе судейства «Мисс Тирасполь 2019» а так же в составе судейства «Мистер Тирасполь 2020»</br>
-              <div class="cnopka">
-                <input type="submit" id="podrobnee" class="podrobnee submit btn" value="Подробнее">
+        </div>
+      </div>
+      
+      <!-- ТЕКСТОВЫЙ БЛОК ОСТАЛСЯ БЕЗ ИЗМЕНЕНИЙ -->
+      <div class="about-column text-premium-block">
+        <div class="content-right">
+          <h2 class="sub-main-title">Кто я и почему меня выбирают</h2>
+          <div class="about-text-content">
+            <br>— Вхожу в топ 40 фотографов Молдовы по мнению международной фотопремии «35 awards»<br>
+            <br>— Автор креативных проектов<br>
+            <br>— Создатель авторского курса по фотографии. Выпустила несколько групп творческих людей в этом направлении<br>
+            <br>— Режиссер проекта «Грехи»<br>
+            <br>— Участница благотворительной фотовыставки «Краски лета 2017»<br>
+            <br>— «BEAUTY fest 2017» в направлении макияжа, 1 место, г. Кишинев<br>
+            <br>— «Гармония красоты 2017» в направлении макияжа, bronze, г.Бендеры<br>
+            <br>— Участница первого в Молдове форума по макияжу<br>
+            <br>— Была в составе судейства «Мисс Тирасполь 2019» а так же в составе судейства «Мистер Тирасполь 2020»<br>
+          </div>
+          <div class="cnopka">
+<a href="https://www.instagram.com/tanyamartynenko.foto/">
+    <input type="button" class="podrobnee submit btn modern-action-button" value="Подробнее">
+  </a>          </div>
+        </div>
+      </div>
+    </div>
+
+          <section class="obrachenie modern-sub-section">
+          <h2 class="main-title premium-heading">Что вы получаете, обращаясь ко мне?</h2>
+          <div class="delimiter luxury-line"></div>
+          <div class="services-container">
+            <div class="container-row modern-benefits-grid">
+              <div class="row-item benefit-card" id="item-1">
+                <div class="benefit-number">-01</div>
+                <p class="benefit-text">Для каждой съемки я продумываю визуальную концепцию, образы, используемые реквизит и локации</p>
+              </div>
+              <div class="row-item benefit-card" id="item-2">
+                <div class="benefit-number">-02</div>
+                <p class="benefit-text">Незабываемые эмоции</p>
+              </div>
+              <div class="row-item benefit-card" id="item-3">
+                <div class="benefit-number">-03</div>
+                <p class="benefit-text">Память, которая сохранится на долгие годы</p>
+              </div>
+              <div class="row-item benefit-card" id="item-4">
+                <div class="benefit-number">-04</div>
+                <p class="benefit-text">Качественные и уникальные фотографии</p>
               </div>
             </div>
           </div>
-        </div>
-
-        <section class="obrachenie">
-    <h1 class="main-title">Что вы получаете, обращаясь ко мне?</h1>
-    <div class="delimiter"></div>
-    <div class="services-container">
-      <div class="container-row">
-        <div class="row-item" id="item-1">
-          <h2>-01</h2>
-          <p>Для каждой съемки я продумываю визуальную концепцию, образы, используемые реквизит и локации</p>
-        </div>
-        <div class="row-item" id="item-2">
-          <h2>-02</h2>
-          <p>Незабываемые эмоции</p>
-        </div>
-        <div class="row-item" id="item-3">
-          <h2>-03</h2>
-          <p>Память, которая сохранится на долгие годы</p>
-        </div>
-        <div class="row-item" id="item-4">
-          <h2>-04</h2>
-          <p>Качественные и уникальные фотографии</p>
-        </div>
+        </section>
       </div>
-    </div>
-  </section>
-</section>
+    </section>
 
+    <section class="portfolio-section modern-section" id="Portfolio">
+      <h1 class="portfolio-color premium-heading">Портфолио</h1>
+      <div class="delimiter luxury-line"></div>
 
+      <div class="background-image-container modern-parallax-portfolio" style="background-image: url('img/logotip/Portfolio.png');"></div>
 
-<section class="portfolio-section" id="Portfolio">
-  <h1 class="portfolio-color">Портфолио</h1>
-  <div class="delimiter"></div>
+      <div class="button-container">
+        <a href="https://www.instagram.com/tanyamartynenko.foto/" class="butn-portfolio modern-gold-button">Перейти к портфолио</a>
+      </div>
+    </section>
 
-  <div class="background-image-container" style="background-image: url('img/logotip/Portfolio.png');"></div>
+    <section class="tariffs-section modern-section" id="tariffs-section">
+      <h1 class="portfolio-color premium-heading">Тарифы</h1>
+      <div class="delimiter luxury-line"></div>
+      <section class="tariffs py-5 bg-light">
+        <div class="container">
+          <div class="tariffs-carousel modern-tariffs-grid">
 
-  <div class="button-container">
-    <a href="https://www.instagram.com/tanyamartynenko.foto/" class="butn-portfolio">Перейти к портфолио</a>
-  </div>
-</section>
-
-
-
-<section class="tariffs-section" id="tariffs-section">
-  <h1 class="portfolio-color">Тарифы</h1>
-  <div class="delimiter"></div>
-  <section class="tariffs py-5 bg-light">
-    <div class="container">
-      <div class="tariffs-carousel">  <!-- заменил тут -->
-
-        <div class="tariff">
-          <h3>ЛАЙТ</h3>
-          <div style="text-align: left;">
-            <h1 class="prise">1000 рублей ПМР</h1>
-            <p  class="with-check">Обработка фото в течении 14 дней ( иногда даже быстрее, в зависимости от обьема работы )</p>
-            <p class="with-check">фотосъемка до 1 часа (время включает переодевание, подготовку студии и уборку реквизитов)</p>
-            <p class="with-check">помощь в позировании</p>
-            <p class="with-check">более 100 исходных фотографий - в этот же день, из которых 20 проходят ретушь: кадрирование, коррекция кожи (удаление прыщей, морщин, синяков и мелких изъянов)</p>
-              <p class="with-check">ПРОСТОЙ РИЛС В ПОДАРОК</p>
-            <p class="with-check">АРЕНДА СТУДИИ ВКЛЮЧЕНА</p>
-            <p class="with-check">предоставление услуг визажиста и парикмахера (оплачиваются отдельно)</p>
-            <p class="with-check" >Одежда в студии БЕСПЛАТНО!</p>
-              <br></br>
-            <p>СРОК ВЫБОРА ФОТО - 1 НЕДЕЛЯ</p>
-             <p>По истечению срока выбора - обработка фотографий не производится!</p>
-              <p style="padding-top:25px">ДОПОЛНИТЕЛЬНЫЕ ПРАВКИ</p>
-              <p class="with-check">Каждая дополнительная фотография в обработке -1шт.-50 рублей ПМР</p>
-<p class="with-check">Зарисовать волосы,погладить одежду, дорисовать фон и другое - оплачивается отдельно, 1 фото -60 рублей ПМР</p>
+            <!-- ТАРИФ ЛАЙТ -->
+            <div class="tariff premium-card">
+              <div class="card-header-luxury">
+                <h3>ЛАЙТ</h3>
+                <h1 class="prise">1000 рублей ПМР</h1>
+              </div>
+              <div class="card-body-luxury" style="text-align: left;">
+                <p class="with-check">Обработка фото в течении 14 дней ( иногда даже быстрее, в зависимости от обьема работы )</p>
+                <p class="with-check">фотосъемка до 1 часа (время включает переодевание, подготовку студии и уборку реквизитов)</p>
+                <p class="with-check">помощь в позировании</p>
+                <p class="with-check">более 100 исходных фотографий - в этот же день, из которых 20 проходят ретушь: кадрирование, коррекция кожи (удаление прыщей, морщин, синяков и мелких изъянов)</p>
+                <p class="with-check">ПРОСТОЙ РИЛС В ПОДАРОК</p>
+                <p class="with-check">АРЕНДА СТУДИИ ВКЛЮЧЕНА</p>
+                <p class="with-check">предоставление услуг визажиста и парикмахера (оплачиваются отдельно)</p>
+                <p class="with-check">Одежда в студии БЕСПЛАТНО!</p>
+                <br>
+                <div class="important-terms-block">
+                  <p class="term-highlight">СРОК ВЫБОРА ФОТО - 1 НЕДЕЛЯ</p>
+                  <p class="term-warning">По истечению срока выбора - обработка фотографий не производится!</p>
                 </div>
+                <div class="additional-features-block">
+                  <p class="block-title-mini" style="padding-top:25px">ДОПОЛНИТЕЛЬНЫЕ ПРАВКИ</p>
+                  <p class="with-check text-muted-luxury">Каждая дополнительная фотография в обработке -1шт.-50 рублей ПМР</p>
+                  <p class="with-check text-muted-luxury">Зарисовать волосы,погладить одежду, дорисовать фон и другое - оплачивается отдельно, 1 фото -60 рублей ПМР</p>
+                </div>
+              </div>
+              <div class="card-footer-luxury">
                 <a href="https://www.instagram.com/tanyamartynenko.foto/" class="btn-subscribe">ЗАПИСАТЬСЯ</a>
-    </div>
-
-        <div class="tariff">
-          <h3>СТАНДАРТ</h3>
-          <div style="text-align: left;">
-           <h1 class="prise">1500 рублей ПМР</h1>
-            <p class="with-check2">Обработка фото до 14 дней</p>
-            <p class="with-check2">фотосъемка до 1,5 часа (время включает переодевание, подготовку студии и уборку реквизитов)</p>
-            <p class="with-check2">помощь в позировании</p>
-            <p class="with-check2">консультация по одежде, визажу, локации</p>
-            <p class="with-check2">помощь в составлении образа</p>
-            <p class="with-check">более 100 исходных фотографий - в этот же день, из которых 25 проходят ретушь: кадрирование, коррекция кожи (удаление прыщей, морщин, синяков и мелких изъянов)</p>
-            <p class="with-check2">ПРОСТОЙ РИЛС В ПОДАРОК</p>
-            <p class="with-check2">АРЕНДА СТУДИИ ВКЛЮЧЕНА</p>
-            <p class="with-check2">предоставление услуг визажиста и парикмахера (оплачиваются отдельно)</p>
-            <p class="with-check2">Одежда в студии БЕСПЛАТНО!</p>
-             <br></br>                            
-<p>СРОК ВЫБОРА ФОТО - 1 НЕДЕЛЯ</p>
-<p>По истечению срока выбора - обработка фотографий не производится!</p>
-<p style="padding-top:25px">ДОПОЛНИТЕЛЬНЫЕ ПРАВКИ</p>
-<p class="with-check">Каждая дополнительная фотография в обработке -1шт.-50 рублей ПМР</p>
-<p class="with-check">Зарисовать волосы,погладить одежду, дорисовать фон и другое - оплачивается отдельно, 1 фото -60 рублей ПМР</p>
-               </div> 
-               <a href="https://www.instagram.com/tanyamartynenko.foto/" class="btn-subscribe">ЗАПИСАТЬСЯ</a>
+              </div>
             </div>
-       
 
-        <div class="tariff">
-          <h3 >ПРЕМИУМ</h3>
-          <div style="text-align: left;">
-            <h1 class="prise">2000 рублей ПМР</h1>
-                        <p class="with-check3">Обработка фото до 10 дней</p>
-            <p class="with-check3">фотосъемка до 2 часов (время включает переодевание, подготовку студии и уборку реквизитов)</p>
-            <p class="with-check3">полное сопровождение по выбору образа и стиля</p>
-            <p class="with-check">более 100 исходных фотографий - в этот же день, из которых 30 проходят ретушь: кадрирование, коррекция кожи (удаление прыщей, морщин, синяков и мелких изъянов)</p>
-            <p class="with-check3">ПРОСТОЙ РИЛС В ПОДАРОК</p>
-            <p class="with-check3">АРЕНДА СТУДИИ ВКЛЮЧЕНА</p>
-           <p class="with-check3" >предоставление услуг визажиста и парикмахера (оплачиваются отдельно)</p>
-            <p class="with-check3">Одежда в студии БЕСПЛАТНО!</p>
-        
-             <br></br>                            
-<p>СРОК ВЫБОРА ФОТО - 1 НЕДЕЛЯ</p>
-<p>По истечению срока выбора - обработка фотографий не производится!</p>
-<p style="padding-top:25px">ДОПОЛНИТЕЛЬНЫЕ ПРАВКИ</p>
-<p class="with-check">Каждая дополнительная фотография в обработке -1шт.-50 рублей ПМР</p>
-<p class="with-check">Зарисовать волосы,погладить одежду, дорисовать фон и другое - оплачивается отдельно, 1 фото -60 рублей ПМР</p>
+            <!-- ТАРИФ СТАНДАРТ -->
+            <div class="tariff premium-card featured-card">
+              <div class="card-header-luxury">
+                <h3>СТАНДАРТ</h3>
+                <h1 class="prise">1500 рублей ПМР</h1>
+              </div>
+              <div class="card-body-luxury" style="text-align: left;">
+                <p class="with-check2">Обработка фото до 14 дней</p>
+                <p class="with-check2">фотосъемка до 1,5 часа (время включает переодевание, подготовку студии и уборку реквизитов)</p>
+                <p class="with-check2">помощь в позировании</p>
+                <p class="with-check2">консультация по одежде, визажу, локации</p>
+                <p class="with-check2">помощь в составлении образа</p>
+                <p class="with-check">более 100 исходных фотографий - в этот же день, из которых 25 проходят ретушь: кадрирование, коррекция кожи (удаление прыщей, морщин, синяков и мелких изъянов)</p>
+                <p class="with-check2">ПРОСТОЙ РИЛС В ПОДАРОК</p>
+                <p class="with-check2">АРЕНДA СТУДИИ ВКЛЮЧЕНА</p>
+                <p class="with-check2">предоставление услуг визажиста и парикмахера (оплачиваются отдельно)</p>
+                <p class="with-check2">Одежда в студии БЕСПЛАТНО!</p>
+                <br>                                     
+                <div class="important-terms-block">
+                  <p class="term-highlight">СРОК ВЫБОРА ФОТО - 1 НЕДЕЛЯ</p>
+                  <p class="term-warning">По истечению срока выбора - обработка фотографий не производится!</p>
+                </div>
+                <div class="additional-features-block">
+                  <p class="block-title-mini" style="padding-top:25px">ДОПОЛНИТЕЛЬНЫЕ ПРАВКИ</p>
+                  <p class="with-check text-muted-luxury">Каждая дополнительная фотография в обработке -1шт.-50 рублей ПМР</p>
+                  <p class="with-check text-muted-luxury">Зарисовать волосы,погладить одежду, дорисовать фон и другое - оплачивается отдельно, 1 фото -60 рублей ПМР</p>
+                </div>
+              </div> 
+              <div class="card-footer-luxury">
+                <a href="https://www.instagram.com/tanyamartynenko.foto/" class="btn-subscribe">ЗАПИСАТЬСЯ</a>
+              </div>
+            </div>
+           
+            <!-- ТАРИФ ПРЕМИУМ -->
+            <div class="tariff premium-card">
+              <div class="card-header-luxury">
+                <h3>ПРЕМИУМ</h3>
+                <h1 class="prise">2000 рублей ПМР</h1>
+              </div>
+              <div class="card-body-luxury" style="text-align: left;">
+                <p class="with-check3">Обработка фото до 10 дней</p>
+                <p class="with-check3">фотосъемка до 2 часов (время включает переодевание, подготовку студии и уборку реквизитов)</p>
+                <p class="with-check3">полное сопровождение по выбору образа и стиля</p>
+                <p class="with-check">более 100 исходных фотографий - в этот же день, из которых 30 проходят ретушь: кадрирование, коррекция кожи (удаление прыщей, морщин, синяков и мелких изъянов)</p>
+                <p class="with-check3">ПРОСТОЙ РИЛС В ПОДАРОК</p>
+                <p class="with-check3">АРЕНДА СТУДИИ ВКЛЮЧЕНА</p>
+                <p class="with-check3">предоставление услуг визажиста и парикмахера (оплачиваются отдельно)</p>
+                <p class="with-check3">Одежда в студии БЕСПЛАТНО!</p>
+                <br>                                     
+                <div class="important-terms-block">
+                  <p class="term-highlight">СРОК ВЫБОРА ФОТО - 1 НЕДЕЛЯ</p>
+                  <p class="term-warning">По истечению срока выбора - обработка фотографий не производится!</p>
+                </div>
+                <div class="additional-features-block">
+                  <p class="block-title-mini" style="padding-top:25px">ДОПОЛНИТЕЛЬНЫЕ ПРАВКИ</p>
+                  <p class="with-check text-muted-luxury">Каждая дополнительная фотография в обработке -1шт.-50 рублей ПМР</p>
+                  <p class="with-check text-muted-luxury">Зарисовать волосы,погладить одежду, дорисовать фон и другое - оплачивается отдельно, 1 фото -60 рублей ПМР</p>
+                </div>
+              </div>
+              <div class="card-footer-luxury">
+                <a href="https://www.instagram.com/tanyamartynenko.foto/" class="btn-subscribe">ЗАПИСАТЬСЯ</a>
+              </div>
+            </div>
+
           </div>
-          <a href="https://www.instagram.com/tanyamartynenko.foto/" class="btn-subscribe">ЗАПИСАТЬСЯ</a>
+        </div>
+      </section>
+    </section>
+
+    <section class="foto-sect modern-section">
+      <div class="section-wrapper">
+
+        <div class="section-foto modern-showcase-row">
+            <div class="showcase-img-container">
+              <img src="img/logotip/retush.jpg" alt="Фотография" class="image-foto image-foto1 modern-fluid-img">
+            </div>
+            <div class="text-foto text-foto1 showcase-text-content">
+                <h2>САМ СЕБЕ РЕТУШЕР</h2>
+                <div class="showcase-description">
+                  <p>— 700 рублей ПМР</p>
+                  <p>— все фото вы ретушируете самостоятельно</p>
+                  <p>— фотосъемка до 1 часа в студии</p>
+                  <p>— отдача всех исходных фотографий</p>
+                  <p>— помощь в выборе поз и позирования</p>
+                  <p>— СТУДИЯ ВКЛЮЧЕНА</p>
+                  <p>— предоставление услуг визажиста и парикмахера (оплата отдельно)</p>
+                  <p>— одежда в студии БЕСПЛАТНО!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-foto modern-showcase-row row-reverse">
+            <div class="showcase-img-container">
+              <img src="img/logotip/vanna.jpg" alt="Фотография" class="image-foto image-foto2 modern-fluid-img">
+            </div>
+            <div class="text-foto text-foto2 showcase-text-content">
+              <h2>ФОТОСЕССИЯ В ДУШЕ ИЛИ В ВАННОЙ</h2>
+              <div class="showcase-description">
+                <p>1200 рублей ПМР</p>
+                <p>фотосессия до 1.30 часов</p>
+                <p>(время переодеваний и сушки включено в это время)</p>
+                <p> Хотите провести съемку в молочной или пенной воде? </p>
+                <p>— фотосессию девушки, парня, ребенка или пары в ванной можно организовать в студии.</p>
+                <p>— фотографии в ванне - выглядят очень романтично.</p>
+                <p>— для фотосессии в ванне нужно как минимум два часа, чтобы вы успели сначала сделать несколько фото в халате или пижаме, например, а потом уже в воде в ванне. На вас может быть либо белье, либо просто пена для ванны или живые цветы. </p>
+                <p>— в моей студии, кроме ванны, есть еще и душ, значит у вас будет еще больше разных фотографий.</p>
+                <div class="inner-notice-box">
+                  <p>СРОК ВЫБОРА ФОТО - ДО 2 НЕДЕЛЬ</p>
+                  <p>По истечению срока выбора - обработка фотографий не производится!</p>
+                  <p>Каждая дополнительная фотография в обработке -1шт.-50 рублей ПМР</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="section-foto modern-showcase-row">
+            <div class="showcase-img-container">
+              <img src="img/logotip/dy.jpg" alt="Фотография" class="image-foto image-foto3 modern-fluid-img">
+            </div>
+            <div class="text-foto text-foto3 showcase-text-content">
+              <h2>АКВАЗОНА</h2>
+              <div class="showcase-description">
+                <p>фотосессия до 2 часов 1800 рублей</p>
+                <p>(время переодеваний и сушки включено в это время)</p>
+
+                <h2> Для кого? </h2>
+                <p>— для тех кому интересная необычная, креативная, творческая съемка</p>
+                <p>— кому нужна имитация дождя на фото</p>
+                <p>— яркая рекламная съемка</p>
+                <p>— фитнес съемка и съемка спортсменов</p>
+                <p>— возможность проведение полноценной аквасъемки — то, что отличает нашу студию от многих других. </p>
+                <p>— Бесконечно-черный, глубокий матовый фон подчеркнет красоту водных брызг, а бассейн с 20-сантиметровым бортиком позволит создать удивительные водные фотографии, разные варианты системы дождя, замораживающий свет, цветные фильтры, съёмка с красками и многое другое. После съемки вы можете согреться под горячим душем, а также за чашкой горячего кофе! :)</p>
+                <div class="inner-notice-box">
+                  <p>СРОК ВЫБОРА ФОТО - ДО 2 НЕДЕЛЬ</p>
+                  <p>По истечению срока выбора - обработка фотографий не производится!</p>
+                  <p>Каждая дополнительная фотография в обработке -1шт.-50 рублей ПМР</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="section-foto import-row modern-showcase-row row-reverse">
+            <div class="showcase-img-container">
+              <img src="img/logotip/les.jpg" alt="Фотография" class="image-foto image-foto4 modern-fluid-img">
+            </div>
+            <div class="text-foto text-foto4 showcase-text-content">
+              <h2>ВЫЕЗДНЫЕ ФОТОСЕССИИ</h2>
+              <div class="showcase-description">
+                <p>1000 руб/час ( время на дорогу по ПМР не считаю)</p>
+                <p>50 фото в цвето и свето коррекции + весь исходный материал</p>
+                <p>Выездная фотосессия, как правило, организовывается тогда, когда студийные стены становятся тесными. Её заказывают для детей,семей,свадьбы, моделей,индивидуальные съемки или LoveStory. Очень часто такая съемка становится незабываемым подарком на праздник. Например, ее можно подарить семейной паре, которая отмечает годовщину. Так, они смогут запечатлеть еще один очень важный для них день. К тому же, это еще и весело,и память на всю жизнь!</p>
+                <div class="inner-notice-box">
+                  <p>СРОК ВЫБОРА ФОТО - ДО 2 НЕДЕЛЬ</p>
+                  <p>ДОПОЛНИТЕЛЬНЫЕ ПРАВКИ</p>
+                  <p>Каждая дополнительная фотография в обработке -1шт.-50 рублей ПМР</p>
+                </div>
+              </div>
+            </div>
+        </div>
+Ы
+        <div class="section-foto modern-showcase-row">
+            <div class="showcase-img-container">
+              <img src="img/logotip/beremen.jpg" alt="Фотография" class="image-foto image-foto5 modern-fluid-img">
+            </div>
+            <div class="text-foto text-foto5 showcase-text-content">
+              <h2>"КОМПЛИМЕНТ" для беременных </h2>
+              <div class="showcase-description">
+                <p>Фотосессия в течении 30 минут - 700 рублей ПМР</p>
+                <p> С условием вас одной!</p>
+                <p>— помощь в выборе поз и позировании</p>
+                <p>— 10 фото в авторской обработке-кадрирование,</p>
+                <p>работа с кожей (прыщи,морщины,синяки,пластика,мелкие изъяны)+ весь исходный материал</p>
+                <p>— СТУДИЯ ВКЛЮЧЕНА</p>
+                <p>— Одежда в студии бесплатно</p>
+                <p>(кроме вещей от местных производителей)</p>
+                <p>ПРОСТОЙ РИЛС В ПОДАРОК</p>
+                <div class="inner-notice-box">
+                  <p>СРОК ВЫБОРА ФОТО - 1 НЕДЕЛЯ</p>
+                  <p>По истечению срока выбора - обработка фотографий не производится!</p>
+                  <p>ДОПОЛНИТЕЛЬНЫЕ ПРАВКИ</p>
+                  <p>Каждая дополнительная фотография в обработке -1шт.-50 рублей ПМР</p>
+                  <p>Зарисовать волосы,погладить одежду, дорисовать фон и другое - оплачивается отдельно, 1 фото -60 рублей ПМР</p>
+                </div>
+              </div>
+            </div>
         </div>
 
       </div>
-    </div>
-  </section>
-</section>
+    </section>
+
+    <section class="gift modern-section" id="Gift">
+      <div class="about-container-gift section-wrapper">
+        <h1 class="main-title premium-heading">Подарочные сертификаты</h1>
+        <div class="delimiter luxury-line"></div>
+        <h2 class="Podarok luxury-quote">Универсальный подарок для ваших родных и близких! Это прекрасная возможность сделать желанный подарок, экономя при этом время на его поиски.</h2>
+        
+        <div class="about-row modern-grid-2">
+          <div class="about-column">
+            <div class="sertificat luxury-features-list">
+              <span class="price gold-link-wrapper" style="color: rgb(215, 208, 208); display: block; margin-bottom: 10px;">Цена согласно купленному пакету по&nbsp;<a href="#tariffs-section" class="luxury-anchor" style="border-bottom: 1px solid rgb(227, 223, 223); box-shadow: rgb(227, 223, 223) 0px 0px 0px 0px inset; color: rgb(227, 223, 223) !important;">тарифам</a> на ваш выбор</span>
+              <br class="br"> — Вы тратите на подарок именно ту сумму, которую запланировали<br>
+              <br>— Не нужно думать об упаковке! Каждый подарочный сертификат – это уже оформленный подарок<br>
+              <br>— Одаряемый имеет преимущество выбрать удобное для него время для фотосессии в течении 3 месяцев, выбрать место (студия или на выезде)<br>
+              <br>— Сертификат дает право обладателю на фотосессию в течении 1 часа, включая свето- и цвето-коррекцию всего отснятого материала.<br>
+              <div class="sertificat-foot-notice">
+                <p>Запись на съемку не менее чем за 5 дней.</p>
+                <p>Будем рады видеть вас у нас в гостях!</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-column">
+            <div class="content-left">
+              <img src="img/logotip/sertf.jpeg" alt="О нас" class="premium-round-img">
+            </div>
+          </div>
+        </div>
+        
+        <div class="cnopka2">
+          <a href="https://www.instagram.com/tanyamartynenko.foto/" id="zacazat" class="zacazat submit btn modern-gold-button">Заказать</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="tariffs-section modern-section">
+      <section id="map" class="map-wrapper-luxury">
+        <h2 class="portfolio-color premium-heading"> Как найти </h2>
+        <div class="delimiter luxury-line"> </div>
+        <div class="map-container-border">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5e6a2035611134e141a01f351338ab17c353be3fd879ba60658e58f2b485bb6d&amp;width=100%25&amp;height=411&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+      </section>
+    </section>
+
+    <section class="nomer modern-contact-bar" id="nomer">
+        <p class="contact-phone-luxury">Связаться со мной: +37377807025</p>
+        <div class="social-icons icon-luxury-row">
+            <div class="t-sociallinks__item t-sociallinks__item_instagram">
+                <a href="https://www.instagram.com/tanyamartynenko.foto/" target="_blank" rel="nofollow noopener">
+                    <img src="img/logotip/insta.png" alt="Instagram">
+                </a>
+            </div>
+            <div class="t-sociallinks__item t-sociallinks__item_youtube">
+                <a href="https://www.youtube.com/watch?v=5lW5K612IdE" target="_blank" rel="nofollow noopener">
+                    <img src="img/logotip/yout.png" alt="YouTube">
+                </a>
+            </div>
+            <div class="t-sociallinks__item t-sociallinks__item_telegram">
+                <a href="https://t.me/37377807025" target="_blank" rel="nofollow noopener">
+                    <img src="img/logotip/teleg.png" alt="Telegram">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="fooot" class="modern-footer-luxury">
+      <div class="container footer-grid-luxury">
+        <div class="brand footer-logo-block">
+          <img src="img/logotip/noroot2.png" alt="Логотип сайта">
+        </div>
+        <nav class="footer-nav-block">
+          <h2>Меню</h2>
+          <ul class="menu-fot">
+            <li><a href="#zagolovok" class="menu-fot-link" data-link="top" title="На главную">Главная</a></li>
+            <li><a href="https://www.instagram.com/tanyamartynenko.foto/"  class="menu-fot-link" title="Love story">Love story</a></li>
+            <li><a href="https://www.instagram.com/tanyamartynenko.foto/"  class="menu-fot-link" title="Wedding">Wedding</a></li>
+            <li><a href="#obomne" class="menu-fot-link" title="Обо мне">Обо мне</a></li>
+            <li><a href="#tariffs-section" class="menu-fot-link" title="Тарифы">Тарифы</a></li>
+            <li><a href="#Gift" class="menu-fot-link" title="Подарочные сертификаты">Подарочные сертификаты</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-block">
+          <h2>Контакты</h2>
+          <ul class="additional-menu">
+            <li><a href="https://viber.click/37377807025" class="menu-fot-link" title="Viber">Viber</a></li>
+            <li><a href="https://www.instagram.com/tanyamartynenko.foto/" class="menu-fot-link" title="Instagram">Instagram</a></li>
+            <li><a href="https://www.youtube.com/watch?v=5lW5K612IdE" class="menu-fot-link" title="Youtube">Youtube</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
 
 
-
-
-
-<section class="foto-sect">
-<div class="section-foto">
-    <img src="img/logotip/retush.jpg" alt="Фотография" class="image-foto image-foto1">
-    <div class="text-foto text-foto1">
-        <h2>САМ СЕБЕ РЕТУШЕР</h2>
-        <p>— 700 рублей ПМР</p>
-        <p>— все фото вы ретушируете самостоятельно</p>
-        <p>— фотосъемка до 1 часа в студии</p>
-        <p>— отдача всех исходных фотографий</p>
-        <p>— помощь в выборе поз и позирования</p>
-        <p>— СТУДИЯ ВКЛЮЧЕНА</p>
-        <p>— предоставление услуг визажиста и парикмахера (оплата отдельно)</p>
-        <p>— одежда в студии БЕСПЛАТНО!</p>
-    </div>
-</div>
-
-<div class="section-foto">
-    <img src="img/logotip/vanna.jpg" alt="Фотография" class="image-foto image-foto2">
-    <div class="text-foto text-foto2">
-      <h2>ФОТОСЕССИЯ В ДУШЕ ИЛИ В ВАННОЙ</h2>
-      <p>1200 рублей ПМР</p>
-<p>фотосессия до 1.30 часов</p>
-<p>(время переодеваний и сушки включено в это время)</p>
-<p> Хотите провести съемку в молочной или пенной воде? </p>
-<p>—фотосессию девушки, парня, ребенка или пары в ванной можно организовать в студии.</p>
-<p>—фотографии в ванне - выглядят очень романтично.</p>
-  <p>—для фотосессии в ванне нужно как минимум два часа, чтобы вы успели сначала сделать несколько фото в халате или пижаме, например, а потом уже в воде в ванне. На вас может быть либо белье, либо просто пена для ванны или живые цветы. </p>
-  <p> —в моей студии, кроме ванны, есть еще и душ, значит у вас будет еще больше разных фотографий.</p>
-<p>СРОК ВЫБОРА ФОТО - ДО 2 НЕДЕЛЬ</p>
-<p>По истечению срока выбора - обработка фотографий не производится!</p>
-<p>Каждая дополнительная фотография в обработке -1шт.-50 рублей ПМР</p>
-    </div>
-</div>
-
-
-<div class="section-foto">
-    <img src="img/logotip/dy.jpg" alt="Фотография" class="image-foto image-foto3">
-    <div class="text-foto text-foto3">
-      <h2>АКВАЗОНА<h2>
-<p>фотосессия до 2 часов 1800 рублей</p>
-<p>(время переодеваний и сушки включено в это время)</p>
-
-<h2> Для кого? <h2>
-<p>— для тех кому интересная необычная, креативная, творческая съемка</p>
-<p>— кому нужна имитация дождя на фото</p>
-<p>— яркая рекламная съемка</p>
-<p>— фитнес съемка и съемка спортсменов</p>
-<p>— возможность проведение полноценной аквасъемки — то, что отличает нашу студию от многих других. </p>
-<p>— Бесконечно-черный, глубокий матовый фон подчеркнет красоту водных брызг, а бассейн с 20-сантиметровым бортиком позволит создать удивительные водные фотографии,
-разные варианты системы дождя, замораживающий свет, цветные фильтры, съёмка с красками и многое другое.
-После съемки вы можете согреться под горячим душем, а также за чашкой горячего кофе! :)</p>
-<p>СРОК ВЫБОРА ФОТО - ДО 2 НЕДЕЛЬ</p>
-<p>По истечению срока выбора - обработка фотографий не производится!</p>
-<p>Каждая дополнительная фотография в обработке -1шт.-50 рублей ПМР<p>
-    </div>
-</div>
-
-
-
-<div class="section-foto">
-    <img src="img/logotip/les.jpg" alt="Фотография" class="image-foto image-foto4">
-    <div class="text-foto text-foto4">
-      <h2>ВЫЕЗДНЫЕ ФОТОСЕССИИ</h2>
-    <p>1000 руб/час ( время на дорогу по ПМР не считаю)</p>
-    <p>50 фото в цвето и свето коррекции + весь исходный материал</p>
-    <p>Выездная фотосессия, как правило, организовывается тогда, когда студийные стены становятся тесными. Её заказывают для детей,семей,свадьбы, моделей,индивидуальные съемки или LoveStory. Очень часто такая съемка становится незабываемым подарком на праздник. Например, ее можно подарить семейной паре, которая отмечает годовщину. Так, они смогут запечатлеть еще один очень важный для них день. К тому же, это еще и весело,и память на всю жизнь!</p>
-    <p>СРОК ВЫБОРА ФОТО - ДО 2 НЕДЕЛЬ</p>
-    <p>ДОПОЛНИТЕЛЬНЫЕ ПРАВКИ</p>
-    <p>Каждая дополнительная фотография в обработке -1шт.-50 рублей ПМР</p>
     
-    </div>
-</div>
-
-
-<div class="section-foto">
-    <img src="img/logotip/beremen.jpg" alt="Фотография" class="image-foto image-foto5">
-    <div class="text-foto text-foto5">
-<h2>"КОМПЛИМЕНТ" для беременных </h2>
-<p>Фотосессия в течении 30 минут -600 рублей ПМР</p>
-<p> С условием вас одной!</p>
-<p>—помощь в выборе поз и позировании</p>
-<p>—10 фото в авторской обработке-кадрирование,</p>
-<p>работа с кожей (прыщи,морщины,синяки,пластика,мелкие изъяны)+ весь исходный материал</p>
-<p>—СТУДИЯ ВКЛЮЧЕНА</p>
-<p>—Одежда в студии бесплатно</p>
-<p>(кроме вещей от местных производителей)</p>
-<p>ПРОСТОЙ РИЛС В ПОДАРОК</p>
-<p>СРОК ВЫБОРА ФОТО - 1 НЕДЕЛЯ</p>
-<p>По истечению срока выбора - обработка фотографий не производится!</p>
-<p>ДОПОЛНИТЕЛЬНЫЕ ПРАВКИ</p>
-<p>Каждая дополнительная фотография в обработке -1шт.-50 рублей ПМР</p>
-<p>Зарисовать волосы,погладить одежду, дорисовать фон и другое - оплачивается отдельно, 1 фото -60 рублей ПМР</p>
-</div>
-</div>
-</div>
-</section>
-<section class="gift"  id="Gift">
-<div class="about-container-gift">
-  <h1 class="main-title">Подарочные сертификаты</h1>
-  <div class="delimiter"></div>
-  <h1 class="Podarok">Универсальный подарок для ваших родных и близких!
-Это прекрасная возможность сделать желанный подарок,
-экономя при этом время на его поиски.</h1>
-  <div class="about-row">
-    <div class="about-column">
-      <div class="sertificat">
-        <span class="price" style="color: rgb(215, 208, 208); display: block; margin-bottom: 10px;">Цена согласно купленному пакету по&nbsp;<a href="#tariffs-section" style="border-bottom: 1px solid rgb(227, 223, 223); box-shadow: rgb(227, 223, 223) 0px 0px 0px 0px inset; color: rgb(227, 223, 223) !important;">тарифам</a> на ваш выбор</span>
-        <br  class="br"> — Вы тратите на подарок именно ту сумму, которую запланировали</br>
-        <br>— Не нужно думать об упаковке! Каждый подарочный сертификат – это уже оформленный подарок</br>
-        <br>— Одаряемый имеет преимущество выбрать удобное для него время для фотосессии в течении 3 месяцев, выбрать место (студия или на выезде)</br>
-        <br>— Сертификат дает право обладателю на фотосессию в течении 1 часа, включая свето- и цвето-коррекцию всего отснятого материала.</br>
-        <p>Запись на съемку не менее чем за 5 дней.</p>
-        <p>Будем рады видеть вас у нас в гостях!</p>
-      </div>
-    </div>
-    <div class="about-column">
-      <div class="content-left">
-        <img src="img/logotip/sertf.jpeg" alt="О нас">
-      </div>
-    </div>
-
-  </div>
-  <div class="cnopka2">
-    <a href="https://www.instagram.com/tanyamartynenko.foto/" id="zacazat" class="zacazat submit btn">Заказать</a>
-  </div>
-</section>
-
-
-
-
-<section class="tariffs-section">
-<section id="map">
-  <h2 class="portfolio-color"> Как найти </h2>
-  <div class="delimiter"> </div>
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5e6a2035611134e141a01f351338ab17c353be3fd879ba60658e58f2b485bb6d&amp;width=100%25&amp;height=411&amp;lang=ru_RU&amp;scroll=true"></script></section>
-</section>
-
-
-
-
-
-
-
-
-<section class="nomer" id="nomer">
-    <p>Связаться со мной: +37377807025</p>
-    <div class="social-icons">
-        <div class="t-sociallinks__item t-sociallinks__item_instagram">
-            <a href="https://www.instagram.com/tanyamartynenko.foto/" target="_blank" rel="nofollow noopener">
-                <img src="img/logotip/insta.png" alt="Instagram">
-            </a>
-        </div>
-        <div class="t-sociallinks__item t-sociallinks__item_youtube">
-            <a href="https://www.youtube.com/watch?v=5lW5K612IdE" target="_blank" rel="nofollow noopener">
-                <img src="img/logotip/yout.png" alt="YouTube">
-            </a>
-        </div>
-        <div class="t-sociallinks__item t-sociallinks__item_telegram">
-            <a href="https://t.me/37377807025" target="_blank" rel="nofollow noopener">
-                <img src="img/logotip/teleg.png" alt="Telegram">
-            </a>
-        </div>
-    </div>
-</section>
-
-
-
-
-<footer id="fooot">
-  <div class="container">
-    <div class="brand">
-      <img src="img/logotip/noroot2.png" alt="Логотип сайта">
-    </div>
-    <nav >
-      <h2>Меню</h2> <!-- Заголовок для первого меню -->
-      <ul class="menu-fot">
-        <li><a href="#zagolovok" class="menu-fot" data-link="top" title="На главную">Главная</a></li>
-        <li><a href="http://t.martynenko.tilda.ws/kids" class="menu-fot" data-link="services" title="Kids">Kids</a></li>
-        <li><a href="http://t.martynenko.tilda.ws/family" class="menu-fot" data-link="services" title="Family">Family</a></li>
-        <li><a href="http://t.martynenko.tilda.ws/fashion" class="menu-fot"  data-link="portfolio" title="Fashion">Fashion</a></li>
-        <li><a href="http://t.martynenko.tilda.ws/love-story" class="menu-fot"  title="Love story">Love story</a></li>
-        <li><a href="http://t.martynenko.tilda.ws/wedding" class="menu-fot"  title="Wedding">Wedding</a></li>
-        <li><a href="#obomne" class="menu-fot"  title="Обо мне">Обо мне</a></li>
-  <li><a href="#tariffs-section" class="menu-fot"  title="Тарифы">Тарифы</a></li>
-  <li><a href="#Gift" class="menu-fot"  title="Подарочные сертификаты">Подарочные сертификаты</a></li>
-      </ul>
-    </nav>
-    <nav>
-      <h2>Контакты</h2> <!-- Заголовок для второго меню -->
-      <ul class="additional-menu">
-        <li><a href="https://viber.click/37377807025" class="menu-fot" title="Viber">Viber</a></li>
-        <li><a href="https://www.instagram.com/tanyamartynenko.foto/" class="menu-fot" title="Instagram">Instagram</a></li>
-        <li><a href="https://www.youtube.com/watch?v=5lW5K612IdE" class="menu-fot" title="Youtube">Youtube</a></li>
-      </ul>
-    </nav>
-  </div>
-</footer>
-
-
-
   </body>
 </html>
