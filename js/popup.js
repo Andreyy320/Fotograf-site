@@ -1,43 +1,62 @@
-$(document).ready(function() {
-    function showElementsOnScroll() {
-        var elements = []; // Массив для всех элементов, которые нужно анимировать
-
-        // Добавляем элементы из первой функции
-        $('.row-item').each(function(index) {
-            if (isElementInViewport($(this))) {
-                elements.push({ element: $(this), index: index });
-            }
+document.addEventListener("DOMContentLoaded", () => {
+    
+    // 1. Инициализация ScrollReveal (Плавное появление блоков)
+    // Подключаем библиотеку через cdn в HTML, а тут настраиваем
+    if (typeof ScrollReveal !== 'undefined') {
+        const sr = ScrollReveal({
+            reset: false,
+            distance: '60px',
+            duration: 1000,
+            delay: 200,
+            easing: 'cubic-bezier(0.5, 0, 0, 1)'
         });
 
-        // Добавляем элементы из второй функции
-        $('.about-column').each(function(index) {
-            if (isElementInViewport($(this))) {
-                elements.push({ element: $(this), index: index });
-            }
-        });
-
-        // Анимируем каждый элемент
-        elements.forEach(function(item) {
-            setTimeout(function() {
-                item.element.addClass('animated');
-            }, (item.index + 1) * 1200); // Increase the delay for each item
-        });
+        sr.reveal('.modern-section, .benefit-card', { origin: 'bottom', interval: 150 });
+        sr.reveal('.premium-heading, .luxury-line', { origin: 'top', distance: '20px' });
     }
 
-    // Обработчик события прокрутки
-    $(window).scroll(showElementsOnScroll);
+    // 2. Магнитный эффект для кнопок
+    const buttons = document.querySelectorAll('.modern-action-button, .modern-gold-button, .btn-subscribe');
+    
+    buttons.forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            
+            // Плавное следование за курсором
+            btn.style.transition = 'transform 0.1s ease';
+            btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+        });
 
-    // Показываем видимые элементы при загрузке страницы
-    showElementsOnScroll();
+        btn.addEventListener('mouseleave', () => {
+            btn.style.transition = 'transform 0.5s ease';
+            btn.style.transform = `translate(0, 0)`;
+        });
+    });
 
-    // Функция для проверки, виден ли элемент во viewport
-    function isElementInViewport(el) {
-        var rect = el[0].getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
+    // 3. Плавный скролл по якорным ссылкам
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // 4. Parallax для секций с фоновым изображением
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const parallaxBlocks = document.querySelectorAll('.modern-parallax-portfolio');
+        
+        parallaxBlocks.forEach(block => {
+            block.style.backgroundPositionY = `${scrolled * 0.5}px`;
+        });
+    });
+    
 });
