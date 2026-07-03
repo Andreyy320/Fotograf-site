@@ -1422,3 +1422,12 @@ body {
         object-position: center !important;
     }
 }
+
+
+
+@media (max-width: 800px) {
+    .modern-parallax-portfolio {
+        background-attachment: scroll; /* Отключаем "залипание" на телефонах */
+        height: 250px; /* Немного уменьшим высоту, чтобы фото смотрелось лучше */
+    }
+}
