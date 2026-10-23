@@ -26,7 +26,13 @@
       var cs = getComputedStyle(track);
       return parseFloat(cs.columnGap || cs.gap) || 0;
     }
-
+function setPad() {
+  var cs = getComputedStyle(track);
+  var g = parseFloat(cs.columnGap || cs.gap) || 0;
+  var p = Math.max(0, (track.clientWidth - cards[0].offsetWidth) / 2 - g);
+  track.style.setProperty('--pad', p + 'px');
+}
+setPad();
     function nearestIndex() {
       var mid = track.scrollLeft + track.clientWidth / 2;
       var best = 0, bestD = Infinity;
@@ -128,7 +134,7 @@
     var rt;
     window.addEventListener('resize', function () {
       clearTimeout(rt);
-      rt = setTimeout(function () { goTo(active, true); }, 120);
+      rt = setTimeout(function () { setPad(); goTo(active, true); }, 120);
     });
 
     goTo(START_INDEX, true);

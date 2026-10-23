@@ -19,7 +19,6 @@ html, body { background: var(--bg-dark); }
 body { color: var(--text-light); font-weight: 300; -webkit-font-smoothing: antialiased; }
 ::selection { background: var(--gold-primary); color: #000; }
 
- * зерно плёнки поверх всего сайта — даёт «дорогую» фактуру * 
 body::after {
   content: "";
   position: fixed; inset: 0;
@@ -211,11 +210,11 @@ body::after {
 .tariffs-slider .tariffs-carousel.is-dragging { cursor: grabbing; scroll-snap-type: none; user-select: none; }
 .tariffs-slider .tariffs-carousel.is-dragging a { pointer-events: none; }
 
- * пустые «распорки» по краям, чтобы первая и последняя карточки тоже вставали в центр * 
 .tariffs-slider .tariffs-carousel::before,
 .tariffs-slider .tariffs-carousel::after {
   content: "";
-  flex: 0 0 max(0px, calc((100% - var(--cw))   2 - var(--gap)));
+  display: block;
+  flex: 0 0 var(--pad, 0px);
 }
 
 .tariffs-slider .tariffs-carousel .tariff {
