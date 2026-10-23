@@ -1,6 +1,3 @@
-/* ==========================================================================
-   1. ПРЕМИАЛЬНЫЕ НАСТРОЙКИ ПЕРЕМЕННЫХ И ОБНУЛЕНИЕ
-   ========================================================================== */
 :root {
     --bg-dark: #0a0a0a;
     --bg-card: #141414;
@@ -33,7 +30,6 @@ body {
     line-height: 1.6;
 }
 
-/* Скроллбар в стиле премиум */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -48,9 +44,7 @@ body {
     background: var(--gold-primary);
 }
 
-/* ==========================================================================
-   2. ШАПКА И НАВИГАЦИЯ (HEADER)
-   ========================================================================== */
+
 .site-header {
     width: 100%;
     position: relative;
@@ -70,7 +64,6 @@ body {
     position: relative;
 }
 
-/* Дорогое полупрозрачное размытие поверх фонового фото хедера */
 .zagolovok::before {
     content: '';
     position: absolute;
@@ -148,7 +141,6 @@ body {
     display: block;
 }
 
-/* Кнопка "Записаться" в меню */
 .modern-btn-cta {
     background: linear-gradient(135deg, var(--gold-dark) 0%, var(--gold-primary) 100%);
     color: #000 !important;
@@ -163,9 +155,7 @@ body {
     box-shadow: 0 6px 25px rgba(214, 175, 55, 0.4);
 }
 
-/* ==========================================================================
-   3. ОБЩИЕ ПРЕМИУМ-КОМПОНЕНТЫ (СЕКЦИИ, ЗАГЛОВКИ)
-   ========================================================================== */
+
 .modern-section {
     padding: 120px 20px;
     position: relative;
@@ -205,9 +195,7 @@ body {
     font-size: 10px;
 }
 
-/* ==========================================================================
-   4. БЛОК "ОБО МНЕ"
-   ========================================================================== */
+
 .modern-grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -252,7 +240,7 @@ body {
     font-weight: 600;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    border-radius: 0; /* Строгий люкс любит прямые углы */
+    border-radius: 0;
     cursor: pointer;
     margin-top: 40px;
     transition: var(--transition-smooth);
@@ -264,33 +252,29 @@ body {
     box-shadow: 0 10px 30px rgba(214, 175, 55, 0.2);
 }
 
-/* ==========================================================================
-   СТИЛИ ДЛЯ ИНТЕРАКТИВНОГО СЛАЙДЕРА «ДО / ПОСЛЕ» В БЛОКЕ «ОБО МНЕ»
-   ========================================================================== */
 
-/* Главная обертка слайдера, наследующая форму старой картинки */
+
 .modern-before-after {
     position: relative;
     width: 100%;
-    max-width: 500px; /* Ограничиваем максимальную ширину для аккуратного вида */
+    max-width: 500px; 
     margin: 0 auto;
-    overflow: hidden; /* Важно: обрезает картинки по форме скруглений */
+    overflow: hidden; 
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* Контейнер интерактивной зоны */
 .bal-container {
     position: relative;
     width: 100%;
     height: 100%;
-    aspect-ratio: 1 / 1; /* Делает блок идеально квадратным */
+    aspect-ratio: 1 / 1; 
     min-height: 350px;
     user-select: none;
     cursor: ew-resize;
 }
 
-/* Общие стили для слоев картинок */
+
 .bal-after, .bal-before {
     position: absolute;
     top: 0;
@@ -306,32 +290,28 @@ body {
     display: block;
 }
 
-/* Слой "До" — работает строго как маска (занавес) */
 .bal-before {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%; /* Стартовое положение ползунка ровно по центру */
+    width: 50%; 
     height: 100%;
     overflow: hidden;
     z-index: 2;
 }
 
-/* ЖЕСТКАЯ ФИКСАЦИЯ: Контейнер внутри маски обязан дублировать размеры главного слайдера */
 .bal-before-inset {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Занимает полную ширину родителя */
+    width: 100%; 
     height: 100%;
 }
 
-/* Скрипт будет передавать точную ширину в пикселях сюда, чтобы картинки не прыгали */
 .bal-container .bal-before-inset {
     width: var(--container-width, 500px); 
 }
 
-/* Элегантные минималистичные плашки "До" и "После" */
 .bal-label {
     position: absolute;
     bottom: 20px;
@@ -353,12 +333,10 @@ body {
 .label-before { left: 20px; }
 .label-after { right: 20px; }
 
-/* Прячем плашки при активном перетаскивании, чтобы не мешали обзору */
 .bal-container:active .bal-label {
     opacity: 0;
 }
 
-/* Тонкая золотая разделительная линия */
 .bal-handle {
     position: absolute;
     top: 0;
@@ -371,7 +349,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Люксовый круглый ползунок по центру линии */
 .bal-handle::after {
     content: '';
     position: absolute;
@@ -387,13 +364,11 @@ body {
     transition: background 0.3s, transform 0.3s;
 }
 
-/* Эффект при наведении на слайдер — кнопка становится золотой */
 .bal-container:hover .bal-handle::after {
     background: var(--gold-primary, #d4af37);
     transform: translate(-50%, -50%) scale(1.05);
 }
 
-/* Аккуратные стрелочки внутри круга */
 .handle-arrow-left, .handle-arrow-right {
     position: absolute;
     top: 50%;
@@ -415,21 +390,10 @@ body {
     border-left: 5px solid var(--gold-primary, #d4af37);
 }
 
-/* Инвертируем цвет стрелок, когда кнопка заливается золотом */
 .bal-container:hover .handle-arrow-left { border-right-color: #111111; }
 .bal-container:hover .handle-arrow-right { border-left-color: #111111; }
 
 
-
-
-
-
-
-
-/* Сетка преимуществ */
-/* ==========================================================================
-   ТОЧЕЧНОЕ ЦЕНТРИРОВАНИЕ ЦИФР (ТЕКСТ ОСТАЕТСЯ СЛЕВА)
-   ========================================================================== */
 
 .modern-sub-section {
     margin-top: 100px;
@@ -447,7 +411,6 @@ body {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.03);
     
-    /* Возвращаем обычное блочное поведение, чтобы текст ровнялся по левому краю */
     display: block; 
     text-align: left; 
     
@@ -468,7 +431,6 @@ body {
     font-weight: 600;
     letter-spacing: 0.05em;
     
-    /* Магия тут: заставляем только цифру встать по центру */
     display: block;
     text-align: center; 
     width: 100%;
@@ -479,16 +441,10 @@ body {
     font-size: 15px;
     line-height: 1.6;
     margin: 0;
-    text-align: left; /* Жестко фиксируем текст по левому краю */
+    text-align: left;
 }
 
 
-
-
-
-/* ==========================================================================
-   5. ПОРТФОЛИО БЛОК
-   ========================================================================== */
 .modern-parallax-portfolio {
     height: 400px;
     background-size: cover;
@@ -525,9 +481,7 @@ body {
     box-shadow: 0 15px 30px rgba(214, 175, 55, 0.25);
 }
 
-/* ==========================================================================
-   6. ТАРИФЫ КАРТОЧКИ (КОНФЕТКА ТУТ)
-   ========================================================================== */
+
 .modern-tariffs-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -555,7 +509,6 @@ body {
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
 }
 
-/* Эффект свечения для самого ходового тарифа СТАНДАРТ */
 .featured-card {
     background: var(--bg-card-premium);
     border: 1px solid var(--gold-primary);
@@ -599,7 +552,6 @@ body {
     line-height: 1.5;
 }
 
-/* Элегантные маркеры списков вместо банальных галочек */
 .card-body-luxury p::before {
     content: '✓';
     position: absolute;
@@ -608,7 +560,6 @@ body {
     font-weight: bold;
 }
 
-/* Блоки важных условий внутри тарифов */
 .important-terms-block {
     background: rgba(255, 255, 255, 0.02);
     padding: 20px;
@@ -619,7 +570,7 @@ body {
 
 .important-terms-block p::before,
 .additional-features-block p::before {
-    display: none !important; /* Убираем маркер-галочку */
+    display: none !important;
 }
 
 .term-highlight {
@@ -648,7 +599,6 @@ body {
     padding-left: 15px !important;
 }
 
-/* КНОПКИ В ТАРИФАХ — Полное исправление конфликтов */
 .btn-subscribe {
     display: block;
     width: 100%;
@@ -672,7 +622,6 @@ body {
     box-shadow: 0 10px 25px rgba(214, 175, 55, 0.3);
 }
 
-/* Особая кнопка для карточки СТАНДАРТ */
 .featured-card .btn-subscribe {
     background: linear-gradient(135deg, var(--gold-dark) 0%, var(--gold-primary) 100%);
     color: #000 !important;
@@ -684,9 +633,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   7. КРЕАТИВНЫЕ СЪЕМКИ (SHOWCASE СЕКЦИИ)
-   ========================================================================== */
 .modern-showcase-row {
     display: flex;
     align-items: center;
@@ -747,9 +693,6 @@ body {
     color: var(--gold-light);
 }
 
-/* ==========================================================================
-   8. СЕРТИФИКАТЫ, КАРТА, КОНТАКТЫ И ФУТЕР
-   ========================================================================== */
 .luxury-quote {
     font-family: 'Playfair Display', serif;
     font-style: italic;
@@ -782,7 +725,6 @@ body {
     margin-top: 50px;
 }
 
-/* Интеграция Яндекс Карты */
 .map-container-border {
     border-radius: 24px;
     overflow: hidden;
@@ -790,7 +732,6 @@ body {
     box-shadow: 0 20px 50px rgba(0,0,0,0.5);
 }
 
-/* Нижняя панель контактов */
 .modern-contact-bar {
     background: #111;
     text-align: center;
@@ -824,7 +765,6 @@ body {
     transform: translateY(-5px);
 }
 
-/* Роскошный темный футер */
 .modern-footer-luxury {
     background: #050505;
     padding: 80px 20px;
@@ -873,9 +813,6 @@ body {
 }
 
 
-/* ==========================================================================
-   ИСПРАВЛЕНИЕ ОТОБРАЖЕНИЯ ИКОНОК СОЦСЕТЕЙ (АКЦЕНТ НА ВИДИМОСТЬ)
-   ========================================================================== */
 
 .icon-luxury-row {
     display: flex;
@@ -895,65 +832,54 @@ body {
     display: block;
     transition: var(--transition-smooth);
     
-    /* Магия инверсии и золотого тонирования: превращает черные иконки в благородное матовое золото */
     filter: invert(0.8) sepia(1) saturate(3) hue-rotate(5deg) brightness(0.9);
     opacity: 0.85;
 }
 
-/* Эффект при наведении — иконка становится ярче, крупнее и слегка подсвечивается */
 .icon-luxury-row a:hover img {
     filter: invert(0.9) sepia(1) saturate(5) hue-rotate(10deg) brightness(1.2);
     opacity: 1;
     transform: translateY(-5px) scale(1.1);
 }
 
-/* Неоновое золотое свечение вокруг иконки при наведении */
 .icon-luxury-row a:hover {
     filter: drop-shadow(0 0 12px rgba(214, 175, 55, 0.6));
 }
 
 
 
-/* Принудительный показ гамбургера */
 #hamburger {
-    display: block !important; /* Всегда видим для теста */
+    display: block !important;
     cursor: pointer;
     font-size: 35px;
-    color: #ffffff; /* Белый цвет на красном фоне должен быть виден */
+    color: #ffffff;
     z-index: 9999;
     position: absolute;
     top: 20px;
     right: 20px;
     padding: 10px;
     line-height: 1;
-    background: rgba(0, 0, 0, 0.3); /* Легкая подложка, чтобы иконку было видно */
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
 
-/* На случай, если он спрятан внутри контейнера */
 .nav-holder {
-    position: relative; /* Чтобы #hamburger позиционировался относительно этого блока */
+    position: relative;
 }
 
 
-
-/* --- ЛОГИКА АДАПТИВНОСТИ 835px --- */
-
-/* 1. На больших экранах гамбургер скрыт, а меню — капсула */
 @media (min-width: 835px) {
     #hamburger {
         display: none !important;
     }
     .menu {
-        display: flex !important; /* Капсула всегда видна */
+        display: flex !important;
     }
 }
 
-/* 2. На экранах 835px и меньше — включаем режим мобильного меню */
 @media (max-width: 835px) {
-    /* Скрываем горизонтальную капсулу */
     .menu {
-        display: none; /* Скрыто по умолчанию, пока не нажали бургер */
+        display: none;
         position: fixed;
         top: 0;
         right: -100%;
@@ -967,13 +893,11 @@ body {
         z-index: 9999;
     }
 
-    /* Когда добавляем класс .open через JS */
     .menu.open {
         display: flex !important;
         right: 0;
     }
 
-    /* Показываем гамбургер */
     #hamburger {
         display: block !important;
         position: fixed;
@@ -986,27 +910,23 @@ body {
     }
 }
 @media (max-width: 835px) {
-    /* Фон меню */
     .menu {
-        background: rgba(10, 10, 10, 0.98); /* Очень глубокий темный цвет */
-        backdrop-filter: blur(20px);        /* Эффект матового стекла */
+        background: rgba(10, 10, 10, 0.98);
+        backdrop-filter: blur(20px);
         padding-top: 100px;
     }
 
-    /* Расположение ссылок */
     .menu li {
         margin: 30px 0;
         text-align: center;
-        opacity: 0;                        /* Скрыты для анимации */
-        transform: translateY(20px);       /* Сдвинуты вниз */
+        opacity: 0;
+        transform: translateY(20px);
     }
 
-    /* Анимация при открытии */
     .menu.open li {
         animation: slideUp 0.5s forwards;
     }
 
-    /* Красивая задержка для каждой ссылки (эффект "волны") */
     .menu.open li:nth-child(1) { animation-delay: 0.1s; }
     .menu.open li:nth-child(2) { animation-delay: 0.2s; }
     .menu.open li:nth-child(3) { animation-delay: 0.3s; }
@@ -1014,127 +934,111 @@ body {
     .menu.open li:nth-child(5) { animation-delay: 0.5s; }
 
     .menu li a {
-        font-size: 24px !important;        /* Крупный, читабельный шрифт */
+        font-size: 24px !important;
         letter-spacing: 0.2em;
     }
 }
 
-/* Сама анимация появления */
 @keyframes slideUp {
     to { opacity: 1; transform: translateY(0); }
 }
 
 
 
-
-
-/* Базовые стили для десктопа (4 в ряд) */
 .modern-benefits-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 колонки по умолчанию */
-    gap: 20px; /* Расстояние между карточками */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
-/* Адаптив: когда экран 1155px и меньше */
 @media (max-width: 1155px) {
     .modern-benefits-grid {
-        grid-template-columns: repeat(2, 1fr); /* Становится 2 колонки */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Адаптив: для совсем маленьких экранов (телефонов) */
 @media (max-width: 600px) {
     .modern-benefits-grid {
-        grid-template-columns: 1fr; /* Становится 1 колонка (все под друг другом) */
+        grid-template-columns: 1fr;
     }
 }
 
 
 
-/* 1. Базовые стили для десктопа (все в ряд) */
 .modern-tariffs-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 равные колонки */
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    align-items: stretch; /* Все карточки одной высоты */
+    align-items: stretch;
 }
 
-/* 2. Адаптив: когда экран 1140px и меньше */
 @media (max-width: 1140px) {
     .modern-tariffs-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    /* 3. Делаем третью карточку (Премиум) на всю ширину и центрируем */
     .modern-tariffs-grid .tariff:nth-child(3) {
-        grid-column: span 2; /* Растягиваем на 2 колонки */
-        max-width: 50%;      /* Делаем ширину в 2 раза меньше */
-        margin: 0 auto;      /* Центрируем её */
+        grid-column: span 2;
+        max-width: 50%;
+        margin: 0 auto;
     }
 }
 
-/* 3. Адаптив для мобильных (все в одну колонку) */
 @media (max-width: 768px) {
     .modern-tariffs-grid {
         grid-template-columns: 1fr;
     }
 
     .modern-tariffs-grid .tariff:nth-child(3) {
-        grid-column: span 1; /* Возвращаем на 1 колонку */
-        max-width: 100%;     /* На всю ширину */
+        grid-column: span 1;
+        max-width: 100%;
     }
 }
 
 
-
-
-
-/* Логика: при 965px и меньше перестраиваем в вертикальный блок */
 @media (max-width: 965px) {
     .modern-showcase-row{
-        flex-direction: column !important; /* Текст и фото друг под другом */
+        flex-direction: column !important;
         align-items: center;
         text-align: center;
     }
 .showcase-description{
-        flex-direction: column !important; /* Текст и фото друг под другом */
+        flex-direction: column !important;
         align-items: center;
         text-align: left;
     }
 
     .showcase-img-container {
-        width: 100% !important; /* Фото занимает всю ширину */
-        margin-bottom: 20px;    /* Отступ между фото и текстом */
+        width: 100% !important;
+        margin-bottom: 20px;
     }
 
     .image-foto {
         width: 100%;
-        max-height: 850px;      /* Ограничиваем высоту, чтобы не была слишком длинной */
-        object-fit: cover;      /* Чтобы фото не искажалось */
-        border-radius: 15px;    /* Добавим скругление для эстетики */
+        max-height: 850px;
+        object-fit: cover;
+        border-radius: 15px;
     }
 
     .showcase-text-content {
-        width: 100% !important; /* Текст тоже на всю ширину */
+        width: 100% !important;
         padding: 0 15px;
     }
 }
 
 
 
-/* --- Адаптация блока сертификатов --- */
 @media (max-width: 840px) {
     .modern-grid-2 {
         display: flex;
-        flex-direction: column-reverse; /* Меняем порядок: фото становится первым */
+        flex-direction: column-reverse;
     }
 .cnopka {
         display: flex;
-        justify-content: center; /* Горизонтальное центрирование */
-        width: 100%;             /* Занимаем всю ширину, чтобы сработал justify-content */
-        margin-top: 20px;        /* Немного отступа сверху, чтобы не слипалось с текстом */
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
     }
-    /* Дополнительно: корректируем отступы для красоты */
     .about-column {
         width: 100% !important;
         margin-bottom: 20px;
@@ -1142,51 +1046,47 @@ body {
 
     .content-left {
         display: flex;
-        justify-content: center; /* Центрируем фото */
+        justify-content: center;
     }
 
     .premium-round-img {
         height: auto;
-        border-radius: 20px; /* Чтобы фото сертификата выглядело аккуратно */
+        border-radius: 20px;
     }
 }
 
 
 @media (max-width: 550px) {
-    /* 1. Уменьшаем отступы и ограничиваем ширину карты */
     .premium-heading
     {
           font-size: 29px;
     }
     .map-wrapper-luxury {
-        padding: 0 10px; /* Добавляем внутренний отступ, чтобы карта не упиралась в края */
+        padding: 0 10px;
         overflow: hidden;
     }
 
     .map-container-border {
         width: 100%;
-        max-width: 450px; /* Принудительно ограничиваем ширину */
+        max-width: 450px;
         margin: 0 auto;
     }
 
-    /* 2. Подгоняем контактный бар, чтобы текст не разрывал экран */
     .modern-contact-bar {
         padding: 20px 10px;
         text-align: center;
     }
 
     .contact-phone-luxury {
-        font-size: 16px; /* Чуть уменьшаем шрифт номера на малых экранах */
-        word-break: break-all; /* Чтобы длинный номер переносился, если не влезает */
+        font-size: 16px;
+        word-break: break-all;
     }
 
-    /* 3. Уменьшаем размер иконок, если они не помещаются в ряд */
     .icon-luxury-row img {
-        width: 40px; /* Иконки чуть меньше */
+        width: 40px;
         height: 40px;
     }
 
-    /* 4. Футер: делаем шрифты чуть компактнее */
     .footer-grid-luxury {
         padding: 0 10px;
     }
@@ -1199,37 +1099,33 @@ body {
 
 
 @media (max-width: 500px) {
-    /* 1. Превращаем футер в колонку */
     .footer-grid-luxury {
         display: flex !important;
         flex-direction: column !important;
         align-items: center;
         text-align: center;
-        gap: 30px; /* Отступ между блоками */
+        gap: 30px;
     }
 
-    /* 2. Уменьшаем размер шрифтов для всего футера */
     .footer-nav-block h2 {
         font-size: 16px !important;
         margin-bottom: 10px;
     }
 
     .menu-fot, .additional-menu {
-        font-size: 13px !important; /* Делаем ссылки компактнее */
+        font-size: 13px !important;
         padding: 0 !important;
     }
 
     .menu-fot li, .additional-menu li {
-        margin: 5px 0; /* Меньше отступы между строками */
+        margin: 5px 0;
     }
 
-    /* 3. Фиксируем ширину логотипа */
     .footer-logo-block img {
-        max-width: 150px; /* Чтобы логотип не был гигантским */
+        max-width: 150px;
         height: auto;
     }
 
-    /* 4. Центрируем меню */
     .footer-nav-block {
         width: 100%;
     }
@@ -1257,19 +1153,15 @@ body {
 
 
 
-
-
-/* Базовый стиль (для больших экранов) */
 .bal-container {
-    width: 500px; /* Фиксируем ширину */
-    height: 500px; /* Фиксируем высоту */
+    width: 500px;
+    height: 500px;
     position: relative;
     overflow: hidden;
-    margin: 0 auto; /* Центрируем */
+    margin: 0 auto;
     border-radius: 20px;
 }
 
-/* Переход на планшеты */
 @media (max-width: 1005px) {
     .bal-container {
         width: 400px;
@@ -1278,19 +1170,18 @@ body {
 }
 
 
-/* --- Переход на мобильный вид (1000px и меньше) --- */
 @media (max-width: 1004px) {
     .about-row.modern-grid-2 {
         display: flex;
-        flex-direction: column-reverse; /* ТЕКСТ ВВЕРХУ, СЛАЙДЕР ПОД НИМ */
+        flex-direction: column-reverse;
         align-items: center;
         gap: 30px;
     }
      .cnopka {
         display: flex;
-        justify-content: center; /* Горизонтальное центрирование */
-        width: 100%;             /* Занимаем всю ширину, чтобы сработал justify-content */
-        margin-top: 20px;        /* Немного отступа сверху, чтобы не слипалось с текстом */
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
     }
 
     .img-premium-block {
@@ -1310,7 +1201,6 @@ body {
 
 
 @media (max-width: 550px) {
-    /* Принудительно задаем поведение для конкретных картинок */
     .bal-container .img-before {
         object-position: center !important;
         object-fit: cover !important;
@@ -1325,19 +1215,17 @@ body {
 }
 
 @media (max-width: 500px) {
-    /* Уменьшаем сам контейнер до 300px (или столько, сколько нужно) */
     .bal-container {
-        width: 300px !important;  /* Можно менять на 280px или 320px */
+        width: 300px !important;
         height: 300px !important;
         margin: 0 auto;
-        border-radius: 15px;      /* Чуть меньше радиус для маленького размера */
+        border-radius: 15px;
         overflow: hidden;
     }
 
-    /* Принудительно задаем размер изображений внутри */
     .bal-before img, 
     .bal-after img {
-        width: 300px !important;  /* ДОЛЖНО СОВПАДАТЬ с шириной контейнера */
+        width: 300px !important;
         height: 300px !important;
         object-fit: cover;
         object-position: center;
@@ -1346,13 +1234,11 @@ body {
 
 
 @media (max-width: 340px) {
-    /* Добавляем чуть больше "воздуха", чтобы блок не прилипал к краям */
     .img-premium-block {
         padding: 0 10px !important;
         box-sizing: border-box;
     }
 
-    /* Уменьшаем контейнер до 250px */
     .bal-container {
         width: 250px !important;
         height: 250px !important;
@@ -1361,7 +1247,6 @@ body {
         overflow: hidden;
     }
 
-    /* Подстраиваем изображения внутри */
     .bal-before img, 
     .bal-after img {
         width: 250px !important;
@@ -1374,7 +1259,6 @@ body {
 
 
 @media (max-width: 310px) {
-    /* Добавляем чуть больше "воздуха", чтобы блок не прилипал к краям */
     .img-premium-block {
         padding: 0 10px !important;
         box-sizing: border-box;
@@ -1404,7 +1288,6 @@ body {
     font-size: 10px !important;}
 
 
-    /* Уменьшаем контейнер до 250px */
     .bal-container {
         width: 200px !important;
         height: 200px !important;
@@ -1413,7 +1296,6 @@ body {
         overflow: hidden;
     }
 
-    /* Подстраиваем изображения внутри */
     .bal-before img, 
     .bal-after img {
         width: 200px !important;
@@ -1427,7 +1309,7 @@ body {
 
 @media (max-width: 800px) {
     .modern-parallax-portfolio {
-        background-attachment: scroll; /* Отключаем "залипание" на телефонах */
-        height: 250px; /* Немного уменьшим высоту, чтобы фото смотрелось лучше */
+        background-attachment: scroll;
+        height: 250px;
     }
 }

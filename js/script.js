@@ -1,15 +1,13 @@
 $(window).on('load', function() {
-  // 1. Плавное скрытие экрана загрузки
   $('#preloader').delay(500).fadeOut('slow');
 });
 
 $(document).ready(function() {
   
-  // 2. Интерактивный слайдер ДО/ПОСЛЕ (первый тип)
   const slider = $('.comparison-slider');
   if(slider.length) {
     slider.on('mousemove touchmove', function(e) {
-      if (e.type === 'touchmove') e.preventDefault(); // Предотвращаем скролл страницы
+      if (e.type === 'touchmove') e.preventDefault(); 
       
       const sliderWidth = slider.width();
       const pageX = (e.type === 'touchmove') ? e.originalEvent.touches[0].pageX : e.pageX;
@@ -24,7 +22,6 @@ $(document).ready(function() {
     });
   }
 
-  // 3. Интерактивный FAQ (Аккордеон)
   $('.faq-question').on('click', function() {
     const item = $(this).parent('.faq-item');
     if(item.hasClass('active')) {
@@ -35,15 +32,13 @@ $(document).ready(function() {
     }
   });
 
-  // 4. Логика слайдера «ДО / ПОСЛЕ» (второй тип - bal-container)
   const $container = $('.bal-container');
   
   if ($container.length > 0) {
-    // Устанавливаем touch-action через JS для предотвращения скролла
     $container.css('touch-action', 'none');
 
     $container.on('mousemove touchmove', function(e) {
-      if (e.type === 'touchmove') e.preventDefault(); // Предотвращаем скролл страницы
+      if (e.type === 'touchmove') e.preventDefault(); 
       
       const containerWidth = $container.width();
       const containerOffset = $container.offset().left;

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Чтобы анимация не повторялась
+                observer.unobserve(entry.target); 
             }
         });
     }, options);
