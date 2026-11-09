@@ -492,9 +492,30 @@
       <section id="map" class="map-wrapper-luxury">
         <h2 class="portfolio-color premium-heading"> Как найти </h2>
         <div class="delimiter luxury-line"> </div>
-        <div class="map-container-border">
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5e6a2035611134e141a01f351338ab17c353be3fd879ba60658e58f2b485bb6d&amp;width=100%25&amp;height=411&amp;lang=ru_RU&amp;scroll=true"></script>
-        </div>
+      <div class="map-container-border" id="map-box" style="min-height:411px"></div>
+<script>
+(function () {
+  var box = document.getElementById('map-box');
+  if (!box) return;
+  var loaded = false;
+  function load() {
+    if (loaded) return;
+    loaded = true;
+    var s = document.createElement('script');
+    s.charset = 'utf-8';
+    s.async = true;
+    s.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5e6a2035611134e141a01f351338ab17c353be3fd879ba60658e58f2b485bb6d&width=100%25&height=411&lang=ru_RU&scroll=true';
+    box.appendChild(s);
+  }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (entries, obs) {
+      if (entries[0].isIntersecting) { load(); obs.disconnect(); }
+    }, { rootMargin: '400px' }).observe(box);
+  } else {
+    window.addEventListener('load', load);
+  }
+})();
+</script>
       </section>
     </section>
 
