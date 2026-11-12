@@ -146,7 +146,7 @@ setPad();
     if (!('IntersectionObserver' in window)) return;
     var sel = '.premium-heading, .luxury-line, .about-text-content, .sub-main-title, ' +
               '.benefit-card, .showcase-img-container, .showcase-text-content, ' +
-              '.luxury-quote, .gift .about-column, .tariffs-slider, ' +
+              '.luxury-quote, .gift .about-column, ' +
               '.map-container-border, .contact-phone-luxury';
     var els = document.querySelectorAll(sel);
     var io = new IntersectionObserver(function (entries) {
@@ -160,7 +160,7 @@ setPad();
           el.style.transitionDelay = '';
         }, 1500);
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+}, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
 
     Array.prototype.forEach.call(els, function (el, i) {
       el.classList.add('lx-reveal');
